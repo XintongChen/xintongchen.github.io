@@ -81,7 +81,8 @@ a:hover p{
 .IntroRow .arrowDown{
     font-size:33px;
     margin-top: 20px;
-    color:#ff7373;
+    /*color:#ff7373;*/
+    color:#d83e77;
 }
 
 .IntroRow .arrowDown:hover{
@@ -143,7 +144,8 @@ a:hover p{
     margin-top: 15px;
 }
 .intro .keywords{
-    color:#ff7373;
+    /*color:#ff7373;*/
+    color:#d83e77;
     font-family: 'Josefin Sans', sans-serif;
     /*font-weight: 400;*/
     padding-top: 10px;
@@ -201,7 +203,7 @@ a:hover p{
 }
 
 .ProjRow .square{
-    padding:20px;
+    padding:15px;
     margin-bottom: 20px;
 }
 
@@ -318,13 +320,16 @@ a:hover p{
 
 
 .ContactRow{
-    border-top: 2px solid #ff7373;
+    /*border-top: 2px solid #ff7373;*/
+    border-top: 2px solid #d83e77;
     padding-top: 20px;
     padding-bottom: 25px;
+    margin-top: 20px;
     /*padding-left: 7%;*/
-    color:#ff7373;
+    /*color:#ff7373;*/
+    color:#d83e77;
     font-family: 'Lato', sans-serif;
-    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.15);
     /*font-size:15px;*/
 }
 
@@ -342,7 +347,8 @@ a:hover p{
 }*/
 
 .ContactRow  i{
-    color: #ff7373;
+    /*color: #ff7373;*/
+    color:#d83e77;
     margin:5px 4px 0px 4px;
     font-size: 20px;
 
