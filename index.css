@@ -165,7 +165,6 @@ a:hover p {
 }
 
 .intro {
-    /*background-color: rgba(255,255,255,0.5);*/
     width: 45%;
     margin: auto;
     margin-top: 30px;
@@ -176,7 +175,6 @@ a:hover p {
     letter-spacing: 2;
     color: #555;
     font-family: 'Josefin Sans', sans-serif;
-    /*opacity: 0;*/
 }
 
 .intro .blackHr {
@@ -248,13 +246,11 @@ a:hover p {
 }
 
 .ProjRow .square:hover {
-    box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 7px 13px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
 .projRow .square:hover .projImg .scaled-img {
-    /*  -webkit-filter: none;
-    filter: none;*/
     -webkit-transform: scale(1.15);
     -moz-transform: scale(1.15);
     -o-transform: scale(1.15);
@@ -309,17 +305,13 @@ a:hover p {
 
 
 .ContactRow {
-    /*border-top: 2px solid #ff7373;*/
     border-top: 2px solid #d83e77;
     padding-top: 20px;
     padding-bottom: 25px;
     margin-top: 20px;
-    /*padding-left: 7%;*/
-    /*color:#ff7373;*/
     color: #d83e77;
     font-family: 'Lato', sans-serif;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.15);
-    /*font-size:15px;*/
 }
 
 
@@ -329,8 +321,6 @@ a:hover p {
     color: #d83e77;
     margin: 5px 4px 0px 4px;
     font-size: 20px;
-    /*    margin-top:5px;
-    margin-right: 10px;*/
 }
 
 
@@ -340,10 +330,6 @@ a:hover p {
 }
 
 
-/*.ContactRow h3{
-    color:#E8F5E9;
-    font-weight: 400;
-}*/
 
 @media screen and (min-width: 320px) {
     .intro {
