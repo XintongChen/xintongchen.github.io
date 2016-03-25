@@ -158,66 +158,105 @@ a:hover p {
 }
 
 .intro {
-    width: 55%;
+    width: 53%;
     margin: auto;
     margin-top: 25px;
     padding-top: 5px;
 }
 
-.intro .fullName {
+.fullName {
     font-variant: small-caps;
     letter-spacing: 2;
     color: #555;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.intro .blackHr {
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-}
+ 
 
-.intro .keywords {
-    color: #d83e77;
+.keyWord {
     font-family: 'Josefin Sans', sans-serif;
-    font-variant: small-caps;
-    padding-top: 10px;
-    opacity: 0;
+
+    font-weight: bold;
+    letter-spacing: 1.01;
+    margin-top:5px;
+    margin-bottom: 20px;
+
 }
 
-.intro .selfIntro {
-    font-family: 'Lato', sans-serif;
+.selfIntro {
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Nunito', sans-serif;
     color: #555;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     display: block;
     opacity: 0;
+    margin-bottom: 10px;
+    /*letter-spacing: 1.01;*/
 }
 
+.icons{
+    height:35px;
+    width:35px;
+    background-color: hsla(192,17%,63%,1);
+    display: inline-block;
+    vertical-align: middle;
+    margin:0px 5px;
+    border-radius: 3px;
+    
+}
+.icons img {
+    height:20px;
+    margin:7.5px;
+     
+}
+
+.icons:hover{
+    background-color: #324246;
+}
+
+.resume{
+        font-size: 17px;
+    height: 35px;
+    background-color:hsla(192,17%,63%,1);
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+  
+ .resume:hover{
+    color:white;
+    background-color: #324246;
+ }
 
 
 
 
 .ProjRow {
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     margin-top: 10px;
     margin-right: 7%;
     margin-left: 7%;
 }
 
-.ProjRow img {
-    width: 100%;
-}
+
 
 .ProjRow .square {
     padding: 5px;
     margin-bottom: 20px;
-    border-radius: 50%;
-    /*overflow: hidden;*/
 }
 
-.ProjRow .projIcon p{
-    font-family: 'Lato', sans-serif;
+.ProjRow .projTags{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
 }
 .ProjRow .projIcon hr{
     margin:10px auto;
@@ -227,58 +266,49 @@ a:hover p {
 
 .ProjRow .square:hover {    
     cursor: pointer;
-    border-radius: 50%;
 }
 
-.projRow .square:hover .projImg{
-    box-shadow: 2px 8px 15px 0 rgba(0, 0, 0, 0.3);
-}
-.projRow .square:hover .projImg .scaled-img {
-   
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    -o-filter:grayscale(0);
-    -moz-filter:grayscale(0);
-    -ms-filter:grayscale(0);
-
-    border-radius: 50%;
+.ProjRow .square .projImg .scaled-img {
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-
-
-.projImg .scaled-img {
-   
-    border-radius: 50%;
-
-    filter: grayscale(50%);
-    -webkit-filter: grayscale(50%);
-    -o-filter:grayscale(50%);
-    -moz-filter:grayscale(50%);
-    -ms-filter:grayscale(50%);
-
-
+.projRow .square:hover  .projImg .scaled-img {
+    -webkit-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    transform:scale(1.1);
 }
+
+
+
+
 
 
 
 .ProjRow .projTitle {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 19px;
     font-variant: small-caps;
+    letter-spacing: 1.01;
 }
 
-.ProjRow .projInfo .projTags {
-    font-size: 16px;
-}
+ 
 
-.ProjRow .projInfo .projSubTitle {
+/*.ProjRow .projInfo .projSubTitle {
     opacity: 0.65;
 }
-
+*/
 .projImg {
     position: relative;
     width:330px;
     margin:auto;
-    border-radius: 50%;
+    border-radius: 4px;
+    overflow: hidden;
+    /*border-radius: 50%;*/
 }
 
 .projIcon {
@@ -302,8 +332,9 @@ a:hover p {
     padding-top: 20px;
     padding-bottom: 25px;
     color: #d83e77;
-    font-family: 'Lato', sans-serif;
+font-family: 'Nunito', sans-serif;
     box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.15);
+    /*letter-spacing: 1.1;*/
 }
 
 
@@ -401,7 +432,7 @@ a:hover p {
 
 @media screen and (min-width: 992px) {
     .intro {
-        width: 55%;
+        width: 53%;
     }
 
     .whiteLine,
