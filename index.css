@@ -72,9 +72,9 @@ a:hover p {
     letter-spacing: 1.4;
 }*/
 
-.IntroRow {
+/*.IntroRow {
     padding-bottom: 30px;
-}
+}*/
 
 .IntroRow .arrowDown {
     font-size: 33px;
@@ -183,14 +183,14 @@ a:hover p {
 
 }
 
-.selfIntro {
+.title p.subline {
     /*font-family: 'Lato', sans-serif;*/
     font-family: 'Nunito', sans-serif;
     color: #555;
     font-size: 20px;
-    line-height: 1.5;
+ line-height: 1.4;
     display: block;
-    opacity: 0;
+    /*opacity: 0;*/
     margin-bottom: 10px;
     /*letter-spacing: 1.01;*/
 }
@@ -201,8 +201,9 @@ a:hover p {
     background-color: hsla(192,17%,63%,1);
     display: inline-block;
     vertical-align: middle;
-    margin:0px 5px;
+    margin:5px 5px 10px 5px;
     border-radius: 3px;
+
     
 }
 .icons img {
@@ -223,7 +224,7 @@ a:hover p {
     display: inline-block;
     vertical-align: middle;
     border-radius: 3px;
-    margin-left: 5px;
+    margin: 5px 0px 10px 5px;
     padding-top: 5px;
     padding-left: 7.5px;
     padding-right: 7.5px;
@@ -354,13 +355,11 @@ font-family: 'Nunito', sans-serif;
 
 
 @media screen and (min-width: 320px) {
-    .intro {
-        width: 85%;
-    }
-    .intro .keywords {
+     
+      .keywords {
         font-size: 20px;
     }
-    .intro .selfIntro {
+    .title p.subline {
         font-size: 16px;
     }
   
@@ -373,13 +372,11 @@ font-family: 'Nunito', sans-serif;
 }
 
 @media screen and (min-width: 480px) {
-    .intro {
-        width: 65%;
-    }
-    .intro .keywords {
+    
+    .keywords {
         font-size: 24px;
     }
-    .intro .selfIntro {
+     .title p.subline{
         font-size: 17px;
     }
 
@@ -394,9 +391,7 @@ font-family: 'Nunito', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
-    .intro {
-        width: 70%;
-    }
+    
 
     .whiteLine,
     .specialLine {
@@ -415,9 +410,9 @@ font-family: 'Nunito', sans-serif;
 }
 
 @media screen and (min-width: 900px) {
-    .intro {
+  /*  .intro {
         width: 60%;
-    }
+    }*/
     .projRow .square {
         /*padding: 25px;*/
     }
@@ -428,12 +423,13 @@ font-family: 'Nunito', sans-serif;
     .projImg{
         width: 350px;
     }
+
 }
 
 @media screen and (min-width: 992px) {
-    .intro {
+    /*.intro {
         width: 53%;
-    }
+    }*/
 
     .whiteLine,
     .specialLine {
@@ -442,7 +438,9 @@ font-family: 'Nunito', sans-serif;
       .projImg{
         width: 270px;
     }
-
+     .title p.subline{
+        font-size: 20px;
+    }
    
 }
 
