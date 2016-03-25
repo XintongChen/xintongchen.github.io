@@ -78,8 +78,9 @@ a:hover p {
 
 .IntroRow .arrowDown {
     font-size: 33px;
-    margin-top: 20px;
+    margin-top: 5px;
     color: #d83e77;
+    /*z-index: 100;*/
 }
 
 .IntroRow .arrowDown:hover {
