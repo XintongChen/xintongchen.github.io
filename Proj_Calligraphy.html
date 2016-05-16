@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <!-- google font -->
    
-     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
      
     <script>
@@ -39,6 +39,16 @@
 </head>
 
 <body>
+     <div class="loading">
+        <div class="loading-center">
+            <div class="loading-center-absolute">
+                <!-- <div class="object" id="object_four"></div> -->
+                <div class="object object_three"></div>
+                <div class="object object_two"></div>
+                <div class="object object_one"></div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <!-- <nav class="navbar navbar-default navbar-fixed-top NavRow">
             <div class="container-fluid">
@@ -67,14 +77,13 @@
             <h1>Script Styles in Chinese Calligraphy</h1>
             <hr>
             <h5>A website to teach five basic script styles in Chinese Calligraphy</h5>
-            <a href="http://www.columbia.edu/~xc2282/calligraphy/calligraphy.html" class="btn" target="_blank">
-                <span class="top_content">View Website</span>
-                <span class="bottom_content">View Website</span></a>
+            <a href="http://www.columbia.edu/~xc2282/calligraphy/calligraphy.html"  target="_blank">
+                View Website <i class="fa fa-long-arrow-right"></i>
+            </a>
         </div>
         <div class="row whiteLine">
             
-            <div class="col-md-8 col-xs-12 col-sm-12">
-                <!-- <h4><strong><i class="fa fa-magic"></i> Design Highlights</strong></h4> -->
+            <!-- <div class="col-md-8 col-xs-12 col-sm-12">
                 <img src="img/calligraphy-1.png" alt="">
                 <img src="img/calligraphy-2.png" alt="">
                 
@@ -82,34 +91,77 @@
                 <img src="img/calligraphy-4.png" alt="">
                 <img src="img/calligraphy-5.png" alt="">
                 
-            </div>
-            <div class="col-md-4 col-xs-12 col-sm-12">
-                <div class="details">
-                    <h4><strong><i class="fa fa-heart"></i> &nbsp; Independent Project</strong></h4>
-                    <p><span class="proj-label">Instructional Design</span>
-                    <span class="proj-label">UI/UX Design</span>
-                     <span class="proj-label">Web Development</span></p>
+            </div> -->
+             <div id="calligraphy-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#calligraphy-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#calligraphy-carousel" data-slide-to="1"></li>
+                    <li data-target="#calligraphy-carousel" data-slide-to="2"></li>
+                    <li data-target="#calligraphy-carousel" data-slide-to="3"></li>
+                    <li data-target="#calligraphy-carousel" data-slide-to="4"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner shadow-img" role="listbox">
+                    <div class="item active">
+                        <img  src="img/calligraphy-a.png" alt="...">
+                         
+                    </div>
+                    <div class="item">
+                       <img  src="img/calligraphy-b.png" alt="...">
+                    </div>
+                    <div class="item">
+                       <img src="img/calligraphy-c.png" alt="...">
+                    </div>
+                    <div class="item">
+                       <img  src="img/calligraphy-d.png" alt="...">
+                    </div>
+                    <div class="item">
+                       <img  src="img/calligraphy-e.png" alt="...">
+                    </div>
                 </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#calligraphy-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#calligraphy-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12">
+                
                 <div class="details">
                     <h4><strong><i class="fa fa-question-circle"></i> &nbsp; Problem</strong></h4>
                     <p>Calligraphy is a significant part of ancient Chinese culture. The calligraphic tradition remains alive today and intrigues people from different regions. However, people sometimes do not understand the different historical backgrounds and artistic characteristics of the five basic script styles. </p>
                 </div>
                 <div class="details">
                     <h4><strong><i class="fa fa-check-circle"></i> &nbsp; Solution</strong></h4>
-                    <p>This website illustrates different historical backgrounds and artistic characteristics of the five basic script styles in Chinese Calligraphy. The comparison of five script styles and the interactive question in this webpage will help people to people to remember information or rules about these script styles, as well as, make the learning process funner and more interesting.
+                    <p>I designed a webpage to teach different historical backgrounds and artistic characteristics of the five basic script styles in Chinese Calligraphy.
                     </p>
-                    <p>This is a one-page project. The first part is the illustration section, and then the question section. Users could go back and forth between these two sections.
-                    </p>
-                    <p> The illustration section includes: (1) what are the different artistic characteristics among five basic script styles; (2) why there are differences (historical factors that lead to these differences); (3) how these differences influence beginners&rsquo; calligraphy learning (learning tips).
-                    <br> In the illustration section, collapsed panel groups are used, which help users to focus on the paragraph they are reading. </p>
-                    <p>
-                    The practice section includes an interactive question: matching pieces of calligraphy to five different scenarios. Learners will drag each of the five pieces of calligraphy to match five different scenarios, and website will give feedback to learners based on their answers.
+                     
+                    <p>(1) The illustration section: I used images and text to compare different script styles and let the learners see the differences among them clearly. </p>
+                    <p>(2)
+                    The game section: I designed a drag and drop game, where learners will match five pieces of calligraphy with five different characters based on the knowledge they have learned in the first section. This allows the learners to apply what they have learnt to solve problems, to strengthen their understanding of the new knowledge.
                 </p>
+                </div>
+                <div class="details">
+                     <h4><strong><i class="fa fa-tint"></i> &nbsp; Color and Font</strong></h4>
+                    <img class="small-img add-margin" src="img/calligraphy-f.png" alt="">
+                </div>
+                <div class="details">
+                    <h4><strong><i class="fa fa-heart"></i> &nbsp; Independent Project</strong></h4>
+                    <p><span class="proj-label">Instructional Design</span>
+                    <span class="proj-label">UI/UX Design</span>
+                     <span class="proj-label">Web Development</span></p>
                 </div>
             </div>
         </div>
-      <div class="row ContactRow">
+       <div class="row ContactRow">
             <div class="col-md-12 text-center">
+                 
+                
                 <a href="index.html">Claire Chen</a> | xc2282@tc.columbia.edu | 646.241.8178
                 <div class="col-md-12 text-center">
                     <a href="https://www.linkedin.com/in/xintongchen" target="_blank"><i class="fa fa-linkedin-square"></i></a>

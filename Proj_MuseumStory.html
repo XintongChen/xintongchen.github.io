@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="proj.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <!-- google font -->
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <script>
     (function(i, s, o, g, r, a, m) {
@@ -37,6 +37,16 @@
 </head>
 
 <body>
+    <div class="loading">
+        <div class="loading-center">
+            <div class="loading-center-absolute">
+                <!-- <div class="object" id="object_four"></div> -->
+                <div class="object object_three"></div>
+                <div class="object object_two"></div>
+                <div class="object object_one"></div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <!-- <nav class="navbar navbar-default navbar-fixed-top NavRow">
             <div class="container-fluid">
@@ -62,58 +72,130 @@
             <img src="img/homeKey.png"></img>
         </div>
         <div class="row jumbotronRow museum_jumbotron text-center">
-            <h1>Story x Museum</h1>
+            <h1>Museum x Story</h1>
             <hr>
             <h5>A mobile application that enhances the art museum experience through the telling and sharing of stories.</h5>
         </div>
         <div class="row whiteLine">
-            <div class="col-md-8 col-xs-12 col-sm-12">
-                <!-- <h4><strong><i class="fa fa-magic"></i> Design</strong></h4> -->
-                <div class="row text-center mobile">
-                    <div class="col-md-6 col-sm-6">
-                        <img src="img/museum-story-1.png" alt="">
+            <div id="museum-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#museum-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#museum-carousel" data-slide-to="1"></li>
+                    <li data-target="#museum-carousel" data-slide-to="2"></li>
+                    <li data-target="#museum-carousel" data-slide-to="3"></li>
+                    <li data-target="#museum-carousel" data-slide-to="4"></li>
+                    <li data-target="#museum-carousel" data-slide-to="5"></li>
+                    <li data-target="#museum-carousel" data-slide-to="6"></li>
+                    <li data-target="#museum-carousel" data-slide-to="7"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active no-shadow-img">
+                        <img src="img/museum-h.png" alt="...">
                     </div>
-                    <div class="col-md-6 col-sm-6">
-                        <img src="img/museum-story-2.png" alt="">
+                    <div class="item no-shadow-img">
+                        <img src="img/museum-g.png" alt="...">
                     </div>
-                    <div class="col-md-6 col-sm-6">
-                        <img src="img/museum-story-3.png" alt="">
+                    <div class="item no-shadow-img">
+                        <img src="img/museum-f.png" alt="...">
                     </div>
-                    <div class="col-md-6 col-sm-6">
-                        <img src="img/museum-story-4.png" alt="">
+                    <div class="item no-shadow-img">
+                        <img src="img/museum-e.png" alt="...">
                     </div>
-                    <div class="col-md-6 col-sm-6">
-                        <img src="img/museum-story-5.png" alt="">
+                    <div class="item no-shadow-img">
+                        <img src="img/museum-d.png" alt="...">
                     </div>
-                    <div class="col-md-6 col-sm-6">
-                        <img src="img/museum-story-6.png" alt="">
+                    <div class="item no-shadow-img">
+                        <img src="img/museum-c.png" alt="...">
+                    </div>
+                    <div class="item no-shadow-img">
+                        <img src="img/museum-b.png" alt="...">
+                    </div>
+                    <div class="item no-shadow-img">
+                        <img src="img/museum-i.png" alt="...">
                     </div>
                 </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#museum-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#museum-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="col-md-4 col-xs-12 col-sm-12">
+            <div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12">
+                <div class="details">
+                    <h4><strong><i class="fa fa-question-circle"></i> &nbsp; Problem</strong></h4>
+                    <p>There are great art muesums with a large amount of extraordinary collections in New York, and some visitors expect to learn a lot from these art museums, but usually they are not satisfied with their learning experience in these art museums.</p>
+                </div>
+                <div class="details">
+                    <h4><strong><i class="fa fa-quote-left"></i> &nbsp; Interview and Research Findings</strong></h4>
+                    <p>By interviewing art museum visitors and reading literature related to museum education, we found that this problem was caused by:</p>
+                    <p>(1) the artwork tends to lack categorization and supporting information.</p>
+                    <p>(2) there is low engagement with the artwork: usually visitors only have a look at the artwork, pass by and forget the artwork very soon.</p>
+                    <p>(3) there is lack of interaction among visitors: visitors usually don't have opportunity to share information/ideas with each other.</p>
+                </div>
+                <div class="details">
+                    <h4><strong><i class="fa fa-user" aria-hidden="true"></i> &nbsp; Personas</strong></h4>
+                   <!--  <div class="row"> -->
+                        <p>Based on interview and research findings, I created 6 personas including 2 target users and 1 non-user.</p>
+                        <div class="col-md-4 col-xs-6">
+                            <img class="add-margin" src="img/museum-persona-1.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <img class="add-margin" src="img/museum-persona-2.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <img class="add-margin" src="img/museum-persona-3.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <img class="add-margin" src="img/museum-persona-4.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <img class="add-margin" src="img/museum-persona-5.png" alt="">
+                        </div>
+                        <div class="col-md-4 col-xs-6">
+                            <img class="add-margin" src="img/museum-persona-6.png" alt="">
+                        </div>
+
+                    <!-- </div> -->
+                    <p><i>* Photo credit to Google Image</i></p>
+                </div>
+                <div class="details">
+                    <h4><strong><i class="fa fa-check-circle"></i> &nbsp; Solutions</strong></h4>
+                    <p>We designed a mobile application that enhances the art museum experience through the telling and sharing of stories.
+                    </p>
+                    <p>(1) ARTWORK LIST: Categorized the artwork by themes which allowed visitors to be able to click on the artwork itself to view supporting information.
+                    </p>
+                    <p>(2) PROMPT & STORY: Provided users prompts about the artwork and allowing visitors to leave their stories to those prompts and listen to the stories of other users, to increased user's engagement with the artwork.
+                    </p>
+                    <p>(3) SHARING & COMMENTING: Increased online interaction amongst visitors when they share stories and comments through the app. In addition, increased social interaction amongst visitors when they talk with each other face-to-face, because they are inspried by the information within this app.
+                    </p>
+                </div>
+                
+                <div class="details">
+                    <h4><strong><i class="fa fa-sitemap"></i> &nbsp; Interaction Map</strong></h4>
+                    <p>
+                        <img class="no-shadow-img add-margin" src="img/museum-a.jpg" alt="">
+                    </p>
+                </div>
                 <div class="details">
                     <h4><strong><i class="fa fa-heart"></i> &nbsp; My Contributions</strong></h4>
                     <p>
-                    <span class="proj-label">Literature Review</span>
-                    <span class="proj-label">UI/UX Design</span>
+                        <span class="proj-label">Literature Review</span>
+                        <span class="proj-label">UX Research</span>
+                        <span class="proj-label">UX Design</span>
+                        <span class="proj-label">UI Design</span>
+                        <span class="proj-label">Prototype</span>
                     </p>
                 </div>
                 <div class="details">
-                    <h4><strong><i class="fa fa-question-circle"></i> &nbsp; Issues Found</strong></h4>
-                    <p>Visitors to art museums are usually not satisfied with their learning experience because:</p>
-                    <p>(1) the artwork tends to lack categorization and supporting information.</p>
-                    <p>(2) in addition, there is low engagement with the artwork.</p>
-                    <p>(3) and there is lack of interaction among visitors.</p>
-                </div>
-                <div class="details">
-                    <h4><strong><i class="fa fa-check-circle"></i> &nbsp; Solution</strong></h4>
-                    <p>We designed a mobile application that enhances the art museum experience through the telling and sharing of stories.
-                    </p>
-                    <p>(1) We categorized the artwork by themes and allowed visitors to be able to click on the artwork itself to view supporting information.
-                    </p>
-                    <p>(2) Increased engagement by asking users questions about the artwork and allowing visitors to leave their responses to those questions and listen to the responses of other users.
-                    </p>
-                    <p>(3) Increased social interaction amongst groups of visitors when they use the app in the museum. In addition, increased online interaction amongst visitors when they share stories and comments through the app.
+                    <h4><strong><i class="fa fa-wrench"></i> &nbsp; Tools Used</strong></h4>
+                    <p><span class="proj-label">Sketch</span>
+                        <span class="proj-label">Photoshop</span>
                     </p>
                 </div>
             </div>
