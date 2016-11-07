@@ -1,19 +1,20 @@
-<html class="">
+<html>
 
 <head>
     <title>Claire Chen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- jQuery lib -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <!-- jQuery UI lib -->
     <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <!-- transit -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
     <!-- Bootstrapt css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- fontawesome -->
-    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- myCSS -->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <!-- google font -->
     <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700' rel='stylesheet' type='text/css'>
@@ -29,7 +30,6 @@
         a.src = g;
         m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
     ga('create', 'UA-67851225-1', 'auto');
     ga('send', 'pageview');
     </script>
@@ -39,53 +39,28 @@
     <div class="loading">
         <div class="loading-center">
             <div class="loading-center-absolute">
-                <!-- <div class="object" id="object_four"></div> -->
-                <div class="object object_three"></div>
-                <div class="object object_two"></div>
                 <div class="object object_one"></div>
+                <div class="object object_two"></div>
+                <div class="object object_three"></div>
+                <div class="object object_four"></div>
             </div>
         </div>
     </div>
     <div class="container-fluid">
-        <!-- <nav class="navbar navbar-default navbar-fixed-top NavRow mainNavRow ">
-            <div class="container-fluid">
-                <div class="navbar-header navHeader">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">CLAIRE CHEN</a>
-                </div>
-                Collect the nav links, forms, and other content for toggling
-                <div class="collapse navbar-collapse" id="navbar-collapsed">
-                    <ul class="nav navbar-nav navbar-right navList">
-                        <li onclick="goTo('aboutMe')">
-                            <a>About <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li onclick="goTo('works')">
-                            <a>Work</a>
-                        </li>
-                        <li onclick="goTo('contactMe')">
-                            <a>Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
+        <div class="topKey text-center">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
         <a id="aboutMe"></a>
         <div class="row IntroRow">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="intro text-center">
                     <h1 class="fullName">Claire Chen</h1>
                     <hr class="blackHr">
-                    <h4 class="keywords"> passionate UI/UX designer with a great ability to code </h4>
-                    <!-- <p class="selfIntro">Hi! My name is Claire. Here is my UI/UX portfolio, consisting of mostly web-based projects, which I have designed and/or coded while studying Instructional Technology and Media at Columbia University.</p> -->
+                    <h4 class="keywords"> <span class="inline-control">UX Designer</span> <span class="inline-control">&</span> <span class="inline-control">Front-End Developer</span> </h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 col-xs-12 text-center">
                     <a onclick="goTo('aboutme')" class="nav-link">
                        About Me
                     </a>
@@ -97,7 +72,7 @@
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12 text-center arrowDown">
                 <div onclick="goTo('works')" class="arrowWrap bounce">
-                    <i class="fa fa-angle-double-down"></i>
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -107,7 +82,7 @@
             <a href="Proj_MuseumStory.html">
                 <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_museum">
                     <div class="projImg">
-                        <img class="scaled-img" src="img/icon-museum-bk.jpg" alt="">
+                        <img class="scaled-img" src="img/icon-museum-bk.png" alt="">
                         <div class="projIcon">
                             <img src="img/icon-museum.png" alt="">
                             <h4 class="projTitle">Story x Museum</h4>
@@ -118,16 +93,16 @@
                     </div>
                 </div>
             </a>
-             <a href="Proj_deepintent.html">
+            <a href="Proj_deepintent.html">
                 <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
                     <div class="projImg">
-                        <img class="scaled-img" src="img/icon-deepintent-bk.jpg" alt="">
+                        <img class="scaled-img" src="img/icon-deepintent-bk.png" alt="">
                         <div class="projIcon">
-                            <img src="img/icon-deepintent.png" alt="">
-                            <h4 class="projTitle">DeepIntent Publisher Dashboard</h4>
+                            <img src="img/icon-dashboard.png" alt="">
+                            <h4 class="projTitle">Publisher Dashboard</h4>
                             <hr>
                             <p class="projTags">
-                                A web user interface to present data, charts and tables to advertisers and publishers</p>
+                                A dashboard that presents data, charts and tables to Ad publishers</p>
                         </div>
                         <span class="border"></span>
                     </div>
@@ -136,7 +111,7 @@
             <a href="Proj_Wetell.html">
                 <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_westory">
                     <div class="projImg">
-                        <img class="scaled-img" src="img/icon-westory-bk.jpg" alt="">
+                        <img class="scaled-img" src="img/icon-westory-bk.png" alt="">
                         <div class="projIcon">
                             <img src="img/icon-westory.png" alt="">
                             <h4 class="projTitle">WeStory</h4>
@@ -147,8 +122,7 @@
                     </div>
                 </div>
             </a>
-           
-            <a href="Proj_Calligraphy.html">
+            <!-- <a href="Proj_Calligraphy.html">
                 <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_shufa">
                     <div class="projImg">
                         <img class="scaled-img" src="img/icon-shufa-bk.jpg" alt="">
@@ -156,17 +130,16 @@
                             <img src="img/icon-shufa.png" alt="">
                             <h4 class="projTitle">Chinese Script Styles</h4>
                             <hr>
-                            <p class="projTags">A website to teach five basic script styles in Chinese Calligraphy</p>
+                            <p class="projTags">A website that teaches five basic script styles in Chinese Calligraphy</p>
                         </div>
                         <span class="border"></span>
                     </div>
                 </div>
-            </a>
-            
+            </a> -->
             <a href="Proj_Culturameme.html">
                 <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_meme">
                     <div class="projImg">
-                        <img class="scaled-img" src="img/icon-meme-bk.jpg" alt="">
+                        <img class="scaled-img" src="img/icon-meme-bk.png" alt="">
                         <div class="projIcon">
                             <img src="img/icon-meme.png" alt="">
                             <h4 class="projTitle">CulturaMeme</h4>
@@ -177,7 +150,7 @@
                     </div>
                 </div>
             </a>
-            <a href="Proj_Gridspark.html">
+            <!-- <a href="Proj_Gridspark.html">
                 <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
                     <div class="projImg">
                         <img class="scaled-img" src="img/icon-gridspark-bk.jpg" alt="">
@@ -191,13 +164,13 @@
                         <span class="border"></span>
                     </div>
                 </div>
-            </a>
+            </a> -->
             <a href="Proj_TCweb.html">
                 <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
                     <div class="projImg">
                         <img class="scaled-img" src="img/icon-tc-bk.jpg" alt="">
                         <div class="projIcon">
-                            <img src="img/icon-tc.png" alt="">
+                            <img src="img/icon-webdesign.png" alt="">
                             <h4 class="projTitle">TC Website Redesign</h4>
                             <hr>
                             <p class="projTags">
@@ -207,70 +180,57 @@
                     </div>
                 </div>
             </a>
-             <a href="http://deepintent.com" target="_blank">
+            <a href="Proj_eCorcoran_CMS.html">
                 <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
                     <div class="projImg">
-                        <img class="scaled-img" src="img/icon-deepintent-1-bk.jpg" alt="">
+                        <img class="scaled-img" src="img/icon-cms-bk.png" alt="">
                         <div class="projIcon">
-                            <img src="img/icon-gridspark.png" alt="">
-                            <h4 class="projTitle">DeepIntent: Homepage</h4>
+                            <img src="img/icon-webdesign.png" alt="">
+                            <h4 class="projTitle">eCorcoran CMS</h4>
                             <hr>
-                            <p class="projTags">
-                                Designed and built homepage for DeepIntent</p>
+                            <p class="projTags">The Content Management System for ecorcoran.com.</p>
                         </div>
                         <span class="border"></span>
                     </div>
                 </div>
             </a>
-            <!-- <a href="Proj_City.html">
-                <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_city">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-city-bk.jpg" alt="">
-                        <div class="projIcon text-center">
-                            <img src="img/icon-city.png" alt="">
-                            <h4 class="projTitle">Image x City</h4>
-                            <hr>
-                            <p class="projSubTitle">Web Design and Dev. | Graphic Design</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </a> -->
         </div>
         <a id="aboutme"></a>
         <div class="row ContactRow">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 col-xs-12 text-center">
                 <h4>MORE ABOUT ME</h4>
             </div>
-            <div class="col-md-12 myPic text-center">
+            <div class="col-md-12 col-xs-12 myPic text-center">
                 <img src="img/avatar.jpg" alt="">
             </div>
             <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 myIntro">
-                <p>I have a background in Instructional Technology which is a interdisciplinary program in design, technology, cognitive science and educational psychology. I found my interests in UI/UX when designing learning products and practiced my skills in <span class="special">UI/UX</span> and <span class="special">front-end development</span> in various projects during my graduate study at Columbia University.</p>
-                <p>I love travel and photography. I am planning to do another 365-projet. I take photos to document my life & travel. Welcome to check them out <a class="special" href="https://www.flickr.com/photos/xin-tong/" target="_blank">HERE</a> and <a href="http://d0nut-hole.tumblr.com" class="special" target="_blank">HERE</a>.</p>
-                <p>I am also interested in calligraphy, reading, swimming, roller coaster, art museum/gallery.</p>
+                <p>I'm a UI/UX Designer with passion for making simple and clean design. I love travel and photography. I take photos to document my life & travel. Welcome to check them out <a class="special" href="https://www.flickr.com/photos/xin-tong/" target="_blank">HERE</a>. </p>
+                <p> I currently work for Corcoran at New York. Before that, I got a M.A. of Instructional Technology at Columbia University and a B.S. of Educational Technology at BNU.</p>
+                <p>I am also interested in Chinese calligraphy, reading, swimming, roller coaster, art museum/gallery.</p>
             </div>
-            <div class="col-md-12 text-center">
-                <hr class="ending-hr">
-                <a href="index.html">Claire Chen</a> | xc2282@tc.columbia.edu | 646.241.8178
-                <div class="col-md-12 text-center">
+            <div class="col-md-12 col-xs-12 text-center">
+                <div class="text-center">
                     <a href="https://www.linkedin.com/in/xintongchen" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://instagram.com/xin.tong/" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
                     <a href="https://www.flickr.com/photos/xin-tong/" target="_blank"><i class="fa fa-flickr"></i></a>
-                    <a href="https://instagram.com/xin.tong/" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="http://d0nut-hole.tumblr.com" target="_blank">
-                        <i class="fa fa-tumblr-square"></i>
+                    <a href="https://dribbble.com/clairechen" target="_blank">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    </a>
+                    <a href="http://codepen.io/chenclaire/" target="_blank">
+                        <i class="fa fa-codepen" aria-hidden="true"></i>
                     </a>
                 </div>
+                <hr class="ending-hr">
+                <span class="contact-info">Designed & Coded by <a  href="index.html">Claire Chen</a> <br> xc2282@tc.columbia.edu | 646.241.8178</span>
             </div>
         </div>
     </div>
-    <!-- </div> -->
     <!-- Bootstrapt js-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- myJS -->
     <script type="text/javascript" src="index.js"></script>
-    <!-- processing -->
-    <!-- <script src="processing.js" type="text/javascript"></script> -->
 </body>
 
 </html>
