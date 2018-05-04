@@ -3,8 +3,9 @@
 <head>
     <title>Xintong Chen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
     <!-- jQuery lib -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <!-- jQuery UI lib -->
     <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
     <!-- transit -->
@@ -13,24 +14,12 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- fontawesome -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.min.css">
+    <!-- twitter emoji   -->
+    <link rel="stylesheet" type="text/css" href="css/twmoji.css">
     <!-- myCSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- google font -->
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-67851225-1', 'auto');
-    ga('send', 'pageview');
-    </script>
 </head>
 
 <body>
@@ -44,21 +33,67 @@
             </div>
         </div>
     </div>
+    <div class="mobile-nav">
+        <div class="inner-wrapper">
+            <div class="menu-closer">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="inner">
+                <div class="nav-option" onclick="goTo('aboutme')">About Me</div>
+                <div class="nav-option" onclick="goTo('works')">Work</div>
+                <!-- <div class="nav-option">Photos <span class="tag">coming soon</span></div> -->
+                <!-- <a href="visuals.html" target="_blank" class="nav-option">Visuals</a> -->
+                <a class="nav-option" href="XintongChen_Resume.pdf" target="_blank">resume</a>
+                <span class="info"> 
+                <hr>
+                    xintong0308@gmail.com
+                    <br>
+                    646.241.8178
+                </span>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="topKey text-center">
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </div>
         <a id="aboutMe"></a>
         <div class="row IntroRow">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="intro text-center">
-                    <div class="introduction">
-                        Hi! I'm <span class="FullName">Xintong Chen</span>.
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="intro ">
+                    <div class="menu-trigger">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
                     </div>
-                    <div class="mytitle">:: Instructional Designer + UX Designer::</div>
-                    <div class="text-center">
+                    <div class="introduction">
+                        Hi, I'm
+                        <span class="color-text"><strong>Xintong Chen</strong></span>
+                    </div>
+                    <div class="introduction shuffle-wrapper">
+                        I'm a product designer and
+                        <span class="shuffle">
+                                I like photography <i class="twa twa-camera"></i>
+                            <br>I like guacamole<i class="twa-avocado twa"></i>
+                            <br>I like jigsaw puzzle <i class="twa-v twa"></i>
+                            <br>I like cooking <i class="twa twa-cooking"></i>
+                        </span>
+                    </div>
+                    <div class="introduction shuffle-wrapper mobile">
+                        <span class="shuffle mobile">
+                                I like photography <i class="twa twa-camera"></i>
+                            <br>I like guacamole<i class="twa-avocado twa"></i>
+                            <br>I like jigsaw puzzle <i class="twa-v twa"></i>
+                            <br>I like cooking <i class="twa twa-cooking"></i>
+                        </span>
+                    </div>
+                    <!-- <div class="nav-wrapper">
                         <a onclick="goTo('works')" class="nav-link">
                             Work
+                        </a>
+                        <a class="nav-link" target="_blank" data-toggle="tooltip" data-placement="top" title="coming soon">    
+                            photos
+                        </a>
+                        <a class="nav-link" target="_blank" href="visuals.html">    
+                            visuals
                         </a>
                         <a class="nav-link" href="ClaireChen_Resume.pdf" target="_blank">    
                             Resume
@@ -66,183 +101,222 @@
                         <a onclick="goTo('aboutme')" class="nav-link">
                             About
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <!-- presentation of works -->
-        <a id="works"></a>
-        <div class="row ProjRow">
-            <a href="Proj_MuseumStory.html">
-                <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_museum">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-museum-bk.png" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-museum.png" alt="">
-                            <h4 class="projTitle">Story x Museum</h4>
-                            <hr>
-                            <p class="projTags"> A mobile App that enhances art museum experience through sharing of stories</p>
-                        </div>
-                        <span class="border"></span>
+        <div class="row IntroRow">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="intro">
+                    <div class="introduction-note color-text">
+                        right now
                     </div>
-                </div>
-            </a>
-            <a href="Proj_eCorcoran.html">
-                <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-ecorcoran-bk.png" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-webdesign.png" alt="">
-                            <h4 class="projTitle">eCorcoran</h4>
-                            <hr>
-                            <p class="projTags">The Intranet for real estate agents to get the resources they need to close their deals</p>
-                        </div>
-                        <span class="border"></span>
+                    <div class="introduction">
+                        I'm designing at Grovo!
                     </div>
-                </div>
-            </a>
-             <a href="Proj_Wetell.html">
-                <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_westory">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-westory-bk.png" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-westory.png" alt="">
-                            <h4 class="projTitle">WeStory</h4>
-                            <hr>
-                            <p class="projTags">A collaborative storytelling website for college students to improve literacy</p>
-                        </div>
-                        <span class="border"></span>
+                    <div class="introduction-note">
+                        Designing engaging Microlearning experiences for hundreds of thousands of employees.
                     </div>
+                    <!-- <div class="introduction-note">
+                        Email <a href="mailto:xintong0308@gmail.com" class="color-text" target="_top">xintong0308@gmail.com</a> to see my designs at Grovo.
+                    </div> -->
                 </div>
-            </a>
-            <!-- <a href="Proj_deepintent.html">
-                <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-deepintent-bk.png" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-dashboard.png" alt="">
-                            <h4 class="projTitle">Publisher Dashboard</h4>
-                            <hr>
-                            <p class="projTags">
-                                A dashboard that presents data, charts and tables to Ad publishers</p>
-                        </div>
-                        <span class="border"></span>
-                    </div>
-                </div>
-            </a> -->
-            <a href="Proj_AdCenter.html">
-                <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-adcenter-bk.png" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-webdesign.png" alt="">
-                            <h4 class="projTitle">Ad Center</h4>
-                            <hr>
-                            <p class="projTags">The tool for real estate agents to buy ads and manage budgets</p>
-                        </div>
-                        <span class="border"></span>
-                    </div>
-                </div>
-            </a>
-           
-            
-            <a href="Proj_Culturameme.html">
-                <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_meme">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-meme-bk.png" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-meme.png" alt="">
-                            <h4 class="projTitle">CulturaMeme</h4>
-                            <hr>
-                            <p class="projTags">An online community for international students to improve their intercultural skills</p>
-                        </div>
-                        <span class="border"></span>
-                    </div>
-                </div>
-            </a>
-            <a href="Proj_Calligraphy.html">
-                <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_shufa">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-shufa-bk.jpg" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-shufa.png" alt="">
-                            <h4 class="projTitle">Chinese Script Styles</h4>
-                            <hr>
-                            <p class="projTags">A website that teaches five basic script styles in Chinese Calligraphy</p>
-                        </div>
-                        <span class="border"></span>
-                    </div>
-                </div>
-            </a>
-            <!-- <a href="Proj_Gridspark.html">
-                <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-gridspark-bk.jpg" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-gridspark.png" alt="">
-                            <h4 class="projTitle">Gridspark: Web Design</h4>
-                            <hr>
-                            <p class="projTags">
-                                A mobile-friendly website introducing Gridspark's advertising prodcuts</p>
-                        </div>
-                        <span class="border"></span>
-                    </div>
-                </div>
-            </a> -->
-            <!-- <a href="Proj_TCweb.html">
-                <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-tc-bk.jpg" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-webdesign.png" alt="">
-                            <h4 class="projTitle">TC Website Redesign</h4>
-                            <hr>
-                            <p class="projTags">
-                                Redesigned and built ~40 micro-sites for Teachers College, Columbia University</p>
-                        </div>
-                        <span class="border"></span>
-                    </div>
-                </div>
-            </a> -->
-            <!-- <a href="Proj_CMS.html">
-                <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
-                    <div class="projImg">
-                        <img class="scaled-img" src="img/icon-cms-bk.png" alt="">
-                        <div class="projIcon">
-                            <img src="img/icon-webdesign.png" alt="">
-                            <h4 class="projTitle">CMS UI Design</h4>
-                            <hr>
-                            <p class="projTags">Content Management System for a company intranet</p>
-                        </div>
-                        <span class="border"></span>
-                    </div>
-                </div>
-            </a> -->
+            </div>
         </div>
-        <a id="aboutme"></a>
-        <div class="row ContactRow">
-            <div class="col-md-12 col-xs-12 text-center">
-                <h4>MORE ABOUT ME</h4>
-            </div>
-            <div class="col-md-12 col-xs-12 myPic text-center">
-                <img src="img/avatar.jpg" alt="">
-            </div>
-            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 myIntro">
-                <p>I was once a lost and frustrated college student who had fears of not being good enough until I heard this:
-                </p>
-                <br>
-                <div class="quote-wrapper text-center">
-                    <blockquote>
-                        We give up not because we don’t have the <strong>ability</strong> to reach our goals but because we cannot see the <strong>path to our destination</strong>.
-                    </blockquote>
-                    <span class="quoted-by">- Professor Zhao</span>
+        <!-- grovo work -->
+        <div class="row ProjRow">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="row">
+                    <a href="Proj_eCorcoran.html">
+                        <div class="col-md-6 col-sm-6 col-xs-12  square" id="square_tc">
+                            <div class="projImg">
+                                <img class="scaled-img lg-move-up" src="img/icon-explore-bk.png" alt="">
+                                <div class="projIcon">
+                                    <img src="img/icon-explore.svg" alt="">
+                                    <p class="projTags">A product tour of Grovo for potential buyers</p>
+                                    <p class="square-cta">
+                                        See project <i class="fa fa-angle-double-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="Proj_reCorcoran.html">
+                        <div class="col-md-6 col-sm-6 col-xs-12  square" id="square_tc">
+                            <div class="projImg">
+                                <img class="scaled-img lg-move-up" src="img/icon-styleguide-bk.png" alt="">
+                                <div class="projIcon">
+                                    <img src="img/icon-styleguide.svg" alt="">
+                                    <p class="projTags">Grovo product design style guide</p>
+                                    <p class="square-cta">
+                                        See project <i class="fa fa-angle-double-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <br>
-                <p>This profound quote helped me overcome my fears and truly inspired me to pursue Instructional Design, because I wanted to help students avoid the fears that I went through. Over time, I came to the realization that Instructional Design is only a subset of UX Design and that I can make a greater impact to people beyond just students. </p>
-                <br>
-                <p>I also love crafting CSS <a class="special" href="animation.html" target="_blank">animations</a>, rock climbing, <a class="special" href="painting-drawing.pdf" target="_blank">painting and drawing</a>, and <a class="special" href="https://www.flickr.com/photos/xin-tong/" target="_blank">photography</a>.
-                </p>
             </div>
+        </div>
+        <div class="row IntroRow">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="intro">
+                    <div class="introduction-note color-text ">
+                        before Grovo
+                    </div>
+                    <div class="introduction">
+                        I designed for real estate agents at Corcoran
+                    </div>
+                    <div class="introduction-note">
+                        Designed 4 web apps and worked closely with engineers to build some of my designs in front-end.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a id="works"></a>
+        <!-- corcoran -->
+        <div class="row ProjRow">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="row">
+                    <a href="Proj_eCorcoran.html">
+                        <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
+                            <div class="projImg">
+                                <img class="scaled-img" src="img/icon-ecorcoran-bk.png" alt="">
+                                <div class="projIcon">
+                                    <img src="img/icon-ecorcoran.svg" alt="">
+                                    <p class="projTags">Document searching web app for real estate agents</p>
+                                    <p class="square-cta">
+                                        See project <i class="fa fa-angle-double-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Proj_AdCenter.html">
+                        <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
+                            <div class="projImg">
+                                <img class="scaled-img" src="img/icon-adcenter-bk.png" alt="">
+                                <div class="projIcon">
+                                    <img src="img/icon-adcenter.svg" alt="">
+                                    <p class="projTags">Ads and budget management web app for real estate agents </p>
+                                    <p class="square-cta">
+                                        See project <i class="fa fa-angle-double-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Proj_reCorcoran.html">
+                        <div class="col-md-4 col-sm-12 col-xs-12  square" id="square_tc">
+                            <div class="projImg">
+                                <img class="scaled-img md-move-up" src="img/icon-refresh-bk.png" alt="">
+                                <div class="projIcon">
+                                    <img src="img/icon-refresh.svg" alt="">
+                                    <p class="projTags">A more friendly corcoran.com</p>
+                                    <p class="square-cta">
+                                        See project <i class="fa fa-angle-double-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row IntroRow">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="intro">
+                    <div class="introduction-note color-text">
+                        other than that
+                    </div>
+                    <div class="introduction">
+                        I worked with startups and friends
+                    </div>
+                    <div class="introduction-note">
+                        Here are 3 selected projects:
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ProjRow">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="row">
+                    <a href="Proj_deepintent.html">
+                        <div class="col-md-4 col-sm-12 col-xs-12  square" id="square_tc">
+                            <div class="projImg">
+                                <img class="scaled-img md-move-up" src="img/icon-deepintent-bk.png" alt="">
+                                <div class="projIcon">
+                                    <img src="img/icon-deepintent.png" alt="">
+                                    <p class="projTags">
+                                        A dashboard that presents data, charts and tables to Ad publishers
+                                    </p>
+                                    <p class="square-cta">
+                                        See project <i class="fa fa-angle-double-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Proj_MuseumStory.html">
+                        <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_museum">
+                            <div class="projImg">
+                                <img class="scaled-img" src="img/icon-museum-bk.png" alt="">
+                                <div class="projIcon">
+                                    <img src="img/icon-museum.svg" alt="">
+                                    <p class="projTags"> A mobile App for story-sharing between art museum visitors</p>
+                                    <p class="square-cta">
+                                        See project <i class="fa fa-angle-double-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="Proj_Wetell.html">
+                        <div class="col-md-4 col-sm-6 col-xs-12 square" id="square_westory">
+                            <div class="projImg">
+                                <img class="scaled-img" src="img/icon-westory-bk.png" alt="">
+                                <div class="projIcon">
+                                    <img src="img/icon-westory.svg" alt="">
+                                    <p class="projTags">A collaborative storytelling website for college students</p>
+                                    <p class="square-cta">
+                                        See project <i class="fa fa-angle-double-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  <div class="row IntroRow">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="intro">
+                    <div class="introduction-note color-text ">
+                        when I'm having down time
+                    </div>
+                    <div class="introduction">
+                        I also like making <a class="nav-link" target="_blank" href="visuals.html"> visual elements</a> :P
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row IntroRow">
+            <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="intro">
+                    <div class="introduction-note color-text ">
+                        last but not least
+                    </div>
+                    <div class="introduction">
+                        <a class="nav-link" href="XintongChen_Resume.pdf" target="_blank">Please click here to see my resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row ContactRow">
             <div class="col-md-12 col-xs-12 text-center">
                 <div class="text-center">
                     <a href="https://www.linkedin.com/in/xintongchen" target="_blank"><i class="fa fa-linkedin-square"></i></a>
@@ -259,15 +333,17 @@
                 </div>
                 <hr class="ending-hr">
                 <span class="contact-info"> 
-                    xc2282@tc.columbia.edu | 646.241.8178
+                    xintong0308@gmail.com | 646.241.8178
                     <br>
-                    Designed & Coded by <a  href="index.html">Xintong Chen</a>
+                    Designed & Coded by <a  href="index.html">Xintong</a>
                 </span>
             </div>
         </div>
     </div>
     <!-- Bootstrapt js-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- fancybox js -->
+    <script src="fancybox/dist/jquery.fancybox.min.js"></script>
     <!-- myJS -->
     <script type="text/javascript" src="index.js"></script>
 </body>

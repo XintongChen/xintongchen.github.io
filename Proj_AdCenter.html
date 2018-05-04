@@ -1,35 +1,16 @@
 <html class="">
 
 <head>
-    <title>Project: eCorcoran</title>
+    <title>Project: Ad Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- jQuery UI lib -->
-    <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <!-- transit -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
     <!-- Bootstrapt css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- fontawesome -->
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.css">
     <!-- myCSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- google font -->
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-67851225-1', 'auto');
-    ga('send', 'pageview');
-    </script>
 
     <body>
         <div class="loading">
@@ -52,7 +33,7 @@
             <div class="row jumbotronRow calligraphy_jumbotron text-center">
                 <h1>Ad Center</h1>
                 <hr>
-                <h5>The tool for real estate agents to buy ads and manage budgets.</h5>
+                <h5>The web application to buy ads and manage budgets.</h5>
             </div>
             <div class="hero-img">
                 <img src="img/adcenter.png" alt="...">
@@ -61,114 +42,222 @@
                 <div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12">
                     <div class="details">
                         <h4><i class="fa fa-star"></i> &nbsp; Background</h4>
-                        <p>Corcoran's Ad Center for agents is about 20 years old and needs to be redesigned.</p>
+                        <p>Corcoran's Ad Center for agents is about 20 years old with an old-fashioned user interface and cumbersome functionality, and it needed to be redesigned.</p>
+                        <p>I worked as a UX Designer with a product manager and two developers to design and build a new Ad Center to increase efficiency of the ad team, managers and agents.</p>
                     </div>
                     <div class="details">
-                        <h4><i class="fa fa-star"></i> &nbsp; Goal</h4>
-                        <p>Build a new Ad Center, within 2 sprints, that allows agents to intuitively and efficiently purchase advertisements and manage budgets.</p>
+                        <h4><i class="fa fa-lightbulb-o" aria-hidden="true"></i> &nbsp; Strategy</h4>
+                        <p>1. Defined feature requirements and prioritized all the features for the new Ad Center.</p>
+                        <p>2. Announced it to a small group of agents, collected feedback, and improved the experience for the wider launch.</p>
+                        <p>3. Added and improved features based on feedback in the following sprints to meet the full ordering and management requirements.</p>
                     </div>
                     <div class="details">
-                        <h4><i class="fa fa-star"></i> &nbsp; Strategy</h4>
-                        <p>Identify all the problems, define feature requirements and prioritize all the features for the new Ad Center.</p>
-                        <p>Release the first version in the first 2 sprints, which provides agents the basic ad ordering needs. </p>
-                        <p>Add new features in the following sprints to meet agents' full ad ordering, photo ordering and ad management requirements.</p>
-                    </div>
-                    <div class="details">
-                        <h4><i class="fa fa-quote-left"></i> &nbsp;Feature Requirements</h4>
-                        <p>We reviewed the old Ad Center, interviewed five agents, and clarified the feature requirements for the new Ad Center. </p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-xs-12">
-                                <img src="img/adcenter-requirements.png" alt="">
+                        <h4><i class="fa fa-table" aria-hidden="true"></i> &nbsp;Understanding the User</h4>
+                        <p>We had intervied our users to better understand how they use the Ad Center. I created a list of three types of users detailing their situations, motivations, and outcomes (aka. the <a href="https://jtbd.info/replacing-the-user-story-with-the-job-story-af7cdee10c27" target="_blank" class="color-text">Job Story</a> framework).
+                        </p>
+                        <div class="gray-block-wrapper">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="gray-block">
+                                    <p><span class="persona-name">Agent</span></p>
+                                    <p>
+                                        <span class="labels">When</span> I have new properties and enough budget
+                                        <br>
+                                        <span class="labels">I Want to </span>create ads for my new properties
+                                        <br>
+                                        <span class="labels">In Order To</span> build my reputation/brand, attract customers, and sell my properties
+                                    </p>
+                                </div>
                             </div>
-                            <div class="img-title text-center col-md-12 col-xs-12">
-                                Ad Center Feature Requirements
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="gray-block">
+                                    <p><span class="persona-name">Agent</span></p>
+                                    <p>
+                                        <span class="labels">When</span> I need a better understanding of my budget
+                                        <br>
+                                        <span class="labels">I Want to </span>easily check my transaction history
+                                        <br>
+                                        <span class="labels">In Order To</span> know my budget balance and how my budget is being used for each ad order</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="gray-block">
+                                    <p><span class="persona-name">Manager</span></p>
+                                    <p>
+                                        <span class="labels">When</span> new transactions happen
+                                        <br>
+                                        <span class="labels">I Want to </span>easily check the transaction record
+                                        <br>
+                                        <span class="labels">In Order To</span> understand how budget is being spent, enforce fiscal controls, and ensure agents don't spend beyond their budget allocation</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="gray-block">
+                                    <p><span class="persona-name">Admin</span></p>
+                                    <p>
+                                        <span class="labels">When</span> new ads are submitted
+                                        <br>
+                                        <span class="labels">I Want to</span> review, approve, or reject agents' ads
+                                        <br>
+                                        <span class="labels">In Order To </span>manage ads, keep ad quality, and help agents generate revenue</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="gray-block">
+                                    <p><span class="persona-name">Admin</span></p>
+                                    <p>
+                                        <span class="labels">When</span> new ad programs are available
+                                        <br>
+                                        <span class="labels">I Want to</span> create, edit, and publish new ad programs
+                                        <br>
+                                        <span class="labels">In Order To </span>give agents more ad options</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="details">
-                        <h4><i class="fa fa-check-circle"></i> &nbsp; Task Flow</h4>
+                        <h4><i class="fa fa-random" aria-hidden="true"></i> &nbsp; Task Flow</h4>
                         <p>To thoroughly think through each step an agent, admin, and manager will be experiencing, I created a task flow chart to flush out design details.</p>
                         <div class="row">
-                            <div class="add-margin col-md-12 col-xs-12">
-                                <img class="" src="img/adcenter-flow.png" alt="">
+                            <div class="col-md-12 col-xs-12">
+                                <a href="img/adcenter-flow.png" data-fancybox>
+                                    <img class="" src="img/adcenter-flow.png" alt="">
                             </div>
-                            <div class="img-title text-center col-md-12 col-xs-12">
-                                Ad Center User Task Flow
+                            </a>
+                            <div class="img-title col-md-12 col-xs-12">
+                                <hr> Ad Center User Task Flow
                             </div>
                         </div>
                     </div>
                     <div class="details">
-                        <h4><i class="fa fa-check-circle"></i> &nbsp; UI Design</h4>
-                        <p>
-                            Below are snapshots of the evolving interface for each release:
+                        <h4><i class="fa fa-object-ungroup" aria-hidden="true"></i> &nbsp; Wireframe</h4>
+                        <p>I wireframed the basic functionalities and the structure based on our task flow and job stories with my product manager.</p>
+                        <div class="row">
+                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                <img class="" src="img/adcenter-c.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <h4><i class="fa fa-laptop" aria-hidden="true"></i> &nbsp; UI Design</h4>
+                        <p>I created a UI system that promotes consistency and scalability inspired by the idea of <a class="color-text" href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Design</a>. I broke down entire interfaces into fundamental building blocks and worked up from there.
                         </p>
                         <div class="row">
-                            <div class="add-margin  col-md-8 col-xs-12">
-                                <img class="shadow-img" src="img/adcenter-1.gif" alt="">
+                            <div class="add-margin col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                                <img class="" src="img/adcenter-a.png" alt="">
+                                <div class="img-title ">
+                                    <hr>Basic Elements
+                                </div>
                             </div>
-                            <div class="img-title col-md-4 col-xs-12">
-                                Ad Ordering Page
+                            <div class="add-margin col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                                <img class="" src="img/adcenter-b.png" alt="">
+                                <div class="img-title ">
+                                    <hr>Functional Blocks
+                                </div>
                             </div>
                         </div>
+                        <p>Here is the high fidelity UI of some key screens in Ad Center:</p>
                         <div class="row">
-                            <div class="add-margin  col-md-8 col-xs-12">
-                                <img class="shadow-img" src="img/adcenter-2.gif" alt="">
+                            <div class=" col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                <a href="img/adcenter-4.png" data-fancybox="images">
+                                    <img class="shadow-img" src="img/adcenter-4.png" alt="">
+                                </a>
+                                <div class="img-title ">
+                                    <hr>Ad Ordering Page: choose an ad program
+                                </div>
                             </div>
-                            <div class="img-title col-md-4 col-xs-12">
-                                Budget Center Page
+                            <div class=" col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                <a href="img/adcenter-5.png" data-fancybox="images">
+                                    <img class="shadow-img" src="img/adcenter-5.png" alt="">
+                                </a>
+                                <div class="img-title ">
+                                    <hr>Ad Ordering Page: edit ad
+                                </div>
+                            </div>
+                            <div class=" col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                <a href="img/adcenter-6.png" data-fancybox="images">
+                                    <img class="shadow-img" src="img/adcenter-6.png" alt="">
+                                </a>
+                                <div class="img-title ">
+                                    <hr>Ad Management Page: review/approve/reject ad
+                                </div>
+                            </div>
+                            <div class=" col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                                <a href="img/adcenter-8.png" data-fancybox="images">
+                                    <img class="shadow-img" src="img/adcenter-8.png" alt="">
+                                </a>
+                                <div class="img-title ">
+                                    <hr>Budget Center Page
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="details">
-                        <h4><i class="fa fa-comment" aria-hidden="true"></i> &nbsp; Feedback</h4>
-                        <p>We rolled out the new Ad Center, and people are saying:</p>
-                        <blockquote>"It's so much better than what we had in terms of user friendliness." <span class="quoted-by">- Sag Harbor Agent</span></blockquote>
-                        <blockquote>"This is the smoothest launch we've had out here." <span class="quoted-by">- Hamptons Agent</span></blockquote>
-                        <blockquote>"I was able to order this morning. Seems pretty self-explanatory. I enjoyed it!" <span class="quoted-by">- Brooklyn Agent</span></blockquote>
-                        <blockquote>"It’s straightforward and clean." <span class="quoted-by">- Manhattan Agent</span></blockquote>
-                        <!-- https://tympanus.net/codrops/css_reference/quotes/ -->
-                    </div>
-                    <div class="details">
-                        <h4><i class="fa fa-heart"></i> &nbsp; My Contribution</h4>
+                        <h4><i class="fa fa-refresh" aria-hidden="true"></i> &nbsp; Iteration</h4>
                         <p>
-                            <span class="proj-label">UI Design</span>
-                            <span class="proj-label">UX Design</span>
-                            <span class="proj-label">Front-End Development</span>
+                            Below are snapshots of the evolving interface for each release, taking Ad Ordering page and Budget Center page as examples:
                         </p>
+                        <div class="row">
+                            <div class="add-margin  col-md-6 col-sm-6 col-xs-12">
+                                <a href="img/adcenter-1.gif" data-fancybox="group">
+                                    <img class="shadow-img" src="img/adcenter-1.gif" alt="">
+                                </a>
+                                <div class="img-title ">
+                                    <hr>Iteration of Ad Ordering Page
+                                </div>
+                            </div>
+                            <div class="add-margin  col-md-6 col-sm-6 col-xs-12">
+                                <a href="img/adcenter-2.gif" data-fancybox="group">
+                                    <img class="shadow-img" src="img/adcenter-2.gif" alt="">
+                                </a>
+                                <div class="img-title ">
+                                    <hr>Iteration of Budget Center Page
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <h4><i class="fa fa-comment" aria-hidden="true"></i> &nbsp; Feedback</h4>
+                            <p>We rolled out the new Ad Center, and people are saying:</p>
+                            <blockquote>"It's so much better than what we had in terms of user friendliness." <span class="quoted-by">- Sag Harbor Agent</span></blockquote>
+                            <blockquote>"This is the smoothest launch we've had out here." <span class="quoted-by">- Hamptons Agent</span></blockquote>
+                            <blockquote>"I was able to order this morning. Seems pretty self-explanatory. I enjoyed it!" <span class="quoted-by">- Brooklyn Agent</span></blockquote>
+                            <blockquote>"It's straightforward and clean." <span class="quoted-by">- Manhattan Agent</span></blockquote>
+                            <!-- https://tympanus.net/codrops/css_reference/quotes/ -->
+                        </div>
+                        <div class="details">
+                            <h4><i class="fa fa-heart"></i> &nbsp; My Contribution</h4>
+                            <p>
+                                <span>UI Design, UX Design, Front-End Development.</span>
+                            </p>
+                        </div>
+                        <div class="details">
+                            <h4><i class="fa fa-wrench"></i> &nbsp; Tools Used</h4>
+                            <p>
+                                <span>Sketch, HTML, CSS, jQuery.</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="details">
-                        <h4><i class="fa fa-wrench"></i> &nbsp; Tools Used</h4>
-                        <p>
-                            <span class="proj-label">Sketch</span>
-                            <span class="proj-label">HTML</span>
-                            <span class="proj-label">CSS</span>
-                            <span class="proj-label">jQuery</span>
-                        </p>
+                    <div class="next-step details">
+                        <div class="row">
+                           
+                            <a href="index.html" class="col-xs-5 home-section text-center"><i class="fa fa-home hide-mobile" aria-hidden="true"></i><span >Back To Home</span></a>
+                            <a href="Proj_reCorcoran.html" class="col-xs-5 col-xs-offset-2 right-section text-center">
+                                <span>Next Project</span><i class="hide-mobile fa fa-chevron-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row ContactRow">
-                <hr class="ending-hr">
-                <div class="col-md-12 col-xs-12 text-center">
-                    <div class="text-center">
-                        <a href="https://www.linkedin.com/in/xintongchen" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                        <a href="https://instagram.com/xin.tong/" target="_blank">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.flickr.com/photos/xin-tong/" target="_blank"><i class="fa fa-flickr"></i></a>
-                        <a href="https://dribbble.com/clairechen" target="_blank">
-                            <i class="fa fa-dribbble" aria-hidden="true"></i>
-                        </a>
-                        <a href="http://codepen.io/chenclaire/" target="_blank">
-                            <i class="fa fa-codepen" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <span class="contact-info">xc2282@tc.columbia.edu | 646.241.8178</span>
-                </div>
-            </div>
+           
         </div>
+        <!-- jQuery UI lib -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
         <!-- Bootstrapt js-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- transit -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
+        <!-- fancybox js -->
+        <script src="fancybox/dist/jquery.fancybox.js"></script>
         <!-- myJS -->
         <script type="text/javascript" src="index.js"></script>
     </body>

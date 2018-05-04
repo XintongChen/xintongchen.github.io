@@ -3,33 +3,15 @@
 <head>
     <title>Project: eCorcoran</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <!-- jQuery UI lib -->
-    <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <!-- transit -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
     <!-- Bootstrapt css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- fontawesome -->
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.css">
     <!-- myCSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- google font -->
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-67851225-1', 'auto');
-    ga('send', 'pageview');
-    </script>
 
     <body>
         <div class="loading">
@@ -55,141 +37,202 @@
                 <h5>The Intranet for real estate agents to get the resources they need to close their deals.</h5>
             </div>
             <div class="hero-img">
-                <img src="img/ecorcoran-0.png" alt="...">
+                <img src="img/ecorcoran-00.png" alt="...">
             </div>
             <div class="row whiteLine">
                 <div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12">
-                    <div class="details ">
-                        <h4><i class="fa fa-star"></i> &nbsp; My Experience</h4>
-                        <p>Corcoran is a real estate firm and is redesigning its intranet (ecorcoran.com). I am working on the redesign of ecorcoran.com on a team of five to improve agents' user experience.</p>
-                        <p>(1) Participated in user interviews to identify agents' complaints and problems.</p>
-                        <p>(2) Designed and built the user interface of ecorcoran.com.</p>
-                        <p>(3) Prototyped templates for different sections based on the needs of agents in different regions. </p>
-                        <p>(4) Collaborated closely with the back-end developer to implement data into the front-end and improve code quality.</p>
+                    <div class="details">
+                        <h4><i class="fa fa-star"></i> &nbsp; Background</h4>
+                        <p>
+                            Corcoran is a real estate company and is redesigning its intranet, eCorcoran. Over 2,000 agents get the documents and resources they need for their day-to-day work at eCorcoran.
+                        </p>
+                        <p>
+                            I am working as a UX designer collaborating with another UX Designer, product manager, and 3 developers to design and build a new eCorcoran to improve agents' satisfaction and working efficiency.</p>
                     </div>
                     <div class="details">
-                        <h4><i class="fa fa-quote-left"></i> &nbsp; User Interview & Problem Identification</h4>
-                        <p>We interviewed five agents that provided broad insights into their current workflow and pain points. We identified existing problems and generated a user journey map. </p>
-                        <p><strong>Problem #1: </strong> Searchability is weak because document retrieval is cumbersome.</p>
-                        <p><strong>Problem #2: </strong> Lacking easy access to top or frequently used resources.</p>
-                        <p><strong>Problem #3: </strong> Unfriendly mobile experience; hard to use on the go.</p>
+                        <h4><i class="fa fa-quote-left"></i> &nbsp; User Interview & Insights</h4>
+                        <p>We conducted user interviews with agents to gather their stories, pain points, and expectation. I summarized agents' workflow and generated a user journey map showing the renting process. </p>
                         <div class="row">
-                            <div class="add-margin col-md-10 col-xs-12">
-                                <img src="img/ecorcoran-c.png" alt="">
+                            <div class="add-margin col-xs-12">
+                                <a href="img/ecorcoran-c.png" data-fancybox="image">
+                                    <img src="img/ecorcoran-c.png" alt="">
+                                </a>
+                                <div class="img-title ">
+                                    <hr>User Journey Map (Renting)
+                                </div>
                             </div>
-                            <div class="img-title col-md-2 col-xs-12">
-                                User Journey Map (Take renting as an example.)
+                        </div>
+                        <p>
+                            By analyzing and synthesizing the information we gathered from user interviews, we were able to see four insights:
+                        </p>
+                        <p><strong class="color-text">Insight 1: </strong> Searchability is weak because document retrieval is cumbersome.</p>
+                        <p><strong class="color-text">Insight 2: </strong> Lack easy access to top or frequently used resources.</p>
+                        <p><strong class="color-text">Insight 3: </strong> Unfriendly mobile experience; hard to use on the go.</p>
+                        <p><strong class="color-text">Insight 4: </strong> Some agents are technically challenged, and they require simpler and more direct user interface.</p>
+                    </div>
+                    <div class="details">
+                        <h4><i class="fa fa-lightbulb-o" aria-hidden="true"></i> &nbsp; Brainstorm</h4>
+                        <p>
+                            With the interview insights in mind, all team members started to brainstorm potential solutions and sketched out ideas independently. We presented our ideas/sketches to the team and voted for the ideas we liked the most.
+                        </p>
+                        <p>
+                            After brainstorming, we defined the features for the MVP while considering time constraints and budget limitations.
+                        </p>
+                        <div class="row">
+                            <div class="add-margin col-xs-12">
+                                <img src="img/ecorcoran-10.png" alt="">
+                                <div class="img-title ">
+                                    <hr>Team Brainstorming Session
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="details">
-                        <h4><i class="fa fa-check-circle"></i> &nbsp; Solutions</h4>
-                        <p><strong>#1 Powerful Search Engine:</strong>
-                            <ul>
-                                <li>Access to search all over the site.</li>
-                                <li>Filtering and sorting enables agents to drill down into subsets of search results. </li>
-                                <li>When searching by keywords, an agent could refine his search criteria by category. </li>
-                            </ul>
-                        </p>
-                        <p><strong>#2 Personalized Content:</strong>
-                            <ul>
-                                <li> Homepage cotent was populated based on region and user type.</li>
-                                <li>Links and documents were ordered by views and date to bring out the most recent and frequently used resources to the top. </li>
-                            </ul>
-                        </p>
-                        <p><strong>#3 Responsive Design:</strong>
+                        <h4><i class="fa fa-laptop" aria-hidden="true"></i> &nbsp; Design</h4>
+                        <p>The structure of the new eCorcoran very simple. There are two pages: homepage and search page.</p>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="add-margin col-md-6 col-sm-6 col-xs-6">
+                                    <a href="img/ecorcoran-a4.png" data-fancybox="images">
+                                        <img class="shadow-img" src="img/ecorcoran-a4.png" alt="">
+                                    </a>
+                                    <div class="img-title ">
+                                        <hr>Homepage
+                                    </div>
+                                </div>
+                                <div class="add-margin col-md-6 col-sm-6 col-xs-6">
+                                    <a href="img/ecorcoran-a5.png" data-fancybox="images">
+                                        <img class="shadow-img" src="img/ecorcoran-a5.png" alt="">
+                                    </a>
+                                    <div class="img-title ">
+                                        <hr>Search Page
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p><strong class="color-text">Solution 1: Powerful Search Engine</strong>
                             <ul>
                                 <li>
-                                    Optimized for any mobile device.
+                                    <p>Filtering and sorting enables agents to drill down into subsets of search results.</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Autocomplete provides suggestions while agents type into the field.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Constant access to search bar at top of the screen.</p>
+                                </li>
+                            </ul>
+                        </p>
+                        <p><strong class="color-text">Solution 2: Personalized Content</strong>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Homepage content is customized based on region and user type.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Links and documents were ordered by popularity and date to bring out the most frequently used and most recent resources to the top.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Users can mark the documents they use frequently and have easy access to them.</p>
+                                </li>
+                            </ul>
+                        </p>
+                        <p><strong class="color-text">Solution 3: Responsive Design</strong>
+                            <ul>
+                                <li>
+                                    <p>Optimized for any mobile device.</p>
                                 </li>
                             </ul>
                         </p>
                         <div class="row">
-                            <div class="ecorcoran-img-responsive add-margin col-md-10 col-xs-12">
-                                <img class="shadow-img " src="img/ecorcoran-a.png" alt="">
-                                <img class="shadow-img " src="img/ecorcoran-b.png" alt="">
+                            <div class="col-md-9  col-sm-9 col-xs-12">
+                                <div class=" col-md-4 col-sm-4 col-xs-4">
+                                    <a href="img/ecorcoran-a1.png" data-fancybox="group">
+                                        <img class="shadow-img" src="img/ecorcoran-a1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a href="img/ecorcoran-a2.png" data-fancybox="group">
+                                        <img class="shadow-img" src="img/ecorcoran-a2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class=" col-md-4 col-sm-4 col-xs-4">
+                                    <a href="img/ecorcoran-a3.png" data-fancybox="group">
+                                        <img class="shadow-img" src="img/ecorcoran-a3.png" alt="">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="img-title col-md-2 col-xs-12">
-                                Responsive Design (mobile and tablet)
-                            </div>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <h4><i class="fa fa-refresh" aria-hidden="true"></i> &nbsp; Iteration</h4>
-                        <p>
-                            After we released the eCorcoran version 1 for one and a half monthes, we conducted usability test with agents and collected their feedback. </p>
-                        <p>
-                            The agents' main complaints are:
-                        </p>
-                        <p><strong>#1 Too much scrolling on all pages.</strong></p>
-                        <p><strong>#2 The organization of the search results is difficult to understand.</strong></p>
-                        <p><strong>#3 AgentSuite section is overwhelming and confusing.</strong></p>
-                        <div class="row">
-                            <div class="add-margin col-md-10 col-xs-12">
-                                <img src="img/ecorcoran-iteration.png" alt="">
-                            </div>
-                            <div class="img-title col-md-2 col-xs-12">
-                                Usability Test Summary (Feb. 2017)
+                            <div class="img-title col-md-3 col-sm-3 col-xs-12">
+                                <hr>
+                                <!-- <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                                <i class="fa fa-hand-o-up" aria-hidden="true"></i>  -->
+                                Mobile User Interface (homepage, hompage - scrolling down, and search page)
                             </div>
                         </div>
-                        <p>Based on agents' feedback, we made the following enhancements:</p>
-                        <p><strong>#1 A more condensed layout, which shows more information on one screen.</strong></p>
-                        <p><strong>#2 Customized filters for different sections. Xore descriptive filters and sorting.</strong></p>
-                        <p><strong>#3 Allow agents to manage options in AgentSuite section by themselves.</strong></p>
-                        <p><strong></strong></p>
                     </div>
                     <div class="details">
                         <h4><i class="fa fa-comment" aria-hidden="true"></i> &nbsp; Feedback</h4>
-                        <p>We rolled out the new eCorcoran and boosted the satisfaction rating from 45% to above 85%. People are saying:</p>
-                        <blockquote>"The new eCorcoran is great … 10,000x better!" <span class="quoted-by">- SoHo Agent</span></blockquote>
-                        <blockquote>"Agents love the look and ability to search. It is a huge improvement." <span class="quoted-by">- Hamptons Manager</span></blockquote>
+                        <p>After we released the new eCorcoran for one and a half months, we boosted the satisfaction ratings from 45% to 85%. People are saying:</p>
+                        <blockquote>"The new eCorcoran is great ... 10,000x better!" <span class="quoted-by">- SoHo Agent</span></blockquote>
+                        <blockquote>"Agents love the look and ability to search. It is a huge improvement." <span class="quoted-by">- Hamptons Manager</span></blockquote>
                         <blockquote>"Totally awesome. One stop shopping." <span class="quoted-by">- Brooklyn Agent</span></blockquote>
                         <blockquote>"So impressed! Thank you all for your hard work." <span class="quoted-by">- East Side Agent</span></blockquote>
                         <!-- https://tympanus.net/codrops/css_reference/quotes/ -->
                     </div>
                     <div class="details">
+                        <h4><i class="fa fa-refresh" aria-hidden="true"></i> &nbsp; Iteration</h4>
+                        <p>
+                            In order to improve agents' satisfaction even further, we conducted usability test with agents. We assigned agents certain search tasks and observed how they accomplish their tasks. We also had face-to-face conversations with agents to collect their feedback.
+                        </p>
+                        <p>
+                            Agents' main complaints were:
+                        </p>
+                        <p><strong class="color-text">Complaint 1:</strong> Too much scrolling on all pages.</p>
+                        <p><strong class="color-text">Complaint 2:</strong> The organization of the search results is difficult to understand.</p>
+                        <p><strong class="color-text">Complaint 3:</strong> AgentSuite section is overwhelming and confusing.</p>
+                        <p>Based on agents' feedback, we made the following enhancements:</p>
+                        <p><strong class="color-text">Enhancement 1:</strong> A more condensed layout shows more information on one screen.</p>
+                        <p><strong class="color-text">Enhancement 2:</strong> Customized filters for different sections. Hints to teach agents how to get better search results.</p>
+                        <p><strong class="color-text">Enhancement 3:</strong> Allow agents to personalize their AgentSuite section.</p>
+                        <p><strong class="color-text"></strong></p>
+                    </div>
+                    <div class="details">
                         <h4><i class="fa fa-heart"></i> &nbsp; My Contribution</h4>
                         <p>
-                            <span class="proj-label">UI Design</span>
-                            <span class="proj-label">UX Research</span>
-                            <span class="proj-label">Front-End Development</span>
+                            UI Design, UX Research, Front-End Development.
                         </p>
                     </div>
                     <div class="details">
                         <h4><i class="fa fa-wrench"></i> &nbsp; Tools Used</h4>
                         <p>
-                            <span class="proj-label">Sketch</span>
-                            <span class="proj-label">Invision</span>
-                            <span class="proj-label">HTML</span>
-                            <span class="proj-label">CSS</span>
-                            <span class="proj-label">jQuery</span>
-                            <span class="proj-label">Bootstrap</span>
+                            Sketch, Invision, HTML, CSS, jQuery, Bootstrap.
                         </p>
                     </div>
-                </div>
-            </div>
-            <div class="row ContactRow">
-                <hr class="ending-hr">
-                <div class="col-md-12 col-xs-12 text-center">
-                    <div class="text-center">
-                        <a href="https://www.linkedin.com/in/xintongchen" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                        <a href="https://instagram.com/xin.tong/" target="_blank">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.flickr.com/photos/xin-tong/" target="_blank"><i class="fa fa-flickr"></i></a>
-                        <a href="https://dribbble.com/clairechen" target="_blank">
-                            <i class="fa fa-dribbble" aria-hidden="true"></i>
-                        </a>
-                        <a href="http://codepen.io/chenclaire/" target="_blank">
-                            <i class="fa fa-codepen" aria-hidden="true"></i>
-                        </a>
+                    <div class="next-step details">
+                        <div class="row">
+                            <a href="index.html" class="col-xs-5 home-section text-center"><i class="hide-mobile fa fa-home" aria-hidden="true"></i><span>Back To Home</span></a>
+                            <a href="Proj_AdCenter.html" class="col-xs-5 col-xs-offset-2 right-section text-center">
+                                <span>Next Project</span><i class="hide-mobile fa fa-chevron-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
-                    <span class="contact-info">xc2282@tc.columbia.edu | 646.241.8178</span>
                 </div>
             </div>
         </div>
+        <!-- jQuery UI lib -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
         <!-- Bootstrapt js-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- transit -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
+        <!-- fancybox js -->
+        <script src="fancybox/dist/jquery.fancybox.js"></script>
         <!-- myJS -->
         <script type="text/javascript" src="index.js"></script>
     </body>

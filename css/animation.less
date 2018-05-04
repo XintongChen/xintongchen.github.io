@@ -29,8 +29,23 @@
         -o-transform: @arguments;
     }
     
-    .single-item svg {
-        width: 190px;
+    .background-gradient(@argument1, @argument2) {
+        background: radial-gradient(@argument1, @argument2);
+        background: -webkit-radial-gradient(@argument1, @argument2);
+        /* Safari 5.1 to 6.0 */
+        background: -o-radial-gradient(@argument1, @argument2);
+        /* For Opera 11.6 to 12.0 */
+        background: -moz-radial-gradient(@argument1, @argument2);
+    }
+    
+    .single-item {
+        .pic {
+            width: 200px;
+            g{
+                    box-shadow: 1px 1px 4px lightblue;
+
+            }
+        }
     }
     
     .details {
@@ -39,31 +54,12 @@
         margin-bottom: 25px;
     }
     
-    // .details:nth-child(even) {
-    //     background-color: #efefef;
-    // }
-    .icon-drawing {
-        background-color: #fff8e6;
-        .line {
-            stroke-dashoffset: 1000;
-            stroke-dasharray: 1000;
+    .icons {
+        background-color: #f6fbff;
+        padding: 150px 25%;
+        @media only screen and (max-width: 768px) {
+            padding: 150px 15%;
         }
-        .line-drawing {
-            .animation(drawing 10s infinite ease-in-out);
-        }
-        .keyframes(drawing;
-        {
-            0% {
-                stroke-dashoffset: 0;
-            }
-            50% {
-                stroke-dashoffset: 1000;
-            }
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-        );
     }
     
     .the-cloud {
@@ -81,158 +77,271 @@
         );
     }
     
-    .the-arrow {
-        background-color: #ffedea;
-        .arrow-down {
-            width: 50px;
-            height: 50px;
-            position: relative;
-            border-radius: 100%;
-            opacity: 1;
-            cursor: pointer;
-            -webkit-transition: opacity 1.3s .5s;
-            left: 50%;
-            transform: translateX(-50%);
-            .arrow {
-                width: 30px;
-                height: 30px;
-                display: block;
-                background-color: tomato;
-                background-size: 12px;
-                border-radius: 100%;
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                z-index: 100;
-            }
-            &:before {
-                content: "";
-                background-color: tomato;
-                width: 50px;
-                height: 50px;
-                border-radius: 100%;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                position: absolute;
-                opacity: 0;
-                left: 0px;
-                .animation(jumper 1.8s 0.33333s ease-out infinite);
-            }
-            &:after {
-                content: "";
-                background-color: tomato;
-                width: 50px;
-                height: 50px;
-                border-radius: 100%;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-                position: absolute;
-                opacity: 0;
-                left: 0px;
-                .animation(jumper 1.8s 0.66666s ease-out infinite);
-            }
-        }
-        .keyframes(jumper;
-        {
-            0% {
-                opacity: 0;
-                -webkit-transform: scale(0);
-                transform: scale(0);
-            }
-            5% {
-                opacity: 1;
-            }
-            100% {
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                opacity: 0;
-            }
-        }
-        );
+    .whale {
+        background: #dfeeff;
     }
     
-    .the-search {
-        background-color: #ffe8f1;
-        overflow: hidden;
-        .search-wrapper {
-            width: 70%;
-            position: relative;
-            margin: auto;
-            @media only screen and (max-width: 580px) {
-                width: 100%;
+    .windmill {
+        background: #fdf7e1;
+        svg {
+            overflow: visible;
+            .cls-1,
+            .cls-3,
+            .cls-4,
+            .cls-5 {
+                fill: #fff;
             }
-            .input-wrapper {
-                overflow-y: hidden;
-                height: 50px;
-                position: relative;
-                width: ~"calc(100% - 155px)";
-                margin-right: 10px;
-                display: inline-block;
-                vertical-align: middle;
-                @media only screen and (max-width: 768px) {
-                    height: 50px;
-                    position: relative;
-                    width: 100%;
-                    margin-right: 0px;
-                    display: block;
-                    margin-bottom: 10px;
+            .cls-2 {
+                fill: #a1ddff;
+            }
+            .cls-3 {
+                opacity: 0.14;
+            }
+            .cls-4 {
+                opacity: 0.2;
+            }
+            .cls-5 {
+                opacity: 0.3;
+            }
+            .cls-6 {
+                fill: #e84949;
+            }
+            .cls-7 {
+                opacity: 0.06;
+            }
+            .cls-8 {
+                opacity: 0.03;
+            }
+            .cls-10,
+            .cls-11,
+            .cls-9 {
+                fill: #111;
+            }
+            .cls-9 {
+                opacity: 0.65;
+            }
+            .cls-10 {
+                opacity: 0.6;
+            }
+            .cls-11 {
+                opacity: 0.8;
+            }
+            .cls-12 {
+                fill: #332818;
+            }
+        }
+    }
+    
+    .flag {
+        background: #dff5ef;
+        svg {
+            .clouds {
+                position: absolute;
+                fill: #fff;
+                .animation (cloud 10s infinite linear);
+                &.tiny-cloud {
+                    .transform (scale(0.23, 0.23));
                 }
-                input {
-                    height: 50px;
-                    border-radius: 2px;
-                    border-color: @primary-color;
+                &.small-cloud {
+                    .transform(scale(0.4, 0.4));
                 }
-                .shuffle-placeholder {
-                    position: absolute;
-                    list-style: none;
-                    top: 0px;
-                    left: 84px;
-                    padding-left: 0px;
-                    text-align: left;
-                    pointer-events: none;
-                    -webkit-animation-play-state: running;
-                    /* Chrome, Safari, Opera */
-                    animation-play-state: running;
-                    .animation(flash 5s steps(6) infinite);
-                    li {
-                        padding: 14.1px 0px 14px 0px;
-                        color: #9e9e9e;
-                        font-size: 15px;
+                &.big-cloud {
+                    .transform (scale(0.53, 0.53));
+                }
+                &.large-cloud {
+                    .transform(scale(0.6, 0.6));
+                }
+                .keyframes(cloud;
+                {
+                    0% {
+                        left: 0%;
+                    }
+                    100% {
+                        left: 120%;
                     }
                 }
-                input:not(:placeholder-shown) + .shuffle-placeholder {
-                    display: none;
-                }
-                input:not(::-moz-placeholder) + .shuffle-placeholder {
-                    display: none;
-                }
-                input:not(:-ms-input-placeholder) + .shuffle-placeholder {
-                    display: none;
-                }
+                );
             }
-            button {
-                width: 140px;
-                height: 50px;
-                border-radius: 2px;
-                background-color: @primary-color;
-                color: white;
-                letter-spacing: 1.2;
-                @media only screen and (max-width: 768px) {
-                    width: 100%;
-                    display: block;
-                }
+            .cls-1 {
+                fill: #fff;
+            }
+            .cls-2 {
+                fill: #e1ecef;
+            }
+            .cls-3 {
+                opacity: 0.6;
+            }
+            .cls-4 {
+                opacity: 0.8;
+            }
+            .cls-5 {
+                fill: none;
+                stroke: #282022;
+                stroke-miterlimit: 10;
+                stroke-width: 6.4px;
+            }
+            .cls-6 {
+                fill: #ce3653;
+            }
+            .cls-7 {
+                fill: #acd1c6;
+            }
+            .cls-8 {
+                opacity: 0.05;
+            }
+            .cls-9 {
+                fill: #83c9bc;
+            }
+            .cls-10 {
+                opacity: 0.06;
+            }
+            .cls-11 {
+                fill: #070707;
+            }
+            .cls-12 {
+                fill: #4abaa5;
             }
         }
-        .keyframes(flash;
-        {
-            0% {
-                top: 0px;
+    }
+    
+    .snack {
+        background: #e7dff5;
+        svg {
+            .cls-1,
+            .cls-19 {
+                fill: #fff;
             }
-            100% {
-                top: -300px;
+            .cls-2 {
+                fill: #56417b;
+            }
+            .cls-3 {
+                fill: #7c4dff;
+            }
+            .cls-17,
+            .cls-3,
+            .cls-8 {
+                opacity: 0.1;
+            }
+            .cls-4 {
+                opacity: 0.05;
+            }
+            .cls-5 {
+                fill: #eee6ff;
+                opacity: 0.04;
+            }
+            .cls-6 {
+                fill: #ea6c6c;
+            }
+            .cls-7 {
+                opacity: 0.07;
+            }
+            .cls-9 {
+                fill: #f7f3e8;
+            }
+            .cls-10,
+            .cls-18 {
+                fill: none;
+                stroke-linejoin: round;
+            }
+            .cls-10 {
+                stroke: #e2e2e2;
+                stroke-linecap: round;
+                stroke-width: 4px;
+            }
+            .cls-11 {
+                fill: #f9f9f9;
+            }
+            .cls-12 {
+                fill: #fcc978;
+            }
+            .cls-13 {
+                fill: #7bb755;
+            }
+            .cls-14 {
+                fill: #f18d60;
+            }
+            .cls-15 {
+                fill: #9bd376;
+            }
+            .cls-16 {
+                fill: #fbddab;
+            }
+            .cls-17 {
+                fill: #333;
+            }
+            .cls-18 {
+                stroke: #f7f7f7;
+                stroke-width: 2px;
+            }
+            .cls-19 {
+                opacity: 0.03;
             }
         }
-        );
+    }
+    
+    .succulent {
+        background: #f1f9f2;
+        svg {
+            .cls-1 {
+                fill: none;
+            }
+            .cls-2 {
+                isolation: isolate;
+            }
+            .cls-3,
+            .cls-5 {
+                fill: #fff;
+            }
+            .cls-4 {
+                fill: #f9f4ca;
+            }
+            .cls-5 {
+                opacity: 0.1;
+            }
+            .cls-6,
+            .cls-7,
+            .cls-8 {
+                fill: #edc10a;
+            }
+            .cls-6 {
+                opacity: 0.05;
+            }
+            .cls-7 {
+                opacity: 0.04;
+            }
+            .cls-8 {
+                opacity: 0.03;
+            }
+            .cls-9 {
+                clip-path: url(#clip-path);
+            }
+            .cls-10 {
+                fill: #e2e2e2;
+            }
+            .cls-11 {
+                fill: #efefef;
+            }
+            .cls-12 {
+                fill: #f7f7f7;
+            }
+            .cls-13 {
+                fill: #828282;
+            }
+            .cls-14 {
+                clip-path: url(#clip-path-2);
+            }
+            .cls-15,
+            .cls-17 {
+                fill: #78a567;
+            }
+            .cls-16 {
+                fill: #c8eac1;
+            }
+            .cls-17 {
+                opacity: 0.25;
+                mix-blend-mode: screen;
+            }
+        }
     }
     
     .the-sky {
@@ -336,14 +445,4 @@
                 }
             }
         }
-        .keyframes(cloud;
-        {
-            0% {
-                left: 0%;
-            }
-            100% {
-                left: 120%;
-            }
-        }
-        );
     }

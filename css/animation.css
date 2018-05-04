@@ -1,66 +1,21 @@
-.single-item svg {
-  width: 190px;
+.single-item .pic {
+  width: 200px;
+}
+.single-item .pic g {
+  box-shadow: 1px 1px 4px lightblue;
 }
 .details {
   padding: 150px 30px;
   background-color: #fafafa;
   margin-bottom: 25px;
 }
-.icon-drawing {
-  background-color: #fff8e6;
+.icons {
+  background-color: #f6fbff;
+  padding: 150px 25%;
 }
-.icon-drawing .line {
-  stroke-dashoffset: 1000;
-  stroke-dasharray: 1000;
-}
-.icon-drawing .line-drawing {
-  -webkit-animation: drawing 10s infinite ease-in-out;
-  -moz-animation: drawing 10s infinite ease-in-out;
-  -o-animation: drawing 10s infinite ease-in-out;
-  animation: drawing 10s infinite ease-in-out;
-}
-@-moz-keyframes drawing {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 1000;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes drawing {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 1000;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@-o-keyframes drawing {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 1000;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes drawing {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 1000;
-  }
-  100% {
-    stroke-dashoffset: 0;
+@media only screen and (max-width: 768px) {
+  .icons {
+    padding: 150px 15%;
   }
 }
 .the-cloud {
@@ -105,237 +60,298 @@
     -o-transform: rotate(35deg);
   }
 }
-.the-arrow {
-  background-color: #ffedea;
+.whale {
+  background: #dfeeff;
 }
-.the-arrow .arrow-down {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  border-radius: 100%;
-  opacity: 1;
-  cursor: pointer;
-  -webkit-transition: opacity 1.3s .5s;
-  left: 50%;
-  transform: translateX(-50%);
+.windmill {
+  background: #fdf7e1;
 }
-.the-arrow .arrow-down .arrow {
-  width: 30px;
-  height: 30px;
-  display: block;
-  background-color: tomato;
-  background-size: 12px;
-  border-radius: 100%;
+.windmill svg {
+  overflow: visible;
+}
+.windmill svg .cls-1,
+.windmill svg .cls-3,
+.windmill svg .cls-4,
+.windmill svg .cls-5 {
+  fill: #fff;
+}
+.windmill svg .cls-2 {
+  fill: #a1ddff;
+}
+.windmill svg .cls-3 {
+  opacity: 0.14;
+}
+.windmill svg .cls-4 {
+  opacity: 0.2;
+}
+.windmill svg .cls-5 {
+  opacity: 0.3;
+}
+.windmill svg .cls-6 {
+  fill: #e84949;
+}
+.windmill svg .cls-7 {
+  opacity: 0.06;
+}
+.windmill svg .cls-8 {
+  opacity: 0.03;
+}
+.windmill svg .cls-10,
+.windmill svg .cls-11,
+.windmill svg .cls-9 {
+  fill: #111;
+}
+.windmill svg .cls-9 {
+  opacity: 0.65;
+}
+.windmill svg .cls-10 {
+  opacity: 0.6;
+}
+.windmill svg .cls-11 {
+  opacity: 0.8;
+}
+.windmill svg .cls-12 {
+  fill: #332818;
+}
+.flag {
+  background: #dff5ef;
+}
+.flag svg .clouds {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 100;
+  fill: #fff;
+  -webkit-animation: cloud 10s infinite linear;
+  -moz-animation: cloud 10s infinite linear;
+  -o-animation: cloud 10s infinite linear;
+  animation: cloud 10s infinite linear;
 }
-.the-arrow .arrow-down:before {
-  content: "";
-  background-color: tomato;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  position: absolute;
-  opacity: 0;
-  left: 0px;
-  -webkit-animation: jumper 1.8s 0.33333s ease-out infinite;
-  -moz-animation: jumper 1.8s 0.33333s ease-out infinite;
-  -o-animation: jumper 1.8s 0.33333s ease-out infinite;
-  animation: jumper 1.8s 0.33333s ease-out infinite;
+.flag svg .clouds.tiny-cloud {
+  -webkit-transform: scale(0.23, 0.23);
+  -moz-transform: scale(0.23, 0.23);
+  -ms-transform: scale(0.23, 0.23);
+  -o-transform: scale(0.23, 0.23);
 }
-.the-arrow .arrow-down:after {
-  content: "";
-  background-color: tomato;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  position: absolute;
-  opacity: 0;
-  left: 0px;
-  -webkit-animation: jumper 1.8s 0.66666s ease-out infinite;
-  -moz-animation: jumper 1.8s 0.66666s ease-out infinite;
-  -o-animation: jumper 1.8s 0.66666s ease-out infinite;
-  animation: jumper 1.8s 0.66666s ease-out infinite;
+.flag svg .clouds.small-cloud {
+  -webkit-transform: scale(0.4, 0.4);
+  -moz-transform: scale(0.4, 0.4);
+  -ms-transform: scale(0.4, 0.4);
+  -o-transform: scale(0.4, 0.4);
 }
-@-moz-keyframes jumper {
+.flag svg .clouds.big-cloud {
+  -webkit-transform: scale(0.53, 0.53);
+  -moz-transform: scale(0.53, 0.53);
+  -ms-transform: scale(0.53, 0.53);
+  -o-transform: scale(0.53, 0.53);
+}
+.flag svg .clouds.large-cloud {
+  -webkit-transform: scale(0.6, 0.6);
+  -moz-transform: scale(0.6, 0.6);
+  -ms-transform: scale(0.6, 0.6);
+  -o-transform: scale(0.6, 0.6);
+}
+@-moz-keyframes cloud {
   0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  5% {
-    opacity: 1;
+    left: 0%;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
+    left: 120%;
   }
 }
-@-webkit-keyframes jumper {
+@-webkit-keyframes cloud {
   0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  5% {
-    opacity: 1;
+    left: 0%;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
+    left: 120%;
   }
 }
-@-o-keyframes jumper {
+@-o-keyframes cloud {
   0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  5% {
-    opacity: 1;
+    left: 0%;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
+    left: 120%;
   }
 }
-@keyframes jumper {
+@keyframes cloud {
   0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  5% {
-    opacity: 1;
+    left: 0%;
   }
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
+    left: 120%;
   }
 }
-.the-search {
-  background-color: #ffe8f1;
-  overflow: hidden;
+.flag svg .cls-1 {
+  fill: #fff;
 }
-.the-search .search-wrapper {
-  width: 70%;
-  position: relative;
-  margin: auto;
+.flag svg .cls-2 {
+  fill: #e1ecef;
 }
-@media only screen and (max-width: 580px) {
-  .the-search .search-wrapper {
-    width: 100%;
-  }
+.flag svg .cls-3 {
+  opacity: 0.6;
 }
-.the-search .search-wrapper .input-wrapper {
-  overflow-y: hidden;
-  height: 50px;
-  position: relative;
-  width: calc(100% - 155px);
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: middle;
+.flag svg .cls-4 {
+  opacity: 0.8;
 }
-@media only screen and (max-width: 768px) {
-  .the-search .search-wrapper .input-wrapper {
-    height: 50px;
-    position: relative;
-    width: 100%;
-    margin-right: 0px;
-    display: block;
-    margin-bottom: 10px;
-  }
+.flag svg .cls-5 {
+  fill: none;
+  stroke: #282022;
+  stroke-miterlimit: 10;
+  stroke-width: 6.4px;
 }
-.the-search .search-wrapper .input-wrapper input {
-  height: 50px;
-  border-radius: 2px;
-  border-color: #d83e77;
+.flag svg .cls-6 {
+  fill: #ce3653;
 }
-.the-search .search-wrapper .input-wrapper .shuffle-placeholder {
-  position: absolute;
-  list-style: none;
-  top: 0px;
-  left: 84px;
-  padding-left: 0px;
-  text-align: left;
-  pointer-events: none;
-  -webkit-animation-play-state: running;
-  /* Chrome, Safari, Opera */
-  animation-play-state: running;
-  -webkit-animation: flash 5s steps(6) infinite;
-  -moz-animation: flash 5s steps(6) infinite;
-  -o-animation: flash 5s steps(6) infinite;
-  animation: flash 5s steps(6) infinite;
+.flag svg .cls-7 {
+  fill: #acd1c6;
 }
-.the-search .search-wrapper .input-wrapper .shuffle-placeholder li {
-  padding: 14.1px 0px 14px 0px;
-  color: #9e9e9e;
-  font-size: 15px;
+.flag svg .cls-8 {
+  opacity: 0.05;
 }
-.the-search .search-wrapper .input-wrapper input:not(:placeholder-shown) + .shuffle-placeholder {
-  display: none;
+.flag svg .cls-9 {
+  fill: #83c9bc;
 }
-.the-search .search-wrapper .input-wrapper input:not(::-moz-placeholder) + .shuffle-placeholder {
-  display: none;
+.flag svg .cls-10 {
+  opacity: 0.06;
 }
-.the-search .search-wrapper .input-wrapper input:not(:-ms-input-placeholder) + .shuffle-placeholder {
-  display: none;
+.flag svg .cls-11 {
+  fill: #070707;
 }
-.the-search .search-wrapper button {
-  width: 140px;
-  height: 50px;
-  border-radius: 2px;
-  background-color: #d83e77;
-  color: white;
-  letter-spacing: 1.2;
+.flag svg .cls-12 {
+  fill: #4abaa5;
 }
-@media only screen and (max-width: 768px) {
-  .the-search .search-wrapper button {
-    width: 100%;
-    display: block;
-  }
+.snack {
+  background: #e7dff5;
 }
-@-moz-keyframes flash {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -300px;
-  }
+.snack svg .cls-1,
+.snack svg .cls-19 {
+  fill: #fff;
 }
-@-webkit-keyframes flash {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -300px;
-  }
+.snack svg .cls-2 {
+  fill: #56417b;
 }
-@-o-keyframes flash {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -300px;
-  }
+.snack svg .cls-3 {
+  fill: #7c4dff;
 }
-@keyframes flash {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -300px;
-  }
+.snack svg .cls-17,
+.snack svg .cls-3,
+.snack svg .cls-8 {
+  opacity: 0.1;
+}
+.snack svg .cls-4 {
+  opacity: 0.05;
+}
+.snack svg .cls-5 {
+  fill: #eee6ff;
+  opacity: 0.04;
+}
+.snack svg .cls-6 {
+  fill: #ea6c6c;
+}
+.snack svg .cls-7 {
+  opacity: 0.07;
+}
+.snack svg .cls-9 {
+  fill: #f7f3e8;
+}
+.snack svg .cls-10,
+.snack svg .cls-18 {
+  fill: none;
+  stroke-linejoin: round;
+}
+.snack svg .cls-10 {
+  stroke: #e2e2e2;
+  stroke-linecap: round;
+  stroke-width: 4px;
+}
+.snack svg .cls-11 {
+  fill: #f9f9f9;
+}
+.snack svg .cls-12 {
+  fill: #fcc978;
+}
+.snack svg .cls-13 {
+  fill: #7bb755;
+}
+.snack svg .cls-14 {
+  fill: #f18d60;
+}
+.snack svg .cls-15 {
+  fill: #9bd376;
+}
+.snack svg .cls-16 {
+  fill: #fbddab;
+}
+.snack svg .cls-17 {
+  fill: #333;
+}
+.snack svg .cls-18 {
+  stroke: #f7f7f7;
+  stroke-width: 2px;
+}
+.snack svg .cls-19 {
+  opacity: 0.03;
+}
+.succulent {
+  background: #f1f9f2;
+}
+.succulent svg .cls-1 {
+  fill: none;
+}
+.succulent svg .cls-2 {
+  isolation: isolate;
+}
+.succulent svg .cls-3,
+.succulent svg .cls-5 {
+  fill: #fff;
+}
+.succulent svg .cls-4 {
+  fill: #f9f4ca;
+}
+.succulent svg .cls-5 {
+  opacity: 0.1;
+}
+.succulent svg .cls-6,
+.succulent svg .cls-7,
+.succulent svg .cls-8 {
+  fill: #edc10a;
+}
+.succulent svg .cls-6 {
+  opacity: 0.05;
+}
+.succulent svg .cls-7 {
+  opacity: 0.04;
+}
+.succulent svg .cls-8 {
+  opacity: 0.03;
+}
+.succulent svg .cls-9 {
+  clip-path: url(#clip-path);
+}
+.succulent svg .cls-10 {
+  fill: #e2e2e2;
+}
+.succulent svg .cls-11 {
+  fill: #efefef;
+}
+.succulent svg .cls-12 {
+  fill: #f7f7f7;
+}
+.succulent svg .cls-13 {
+  fill: #828282;
+}
+.succulent svg .cls-14 {
+  clip-path: url(#clip-path-2);
+}
+.succulent svg .cls-15,
+.succulent svg .cls-17 {
+  fill: #78a567;
+}
+.succulent svg .cls-16 {
+  fill: #c8eac1;
+}
+.succulent svg .cls-17 {
+  opacity: 0.25;
+  mix-blend-mode: screen;
 }
 .the-sky {
   background-color: #d9f1ff;
@@ -453,36 +469,4 @@
   animation-delay: 2.1s;
   -webkit-animation-duration: 78s;
   animation-duration: 78s;
-}
-@-moz-keyframes cloud {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 120%;
-  }
-}
-@-webkit-keyframes cloud {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 120%;
-  }
-}
-@-o-keyframes cloud {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 120%;
-  }
-}
-@keyframes cloud {
-  0% {
-    left: 0%;
-  }
-  100% {
-    left: 120%;
-  }
 }
