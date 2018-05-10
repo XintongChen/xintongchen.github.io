@@ -194,6 +194,7 @@ body {
   }
 }
 .IntroRow .intro .introduction-note {
+  margin-top: 8px;
   width: 60%;
   line-height: 1.7;
   color: #777;
