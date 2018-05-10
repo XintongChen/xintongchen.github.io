@@ -1,4 +1,5 @@
         @import url(https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i);
+        @import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i);
         @primary-color: #d83e77;
         @dark-gray: #444;
         @mid-gray: #777;
@@ -134,9 +135,12 @@
                 }
             }
         }
-        strong{
-            font-family: 'MuseoSans-700';
+        
+        strong {
+            // font-family: 'MuseoSans-700';
+            font-weight: bold;
         }
+        
         body {
             max-width: 1440px;
             margin: auto;
@@ -179,8 +183,10 @@
                         padding: 15px 0px;
                         cursor: pointer;
                         opacity: 0.8;
-                        font-family: 'MuseoSans-700', sans-serif;
-                        text-transform: uppercase;
+                        // font-family: 'MuseoSans-700', sans-serif;
+                        font-family: 'Crimson Text', serif;
+                        font-weight: 600;
+                        // text-transform: uppercase;
                         font-size: 30px;
                         letter-spacing: 1.5;
                         display: block;
@@ -237,7 +243,9 @@
                     font-size: 32px;
                     color: @dark-gray;
                     line-height: 1.5;
-                    font-family: 'MuseoSans-700', sans-serif;
+                    // font-family: 'MuseoSans-700', sans-serif;
+                    font-family: 'Crimson Text', serif;
+                    font-weight: 600;
                     @media only screen and (max-width: 768px) {
                         font-size: 26px;
                     }
@@ -404,10 +412,10 @@
                     .scaled-img {
                         border-radius: 4px;
                         margin-top: -32px;
-                        &.lg-move-up{
+                        &.lg-move-up {
                             @media only screen and (min-width: 991px) {
                                 margin-top: -160px;
-                            } 
+                            }
                         }
                         &.md-move-up {
                             @media only screen and (max-width: 991px) {
@@ -450,7 +458,6 @@
                         }
                     }
                 }
-               
                 &:hover {
                     cursor: pointer;
                     .projIcon {
@@ -672,7 +679,8 @@
             font-weight: 300;
             font-family: 'MuseoSans-300', sans-serif;
             h1 {
-                font-family: 'MuseoSans-300', sans-serif;
+                // font-family: 'MuseoSans-300', sans-serif;
+                font-family: 'Crimson Text', serif;
                 letter-spacing: 0.3;
                 @media only screen and (max-width: 550px) {
                     font-size: 28px;
@@ -723,8 +731,9 @@
         
         .img-title {
             color: @light-gray;
-            font-family: 'Lora', serif;
-            font-style: italic;
+            // font-family: 'Lora', serif;
+            font-family: 'Crimson Text', serif;
+            // font-style: italic;
             margin-top: 8px;
             margin-bottom: 20px;
             .fa-hand-o-up {
@@ -809,9 +818,10 @@
                     }
                 }
                 h4 {
-                    font-family: 'MuseoSans-700', sans-serif;
-                    color: @light-gray;
-                    letter-spacing: 1px;
+                    font-family: 'MuseoSans-500', sans-serif;
+                    // color: @light-gray;
+                    color:@primary-color;
+                    letter-spacing: 2px;
                     font-size: 18px;
                     text-transform: uppercase;
                     margin-bottom: 16px;
