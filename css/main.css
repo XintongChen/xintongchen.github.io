@@ -82,7 +82,7 @@ a:hover p {
   animation-delay: 0.9s;
 }
 strong {
-  font-weight: bold;
+  font-family: 'MuseoSans-700', sans-serif !important;
 }
 body {
   max-width: 1440px;
@@ -871,13 +871,13 @@ body {
   font-family: 'Lora', serif;
 }
 .whiteLine .details h4 {
-  font-family: 'MuseoSans-500', sans-serif;
+  font-family: 'Lora', serif;
   color: #d83e77;
-  letter-spacing: 2px;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
   line-height: 1.5;
+  font-weight: bold;
 }
 .whiteLine .details .label-tag {
   background-color: #d83e77;
@@ -981,6 +981,10 @@ body {
 }
 .whiteLine .shadow-img {
   box-shadow: 2px 2px 7px #b7b7b7;
+}
+.whiteLine .outline-img {
+  border: 1px solid #b9b9b9;
+  border-radius: 3px;
 }
 .whiteLine .add-margin {
   margin-top: 5px;

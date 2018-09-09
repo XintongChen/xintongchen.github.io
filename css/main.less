@@ -137,8 +137,8 @@
         }
         
         strong {
-            // font-family: 'MuseoSans-700';
-            font-weight: bold;
+            font-family: 'MuseoSans-700', sans-serif !important;
+            // font-weight: bold;
         }
         
         body {
@@ -480,6 +480,7 @@
             }
             h4 {
                 font-family: 'MuseoSans-500', sans-serif;
+                // font-family: 'Crimson Text', serif;
                 color: @primary-color;
                 letter-spacing: 1;
             }
@@ -817,14 +818,16 @@
                     }
                 }
                 h4 {
-                    font-family: 'MuseoSans-500', sans-serif;
+                    // font-family: 'MuseoSans-500', sans-serif;
+                    font-family: 'Lora', serif;
                     // color: @light-gray;
                     color:@primary-color;
-                    letter-spacing: 2px;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                    margin-bottom: 16px;
+                    // letter-spacing: 0.5px;
+                    font-size: 24px;
+                    text-transform: capitalize;
+                    margin-bottom: 12px;
                     line-height: 1.5;
+                    font-weight: bold;
                 }
                 .label-tag {
                     background-color: @primary-color;
@@ -919,6 +922,10 @@
             }
             .shadow-img {
                 box-shadow: 2px 2px 7px #b7b7b7;
+            }
+            .outline-img{
+                border: 1px solid @light-gray;
+                border-radius: 3px;
             }
             .add-margin {
                 margin-top: 5px;
