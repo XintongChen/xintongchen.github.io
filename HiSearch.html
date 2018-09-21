@@ -103,13 +103,13 @@
                     <div class="details">
                         <h4>Understand search behavior</h4>
                         <p class="color-text">
-                            <strong>User research</strong>
+                            <strong>User Interview</strong>
                         </p>
                         <p>
-                            I worked with our user researcher and spoke to 10 Spring users and 9 non-Spring users. We tested our search exerience on both desktop and mobile.
+                            I worked with our user researcher and conducted user interview with 10 Spring users and 9 non-Spring users. We asked questions to understand their shopping preference and tested Spring's search exerience on both desktop and mobile.
                         </p>
                         <p>
-                            During the user research process, I provided search tasks to make sure we can get the most from observing users’ search experience. As the user interviews moving on, I started to build some assumptions and revised research questions/tasks based previous interviews and my assumptions.
+                            During the user interview process, I provided initial questions and search tasks. As the user interviews moved on, I started to build some assumptions and revised research questions/tasks based previous interviews and my assumptions.
                         </p>
                         <div class="row">
                             <div class="add-margin col-md-8 col-sm-8 col-xs-12">
@@ -332,19 +332,76 @@
                         </p>
                     </div>
                     <div class="details">
-                        <h4>User Stories</h4>
-                    </div>
-                    <div class="details">
-                        <h4>Design</h4>
+                        <h4>Design and Iteration</h4>
+                        <p class="color-text"><strong>High Intent Query Search</strong></p>
                         <p>
-                            Before & after
+                            After engineers improved the search algorithm, we were able to provide very accurate results for users' high intent search. And then I started to figure out 2 UX problems that came up with the improved search functionality:
                         </p>
                         <p>
-                            L1 picker, breadcrumb (input from engineer, testing and iteration)
+                            <strong>
+                                 1. How to improve the awearness of the great query search experience in Spring?
+                             </strong> As I mentioned before, users usually don't start from search bar because they don't trust search results they got from online shopping sites. So the design challenge I had was to draw users' attention to the search bar and let me know Spring provides very great query search experience.
                         </p>
+                        <p>I sketched out multiple solutions, picked the best one, and then A/B tested 3 variations internally.</p>
+                        <div class="row">
+                            <div class="add-margin col-md-9 col-sm-9 col-xs-12">
+                                <img src="img/searchAB1.png" alt="">
+                            </div>
+                            <div class="img-title col-md-3 col-sm-3 col-xs-12">
+                                <hr>V1: Search bar is on the left side, and search suggestions push homepage content further down to the page.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="add-margin col-md-9 col-sm-9 col-xs-12">
+                                <img src="img/searchAB2.png" alt="">
+                            </div>
+                            <div class="img-title col-md-3 col-sm-3 col-xs-12">
+                                <hr>V2: Search bar is on the right side, and search suggestions push homepage content further down to the page.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="add-margin col-md-9 col-sm-9 col-xs-12">
+                                <img src="img/searchAB3.png" alt="">
+                            </div>
+                            <div class="img-title col-md-3 col-sm-3 col-xs-12">
+                                <hr>V3: Search bar is on the left side, and search suggestions are in a regular dropdown and covers part of the homepage content.
+                            </div>
+                        </div>
                         <p>
-                            brands refinement, size refinement (testing and iteration)
+                            After we run A/B testing with 6 people internally, we found out 4 out of 6 people like V1. And I landed on the final design. Here is a before&after of the search bar and nav bar experience of Spring.
                         </p>
+                        <div class="row">
+                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                <img src="img/search-before-after1.png" alt="">
+                            </div>
+                        </div>
+                        <p>
+                            <strong>
+                                2. What should a user see if there're no results returned based on their very specific serach query?
+                            </strong>
+                        </p>
+                        <p class="color-text"><strong>High intent refine experience</strong></p>
+                        <p>
+                            Based on the user interview, I saw 3 outstanding problems with the refine experience. And I will share about how I solve these problem one by one.
+                        </p>
+                        <p><strong>1. How to improve the experience of refining by sizes, and educate users the benefits of My Sizes?</strong></p>
+                        <p>Based on the user interviews and my own audi, I found out there were a two things I can improve: the placement of My Sizes (people usually cannot notice it when refining by sizes), and the visual design for diferent status of My Sizes (it wasn't clear whether it's on or off).</p>
+                        <div class="row">
+                            <div class="add-margin col-md-9 col-sm-9 col-xs-12">
+                                <img src="img/searchAB3.png" alt="">
+                            </div>
+                            <div class="img-title col-md-3 col-sm-3 col-xs-12">
+                                <hr>The old design for My Sizes.
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                <img src="img/search-size1.png" alt="">
+                            </div>
+                        </div>
+                        <p><strong>2. How to improve the experience of refining by brands?</strong></p>
+                        <p><strong>3. What's the best hierachy of the refinements?</strong></p>
                     </div>
                     <div class="details">
                         <h4>Next steps</h4>
