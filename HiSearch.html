@@ -113,7 +113,7 @@
                         </p>
                         <div class="row">
                             <div class="add-margin col-md-8 col-sm-8 col-xs-12">
-                                <img src="img/search-research-1.png" alt="">
+                                <img src="img/search-research-1.png" class="outline-img" alt="">
                             </div>
                             <div class="img-title col-md-4 col-sm-4 col-xs-12">
                                 <hr>Screenshot of some search/refine tasks for users
@@ -249,7 +249,7 @@
                             During the problem discovery phase, I was also asking myself what does a good search look like, what are the current solutions, and what I can learn from it? To answer all these questions, I did competitive research on other online shopping websites/apps, such as, ASOS, Lyst, ShopStyle, Revolve, and etc…
                         </p>
                         <p>
-                            Here is a collection of the search experience I went through: <a class="color-text" href="https://bit.ly/2wU3rja">https://bit.ly/2wU3rja</a>
+                            Here is a collection of the search experience I went through: <a class="color-text" href="https://bit.ly/2wU3rja" target="_blank">Search/Refine Competitive Solutions</a>
                         </p>
                         <div class="row">
                             <div class="add-margin col-md-10 col-xs-12">
@@ -283,7 +283,7 @@
                                 <img src="img/search-flow3.png" alt="">
                             </div>
                             <div class="img-title col-md-4 col-sm-4 col-xs-12">
-                                <hr>Entry points and user flow for search and refine.
+                                <hr>3 different entry points for search and refine.
                             </div>
                         </div>
                     </div>
@@ -360,39 +360,23 @@
                                 <hr>Old search bar: 1. The search bar looks like a patch, some users don’t really see it; 2. The placement of navigation and search bar are awkward, lots of users acidentally touch the navigation and the navigation dropdown will block search bar.
                             </div>
                         </div>
-                        <p><strong>Competitive Solution</strong></p>
+                        <p><strong>Competitive Solutions</strong></p>
                         <p>I looked at some other shopping sites and tried to figure out what do they want to achieve by design their search in certain ways. I got a lot inspiration and collected some competitive solutions in this doc: <a class="color-text" target="_blank" href="https://paper.dropbox.com/doc/Search-Bar-Nav--ANzUZBE9XIjn3k7aRE1gpC0hAQ-oMi1cQskB0nfqsNl8sfTr">Search Bar & Nav Competitive Solutions</a></p>
                         <p><strong>Design Explorations</strong></p>
                         <p>
-                            Keeping my goal in mind, I sketched out design solutions in a few different directions. After took marketing and other stakeholders’ opinion into consideration, direction 2 was most promising one. Because it exposes all the product categories we carry at Spring and provides enough space for navigation dropdown and search suggestions.
+                            With Spring’s existing style guide, I skipped wireframing.
+                            <br> Keeping the goal in mind, I sketched out design solutions in a few different directions. After took marketing and other stakeholders’ opinion into consideration, direction 2 was most promising one. Because it exposes all the product categories we carry at Spring and provides enough space for navigation dropdown and search suggestions.
                         </p>
                         <div class="row">
                             <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <img src="img/search-bar-d1.png" alt="">
-                            </div>
-                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
-                                <hr>Direction 1
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <img src="img/search-bar-d2.png" alt="">
-                            </div>
-                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
-                                <hr>Direction 2
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <img src="img/search-bar-d3.png" alt="">
-                            </div>
-                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
-                                <hr>Direction 3
+                                <a href="img/search-bar-d1.png" data-fancybox="SearchBar">
+                                    <img src="img/search-bar-d1.png" alt="">
+                                </a>
                             </div>
                         </div>
                         <p><strong>AB Testing</strong></p>
                         <p>
-                            I dug deeper into direction 2 and wanted to find out if I could make it even better. I got 2 variations and tested them internally. Because I wanted to find out what's a better hierachy for search bar and navigation, as well as what's a better way to show search suggestions.
+                            I dug deeper into direction 2 and wanted to find out how I could make it even better. I got 2 variations and built prototypes for AB Testing to see what's a better hierachy for search bar and navigation, as well as what's a better way to show search suggestions.
                         </p>
                         <div class="row">
                             <div class="add-margin col-md-12 col-sm-12 col-xs-12">
@@ -401,7 +385,7 @@
                                 </a>
                             </div>
                         </div>
-                        <p>After tested with 7 people internally, I chose Viaration 1 as the final design. And here are some key screens:</p>
+                        <p>After tested with 7 people internally, I chose Viaration 1 as the final design. <a href="https://shopspring.invisionapp.com/share/JKO6A0Y3H49#/321170337_searchBar_C1" class="color-text" target="_blank">View Search Bar and Nav Prototype (V1)</a>.</p>
                         <div class="row">
                             <div class="add-margin col-md-12 col-sm-12 col-xs-12">
                                 <img src="img/search-bar-new.png" alt="">
@@ -413,8 +397,31 @@
                             </strong>
                         </p>
                         <p>
-                            As the search results getting more relevant and accurate, we saw the possibility that people will search for something very specific that Spring doesn’t carry. In this situation, what should we show to users and how should we communicate with users to decrease their disappointment?
+                            As more and more users are starting high intent query search and the search results are getting more and more relevant, we saw a higher possibility that we will have no results or a few results to return based on users' queries. In this situation, what should we show to users and how should we communicate with users to decrease their disappointment?
                         </p>
+                        <p><strong>Use Cases</strong></p>
+                        <p>I started to figure out this problem from thinking of why there are no (or only a few) results returned. I found out there could be 3 different use cases:</p>
+                        <p>1. User enters an unmeaningful query.</p>
+                        <p>2. User enters a meaningful query, but these product don't exist in Spring.</p>
+                        <p>3. User enters a meaningful query, and only a few (less than 6) products match the query.</p>
+                        <p><strong>User Experience</strong></p>
+                        <p>The principle for No-Search-Result design is to first clearly tell user there are not restuls (or few results) and then give relavent recommendations. </p>
+                        <p>After I mapped out all possible use cases, I looped in our tech lead to understand our technical constraints/capability and brain-stormed possible solutions.</p>
+                        <div class="row">
+                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
+                                <img src="img/search-noresults-1.JPG" alt="">
+                            </div>
+                        </div>
+                        <p>Use Case 2 is the most tricky one. After collaborating with tech lead and PM, I found out the following solution for Use Case 2.</p>
+                        <p><strong>UI Design</strong></p>
+                        <p></p>
+                        <div class="row">
+                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                <a href="img/search-noresults-2.png" data-fancybox="Search-noresults">
+                                    <img src="img/search-noresults-2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
                         <hr>
                         <p class="color-text"><strong>Categories</strong></p>
                         <hr>
