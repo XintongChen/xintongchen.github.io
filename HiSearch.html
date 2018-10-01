@@ -122,8 +122,8 @@
                                 <img src="img/search-research2.png" alt="">
                             </div>
                             <div class="img-title col-md-12 col-sm-12 col-xs-12">
-                                <hr>(Left) Screenshot of some search/refine tasks for users
-                                <br>(Right) Screenshot of research synthesis
+                                <hr>(First) Screenshot of some search/refine tasks for users
+                                <br>(Second) Screenshot of research synthesis
                             </div>
                         </div>
                         <br>
@@ -204,9 +204,8 @@
                                 </a>
                             </div>
                             <div class="img-title col-md-5 col-sm-5 col-xs-12">
-                                <hr>Party of Spring taxonomy tree.
-                                <br>
-                                <br> Women's and Men's are kind of similar to each other, which means there are products that exist under both Women's and Men's.
+                                <hr>Spring taxonomy tree (Partial).
+                                <br> Women's and Men's are kind of similar to each other.
                             </div>
                         </div>
                         <div class="row">
@@ -216,9 +215,8 @@
                                 </a>
                             </div>
                             <div class="img-title col-md-5 col-sm-5 col-xs-12">
-                                <hr>Taxonomy tree structure is not ideal
-                                <br>
-                                <br> Women's and Men's are kind of similar to each other, which means there are products that exist under both Women's and Men's.
+                                <hr>Taxonomy tree structure is not ideal, sometimes there are next levels under a certain categories.
+                                <br>Referring to the findings of user interviews, I realized this is reason why some users don't expect to click into "Swimsuits" and further refine their search.
                             </div>
                         </div>
                         <div class="gray-block-wrapper">
@@ -293,15 +291,15 @@
                                     </p>
                                     <p>
                                         <span class="color-text">1. Users don't trust query search.</span>
-                                        <br> Because search results are not accurate enough. Users still have to take extra effort to refine their search even though they've already described what they are looking for in the search queries.
+                                        <br> Search results are not accurate enough. Users still have to take extra effort to refine their search even though they've already described what they are looking for in the search queries.
                                     </p>
                                     <p>
-                                        <span class="color-text">2. Desktop refine (filter) experience is not intuitive enough.</span>
-                                        <br> There are different usability issues with different filters.
-                                    </p>
-                                    <p>
-                                        <span class="color-text">3. The structure of taxonomy tree is not perfect, </span>
+                                        <span class="color-text">2. The structure of taxonomy tree is not perfect, </span>
                                         <br> which makes some products less searchable/discoverable.
+                                    </p>
+                                    <p>
+                                        <span class="color-text">3. Desktop refine (filter) experience is not intuitive enough.</span>
+                                        <br> There are different usability issues with different filters.
                                     </p>
                                 </div>
                             </div>
@@ -313,25 +311,49 @@
                             After the problems are clearly defined, we took our engineering resources into consideration to assess what problems we would work on at that time. We saw an opportunity to
                         </p>
                         <p>
-                            <span class="color-text">1. Improve the accuracy and user experience of search.</span>
-                            <br> Auto refine search results if there is color, brand, taxonomy or gener in search query.
+                            1. Improve the accuracy and user experience of search. Auto refine search results if there is color, brand, taxonomy or gener in search query.
                         </p>
                         <p>
-                            <span class="color-text">2. Improve the refine experience on desktop.</span>
+                            2. Improve Category refinement.
+                            <br> We won't have the resources to improve the structure of Spring taxonomy tree. So the task falls on me, and I need to figure out how I could improve the UI Design and make it easier for users to refine by categories.
                         </p>
                         <p>
-                            <span class="color-text">3. Improve the design of Category refinement.</span>
-                            <br> Even though we saw the problem with the structure of our taxonomoy tree, but we didn't have the budget to restructure it. We could only improve the UI to fix the problem temporarily.
+                            3. Improve the refine experience on desktop.
                         </p>
                     </div>
                     <div class="details">
                         <h4>Design and Iteration</h4>
-                        <p class="color-text"><strong>New High Intent Search Experience</strong></p>
                         <p>
-                            Here are a few key screens of the new high intent search and refine experience. I will dive into each sub-problem and talk about how I landed on the final design solutions.
+                            Here are a few key screens of the new high intent search and refine experience.
                         </p>
+                        <div class="row">
+                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                <img src="img/search.png" alt="">
+                            </div>
+                        </div>
+                        <p>
+                            To better showcase how I landed on the final design solutions, I will dive into 3 sub-problems and talk about my thinking processes:
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="evevator">
+                                    <p><u><a class="color-text" onclick="goTo('query')">Problem 1: Query Search</a></u></p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="evevator">
+                                    <p><u><a class="color-text" onclick="goTo('categories')">Problem 2: Categories</a></u></p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="evevator">
+                                    <p><u><a class="color-text" onclick="goTo('refinements')">Problem 3: Refinements</a></u></p>
+                                </div>
+                            </div>
+                        </div>
                         <hr>
-                        <p class="color-text"><strong>High Intent Query Search</strong></p>
+                        <a id="query"></a>
+                        <p class="color-text"><strong>Query Search</strong></p>
                         <p>
                             After engineers improved the search algorithm, we were able to provide very accurate results for users' high intent search. And then I started to figure out 2 UX problems that came up with the improved search functionality:
                         </p>
@@ -416,6 +438,7 @@
                             </div>
                         </div>
                         <hr>
+                        <a id="categories"></a>
                         <p class="color-text"><strong>Categories</strong></p>
                         <p>
                             When users are searching for product with high intent, even though they’ve already type search query into the search bar, they still have go through 3 to 5 clicks in the category tree to get to the sub-category they are looking for. During user interviews, we saw that more than half of the users complained about this.
@@ -472,6 +495,7 @@
                             </div>
                         </div>
                         <hr>
+                        <a id="refinements"></a>
                         <p class="color-text"><strong>Refinements</strong></p>
                         <p><strong>1. Hierachy</strong></p>
                         <p>
@@ -480,7 +504,17 @@
                         <p>
                             I got 2 different inputs when I tried to figure out refinement hierarchy. Based on the data analysis, I saw there are more clicks on Price and Discount than Color and brands. But from user interviews, I found out people usually refine by brands and colors first, and then sizes, lastly price/discount. Because people don't want to limit the options at the beginning, and usually they don't have a clear bar for price.
                         </p>
-                        <p>I finally decided to set the hierarchy based on the input from user interviews, because I believed it’s the natural way of refining a fashion search. From this__</p>
+                        <p>I finally decided to set the hierarchy based on the input from user interviews, because I believed it’s the natural way of refining a fashion search. </p>
+                        <div class="row">
+                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
+                                <img src="img/search-hierachy.png" alt="">
+                            </div>
+                            <div class="img-title col-md-4 col-sm-4 col-xs-12">
+                                <hr>Hierachy of refinements:
+                                <br>Categories, Brands, Color, Size, Discount, and Price.
+                            </div>
+                            
+                        </div>
                         <p><strong>2. Size refinement & My Sizes</strong></p>
                         <p>
                             Spring has My Sizes feature for all registered members, where users can set up sizes in their profiles and only see what’s in stock in their sizes. But users usually don’t notice it.
@@ -552,7 +586,7 @@
                     <div class="next-step details">
                         <div class="row">
                             <a href="index.html" class="col-xs-5 home-section text-center"><span>Back To Home</span></a>
-                            <a href="Proj_styleGuideGrovo.html" class="col-xs-5 col-xs-offset-2 right-section text-center">
+                            <a href="Proj_Spring.html" class="col-xs-5 col-xs-offset-2 right-section text-center">
                                 <span>Next Project</span>
                             </a>
                         </div>
