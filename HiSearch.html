@@ -1,19 +1,18 @@
 <html class="">
-
-<head>
-    <title>Spring Search</title>
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <!-- Bootstrapt css-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <!-- fancybox css -->
-    <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.css">
-    <!-- myCSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
+    <head>
+        <title>Spring Search</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" href="img/favicon.png" type="image/png" />
+        <!-- Bootstrapt css-->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- fancybox css -->
+        <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.css">
+        <!-- myCSS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
     <body>
         <div class="loading">
             <div class="loading-center">
@@ -47,7 +46,7 @@
                             <div class="col-md-offset-2 col-md-8 col-sm-12">
                                 <p>
                                     <strong>
-                                        Spring is a fashion and beauty marketplace where people can discover and buy products from 1500+ brands.
+                                    Spring is a fashion and beauty marketplace where people can discover and buy products from 1500+ brands.
                                     </strong>
                                 </p>
                                 <p>
@@ -56,17 +55,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--  <div class="details">
-                        <h4>What's Spring</h4>
-                        <p class="color-text">What’s Spring</p>
-                        <p>
-                            Spring is a fashion and beauty marketplace where people can discover and buy products from different brands. Spring carries 1500+ brands and 200k+ products.
-                        </p>
-                        <p class="color-text">Spring’s business goal</p>
-                        <p>
-                            The #1 business goal of Spring is to increase user retention. We wanted to drive our users to come back to Spring after their first purchase and make their 2nd, 3rd, … purchase.
-                        </p>
-                    </div> -->
                     <div class="details">
                         <h4>Why improve search</h4>
                         <p class="color-text"><strong>For Spring</strong></p>
@@ -130,9 +118,7 @@
                         <div class="gray-block-wrapper">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="gray-block">
-                                    <p>
-                                        <strong>Take-aways</strong>
-                                    </p>
+                                    <p><strong>Take-aways</strong></p>
                                     <p>
                                         <span class="color-text">Nav Bar vs. Serach Bar: </span> Most users start search from Nav Bar and don’t trust Search Bar generally on all shopping sites, but users do use Search Bar when searching with high intent.
                                     </p>
@@ -178,9 +164,7 @@
                         <div class="gray-block-wrapper">
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="gray-block">
-                                    <p>
-                                        <strong>Take-aways</strong>
-                                    </p>
+                                    <p><strong>Take-aways</strong></p>
                                     <p>
                                         <span class="color-text">1.</span> Users like to refine their search by brand and discount more than size and color.
                                     </p>
@@ -322,7 +306,7 @@
                         </p>
                     </div>
                     <div class="details">
-                        <h4>Design and Iteration</h4>
+                        <h4>Design & Iteration</h4>
                         <p>
                             Here are a few key screens of the new high intent search and refine experience.
                         </p>
@@ -334,244 +318,257 @@
                         <p>
                             To better showcase how I landed on the final design solutions, I will dive into 3 sub-problems and talk about my thinking processes:
                         </p>
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="evevator">
-                                    <p><u><a class="color-text" onclick="goTo('query')">Problem 1: Query Search</a></u></p>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <p class="panel-title color-text">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                            <strong>Problem 1: Query Search</strong>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <p>
+                                            After engineers improved the search algorithm, we were able to provide very accurate results for users' high intent search. And then I started to figure out 2 UX problems that came up with the improved search functionality:
+                                        </p>
+                                        <p>
+                                            <strong>1. Search Bar & Navigation</strong>
+                                        </p>
+                                        <p>
+                                            Even though query search is the most natural way for high intent search, but from user interviews, we found out that users usually don't start their search from search bar because they don't trust search in general for online shopping sites. Our engineers improved the search algorithm and Spring was able to return very relevant items based on users’ search queries.
+                                        </p>
+                                        <p><strong>Design Challenge</strong></p>
+                                        <p>So the design challenge I had was to fix the current usability issue with our search bar and get more users to start their search from search bar, this way users will find out that Spring provides very great query search experience, and in long term, people will get more confidence of doing fashion search in Spring.</p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <img src="img/search-bar-current1.png" alt="">
+                                            </div>
+                                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
+                                                <hr>Old search bar: 1. The search bar looks like a patch, some users don’t really see it; 2. The placement of navigation and search bar are awkward, lots of users acidentally touch the navigation and the navigation dropdown will block search bar.
+                                            </div>
+                                        </div>
+                                        <p><strong>Competitive Solutions</strong></p>
+                                        <p>I looked at some other shopping sites and tried to figure out what do they want to achieve by design their search in certain ways. I got a lot inspiration and collected some competitive solutions in this doc: <a class="color-text" target="_blank" href="https://paper.dropbox.com/doc/Search-Bar-Nav--ANzUZBE9XIjn3k7aRE1gpC0hAQ-oMi1cQskB0nfqsNl8sfTr">Search Bar & Nav Competitive Solutions</a></p>
+                                        <p><strong>Design Explorations</strong></p>
+                                        <p>
+                                            With Spring’s existing style guide, I skipped wireframing.
+                                            <br> Keeping the goal in mind, I sketched out design solutions in a few different directions. After took marketing and other stakeholders’ opinion into consideration, direction 2 was most promising one. Because it exposes all the product categories we carry at Spring and provides enough space for navigation dropdown and search suggestions.
+                                        </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <a href="img/search-bar-d1.png" data-fancybox="SearchBar">
+                                                    <img src="img/search-bar-d1.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p><strong>AB Testing</strong></p>
+                                        <p>
+                                            I dug deeper into direction 2 and wanted to find out how I could make it even better. I got 2 variations and built prototypes for AB Testing to see what's a better hierachy for search bar and navigation, as well as what's a better way to show search suggestions.
+                                        </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <a href="img/searchAB1.png" data-fancybox="SearchAB">
+                                                    <img src="img/searchAB1.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p>After tested with 7 people internally, I chose Viaration 1 as the final design. <a href="https://shopspring.invisionapp.com/share/JKO6A0Y3H49#/321170337_searchBar_C1" class="color-text" target="_blank">View Search Bar and Nav Prototype (V1)</a>.</p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <img src="img/search-bar-new.png" alt="">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <p>
+                                            <strong>
+                                            2. No search results
+                                            </strong>
+                                        </p>
+                                        <p>
+                                            As more and more users are starting high intent query search and the search results are getting more and more relevant, we saw a higher possibility that we will have no results or a few results to return based on users' queries. In this situation, what should we show to users and how should we communicate with users to decrease their disappointment?
+                                        </p>
+                                        <p><strong>Use Cases</strong></p>
+                                        <p>I started to figure out this problem from thinking of why there are no (or only a few) results returned. I found out there could be 3 different use cases:</p>
+                                        <p>1. User enters an unmeaningful query.</p>
+                                        <p>2. User enters a meaningful query, but these product don't exist in Spring.</p>
+                                        <p>3. User enters a meaningful query, and only a few (less than 6) products match the query.</p>
+                                        <p><strong>User Experience</strong></p>
+                                        <p>The principle for No-Search-Result design is to first clearly tell user there are not restuls (or few results) and then give relavent recommendations. </p>
+                                        <p>After I mapped out all possible use cases, I looped in our tech lead to understand our technical constraints/capability and brain-stormed possible solutions.</p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
+                                                <img src="img/search-noresults-1.JPG" alt="">
+                                            </div>
+                                        </div>
+                                        <p>Use Case 2 is the most tricky one. After collaborating with tech lead and PM, I found out the following solution for Use Case 2.</p>
+                                        <p><strong>UI Design</strong></p>
+                                        <p></p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <a href="img/search-noresults-2.png" data-fancybox="Search-noresults">
+                                                    <img src="img/search-noresults-2.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="evevator">
-                                    <p><u><a class="color-text" onclick="goTo('categories')">Problem 2: Categories</a></u></p>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <p class="panel-title color-text">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="collapsed">
+                                            <strong>Problem 2: Categories</strong>
+                                        </a>
+
+                                    </p>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <p>
+                                            When users are searching for product with high intent, even though they’ve already type search query into the search bar, they still have go through 3 to 5 clicks in the category tree to get to the sub-category they are looking for. During user interviews, we saw that more than half of the users complained about this.
+                                        </p>
+                                        <p>
+                                            <strong>Design Challenge</strong>
+                                        </p>
+                                        <p>
+                                            We wanted to drop users on the right sub-category and skip all the clicks. But for gender neutral products (like jeans, sneakers, and etc), if users don’t indicate gender in their search queries, we won’t know which path they should follow.
+                                        </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <img src="img/search-picker-0.png" alt="">
+                                            </div>
+                                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
+                                                <hr> For example, if user types “Levi’s skinny jeans”, we won’t know whether they are looking for women’s skinny jeans or men’s skinny jeans, or kids’ skinny jeans.
+                                            </div>
+                                        </div>
+                                        <p>
+                                            So we need the user’s input here. The challenge I faced was to figure out how to collect users’ inputs and make sure users won’t feel it’s intrude or redundant.
+                                        </p>
+                                        <p>
+                                            <strong>Design Explorations</strong>
+                                        </p>
+                                        <p>
+                                            I wireframed 3 potentials solutions, and decided to go with Solution 3. Because in Solution 3, it looks more like part of the refine experience, and in Solution 1 and 2 it takes too much primary space which could be used for something more important potential features.
+                                        </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <img src="img/search-picker-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <strong>Prototype and Testing</strong>
+                                        </p>
+                                        <p>
+                                            Within in Solution 3, I tried a few different visual treatments and prototyped 2 of them. We did AB testing internally with 6 people.
+                                        </p>
+                                        <p>
+                                            View prototyes for AB testing:
+                                            <a href="https://shopspring.invisionapp.com/share/DBNN8LIYKF6" class="color-text" target="_blank">Option 1 (control)</a> and
+                                            <a href="https://shopspring.invisionapp.com/share/VHNY2BKCKXS" class="color-text" target="_blank">Option 2 (variation)</a>.
+                                        </p>
+                                        <p>
+                                            I chose Option 1 as the final design and handed it off to engineers. Because Option 1 could clearly tell user it requries a single selection and better aligns the front-end setup.
+                                        </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <a href="img/search-picker-2.png" data-fancybox="picker">
+                                                    <img src="img/search-picker-2.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="evevator">
-                                    <p><u><a class="color-text" onclick="goTo('refinements')">Problem 3: Refinements</a></u></p>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <p class="panel-title color-text">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="collapsed">
+                                            <strong>Problem 3: Refinements</strong>
+                                        </a>
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <a id="query"></a>
-                        <p class="color-text"><strong>Query Search</strong></p>
-                        <p>
-                            After engineers improved the search algorithm, we were able to provide very accurate results for users' high intent search. And then I started to figure out 2 UX problems that came up with the improved search functionality:
-                        </p>
-                        <p>
-                            <strong>
-                                 1. Search Bar & Navigation
-                             </strong>
-                        </p>
-                        <p>
-                            Even though query search is the most natural way for high intent search, but from user interviews, we found out that users usually don't start their search from search bar because they don't trust search in general for online shopping sites. Our engineers improved the search algorithm and Spring was able to return very relevant items based on users’ search queries.
-                        </p>
-                        <p><strong>Design Challenge</strong></p>
-                        <p>So the design challenge I had was to fix the current usability issue with our search bar and get more users to start their search from search bar, this way users will find out that Spring provides very great query search experience, and in long term, people will get more confidence of doing fashion search in Spring.</p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <img src="img/search-bar-current1.png" alt="">
-                            </div>
-                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
-                                <hr>Old search bar: 1. The search bar looks like a patch, some users don’t really see it; 2. The placement of navigation and search bar are awkward, lots of users acidentally touch the navigation and the navigation dropdown will block search bar.
-                            </div>
-                        </div>
-                        <p><strong>Competitive Solutions</strong></p>
-                        <p>I looked at some other shopping sites and tried to figure out what do they want to achieve by design their search in certain ways. I got a lot inspiration and collected some competitive solutions in this doc: <a class="color-text" target="_blank" href="https://paper.dropbox.com/doc/Search-Bar-Nav--ANzUZBE9XIjn3k7aRE1gpC0hAQ-oMi1cQskB0nfqsNl8sfTr">Search Bar & Nav Competitive Solutions</a></p>
-                        <p><strong>Design Explorations</strong></p>
-                        <p>
-                            With Spring’s existing style guide, I skipped wireframing.
-                            <br> Keeping the goal in mind, I sketched out design solutions in a few different directions. After took marketing and other stakeholders’ opinion into consideration, direction 2 was most promising one. Because it exposes all the product categories we carry at Spring and provides enough space for navigation dropdown and search suggestions.
-                        </p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <a href="img/search-bar-d1.png" data-fancybox="SearchBar">
-                                    <img src="img/search-bar-d1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <p><strong>AB Testing</strong></p>
-                        <p>
-                            I dug deeper into direction 2 and wanted to find out how I could make it even better. I got 2 variations and built prototypes for AB Testing to see what's a better hierachy for search bar and navigation, as well as what's a better way to show search suggestions.
-                        </p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <a href="img/searchAB1.png" data-fancybox="SearchAB">
-                                    <img src="img/searchAB1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <p>After tested with 7 people internally, I chose Viaration 1 as the final design. <a href="https://shopspring.invisionapp.com/share/JKO6A0Y3H49#/321170337_searchBar_C1" class="color-text" target="_blank">View Search Bar and Nav Prototype (V1)</a>.</p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <img src="img/search-bar-new.png" alt="">
-                            </div>
-                        </div>
-                        <p>
-                            <strong>
-                                2. No search results
-                            </strong>
-                        </p>
-                        <p>
-                            As more and more users are starting high intent query search and the search results are getting more and more relevant, we saw a higher possibility that we will have no results or a few results to return based on users' queries. In this situation, what should we show to users and how should we communicate with users to decrease their disappointment?
-                        </p>
-                        <p><strong>Use Cases</strong></p>
-                        <p>I started to figure out this problem from thinking of why there are no (or only a few) results returned. I found out there could be 3 different use cases:</p>
-                        <p>1. User enters an unmeaningful query.</p>
-                        <p>2. User enters a meaningful query, but these product don't exist in Spring.</p>
-                        <p>3. User enters a meaningful query, and only a few (less than 6) products match the query.</p>
-                        <p><strong>User Experience</strong></p>
-                        <p>The principle for No-Search-Result design is to first clearly tell user there are not restuls (or few results) and then give relavent recommendations. </p>
-                        <p>After I mapped out all possible use cases, I looped in our tech lead to understand our technical constraints/capability and brain-stormed possible solutions.</p>
-                        <div class="row">
-                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
-                                <img src="img/search-noresults-1.JPG" alt="">
-                            </div>
-                        </div>
-                        <p>Use Case 2 is the most tricky one. After collaborating with tech lead and PM, I found out the following solution for Use Case 2.</p>
-                        <p><strong>UI Design</strong></p>
-                        <p></p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <a href="img/search-noresults-2.png" data-fancybox="Search-noresults">
-                                    <img src="img/search-noresults-2.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <a id="categories"></a>
-                        <p class="color-text"><strong>Categories</strong></p>
-                        <p>
-                            When users are searching for product with high intent, even though they’ve already type search query into the search bar, they still have go through 3 to 5 clicks in the category tree to get to the sub-category they are looking for. During user interviews, we saw that more than half of the users complained about this.
-                        </p>
-                        <p>
-                            <strong>Design Challenge</strong>
-                        </p>
-                        <p>
-                            We wanted to drop users on the right sub-category and skip all the clicks. But for gender neutral products (like jeans, sneakers, and etc), if users don’t indicate gender in their search queries, we won’t know which path they should follow.
-                        </p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <img src="img/search-picker-0.png" alt="">
-                            </div>
-                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
-                                <hr> For example, if user types “Levi’s skinny jeans”, we won’t know whether they are looking for women’s skinny jeans or men’s skinny jeans, or kids’ skinny jeans.
-                            </div>
-                        </div>
-                        <p>
-                            So we need the user’s input here. The challenge I faced was to figure out how to collect users’ inputs and make sure users won’t feel it’s intrude or redundant.
-                        </p>
-                        <p>
-                            <strong>Design Explorations</strong>
-                        </p>
-                        <p>
-                            I wireframed 3 potentials solutions, and decided to go with Solution 3. Because in Solution 3, it looks more like part of the refine experience, and in Solution 1 and 2 it takes too much primary space which could be used for something more important potential features.
-                        </p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <img src="img/search-picker-1.png" alt="">
-                            </div>
-                        </div>
-                        <p>
-                            <strong>
-                                Prototype and Testing
-                            </strong>
-                        </p>
-                        <p>
-                            Within in Solution 3, I tried a few different visual treatments and prototyped 2 of them. We did AB testing internally with 6 people.
-                        </p>
-                        <p>
-                            View prototyes for AB testing:
-                            <a href="https://shopspring.invisionapp.com/share/DBNN8LIYKF6" class="color-text" target="_blank">Option 1 (control)</a> and
-                            <a href="https://shopspring.invisionapp.com/share/VHNY2BKCKXS" class="color-text" target="_blank">Option 2 (variation)</a>.
-                        </p>
-                        <p>
-                            I chose Option 1 as the final design and handed it off to engineers. Because Option 1 could clearly tell user it requries a single selection and better aligns the front-end setup.
-                        </p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <a href="img/search-picker-2.png" data-fancybox="picker">
-                                    <img src="img/search-picker-2.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <hr>
-                        <a id="refinements"></a>
-                        <p class="color-text"><strong>Refinements</strong></p>
-                        <p><strong>1. Hierachy</strong></p>
-                        <p>
-                            Another challenge I had when designing High Intent Search experience was what’s the best hierarchy for all the refinements on search page.
-                        </p>
-                        <p>
-                            I got 2 different inputs when I tried to figure out refinement hierarchy. Based on the data analysis, I saw there are more clicks on Price and Discount than Color and brands. But from user interviews, I found out people usually refine by brands and colors first, and then sizes, lastly price/discount. Because people don't want to limit the options at the beginning, and usually they don't have a clear bar for price.
-                        </p>
-                        <p>I finally decided to set the hierarchy based on the input from user interviews, because I believed it’s the natural way of refining a fashion search. </p>
-                        <div class="row">
-                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
-                                <img src="img/search-hierachy.png" alt="">
-                            </div>
-                            <div class="img-title col-md-4 col-sm-4 col-xs-12">
-                                <hr>Hierachy of refinements:
-                                <br>Categories, Brands, Color, Size, Discount, and Price.
-                            </div>
-                            
-                        </div>
-                        <p><strong>2. Size refinement & My Sizes</strong></p>
-                        <p>
-                            Spring has My Sizes feature for all registered members, where users can set up sizes in their profiles and only see what’s in stock in their sizes. But users usually don’t notice it.
-                        </p>
-                        <div class="row">
-                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
-                                <img src="img/search-size-current.png" alt="">
-                            </div>
-                            <div class="img-title col-md-4 col-sm-4 col-xs-12">
-                                <hr>Screenshot of search results page: My Sizes and Size refinement are very sparate.
-                                <br> Most people used to look for refinements on the left side of the page, so they end up not seeing My Sizes.
-                            </div>
-                        </div>
-                        <p><strong>Design Challenge</strong></p>
-                        <p>Redesign Size refinement and My Sizes to educate non Spring memebers or new users about My Sizes and make it easier to refine by size.</p>
-                        <p><strong>User Stories</strong></p>
-                        <p>I wrote down users stories to lead my design for different types of use cases.</p>
-                        <div class="gray-block-wrapper">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="gray-block">
-                                    <p>As <strong>a Spring member who has My Sizes set up</strong>, when I am refining my search by size, I want to be able to turn on or off My Size, so that I will have more control over sizes.</p>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <p><strong>1. Hierachy</strong></p>
+                                        <p>
+                                            Another challenge I had when designing High Intent Search experience was what’s the best hierarchy for all the refinements on search page.
+                                        </p>
+                                        <p>
+                                            I got 2 different inputs when I tried to figure out refinement hierarchy. Based on the data analysis, I saw there are more clicks on Price and Discount than Color and brands. But from user interviews, I found out people usually refine by brands and colors first, and then sizes, lastly price/discount. Because people don't want to limit the options at the beginning, and usually they don't have a clear bar for price.
+                                        </p>
+                                        <p>I finally decided to set the hierarchy based on the input from user interviews, because I believed it’s the natural way of refining a fashion search. </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
+                                                <img src="img/search-hierachy.png" alt="">
+                                            </div>
+                                            <div class="img-title col-md-4 col-sm-4 col-xs-12">
+                                                <hr>Hierachy of refinements:
+                                                <br>Categories, Brands, Color, Size, Discount, and Price.
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <p><strong>2. Size refinement & My Sizes</strong></p>
+                                        <p>
+                                            Spring has My Sizes feature for all registered members, where users can set up sizes in their profiles and only see what’s in stock in their sizes. But users usually don’t notice it.
+                                        </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
+                                                <img src="img/search-size-current.png" alt="">
+                                            </div>
+                                            <div class="img-title col-md-4 col-sm-4 col-xs-12">
+                                                <hr>Screenshot of search results page: My Sizes and Size refinement are very sparate.
+                                                <br> Most people used to look for refinements on the left side of the page, so they end up not seeing My Sizes.
+                                            </div>
+                                        </div>
+                                        <p><strong>Design Challenge</strong></p>
+                                        <p>Redesign Size refinement and My Sizes to educate non Spring memebers or new users about My Sizes and make it easier to refine by size.</p>
+                                        <p><strong>User Stories</strong></p>
+                                        <p>I wrote down users stories to lead my design for different types of use cases.</p>
+                                        <div class="gray-block-wrapper">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="gray-block">
+                                                    <p>As <strong>a Spring member who has My Sizes set up</strong>, when I am refining my search by size, I want to be able to turn on or off My Size, so that I will have more control over sizes.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gray-block-wrapper">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="gray-block">
+                                                    <p>As <strong>a new Spring member</strong>, when I am refining my search by size, I want to save my current size preference to My Sizes, so that I can get more personalized search results faster in the future.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gray-block-wrapper">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                                <div class="gray-block">
+                                                    <p>As <strong>a non Spring member</strong>, when I am refining my search by size and seeing My Sizes for the first time, I want to know what’s My Sizes and how it helps me with my future search, so that it will be easier for me to make a decision on whether I want to set it up or not.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p><strong>Design Explorations</strong></p>
+                                        I tried 2 placements for the controllers: top and bottom.
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <img src="img/search-size1.png" alt="">
+                                            </div>
+                                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
+                                                <hr>Option 1: Controllers at the bottom
+                                                <br>Option 2: Controllers at the top
+                                            </div>
+                                        </div>
+                                        <p>I ended up with having controller at the top, because it a more natural way for user to browse and take actions.</p>
+                                        <p><strong>Final Design</strong></p>
+                                        <p>Here's the design for the new size refinement for Spring members who haven't set up My Sizes yet.</p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <a href="img/search-size2.png" data-fancybox="size">
+                                                    <img src="img/search-size2.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="gray-block-wrapper">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="gray-block">
-                                    <p>As <strong>a new Spring member</strong>, when I am refining my search by size, I want to save my current size preference to My Sizes, so that I can get more personalized search results faster in the future.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gray-block-wrapper">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="gray-block">
-                                    <p>As <strong>a non Spring member</strong>, when I am refining my search by size and seeing My Sizes for the first time, I want to know what’s My Sizes and how it helps me with my future search, so that it will be easier for me to make a decision on whether I want to set it up or not.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p><strong>Design Explorations</strong></p>
-                        I tried 2 placements for the controllers: top and bottom.
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <img src="img/search-size1.png" alt="">
-                            </div>
-                            <div class="img-title col-md-12 col-sm-12 col-xs-12">
-                                <hr>Option 1: Controllers at the bottom
-                                <br>Option 2: Controllers at the top
-                            </div>
-                        </div>
-                        <p>I ended up with having controller at the top, because it a more natural way for user to browse and take actions.</p>
-                        <p><strong>Final Design</strong></p>
-                        <p>Here's the design for the new size refinement for Spring members who haven't set up My Sizes yet.</p>
-                        <div class="row">
-                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
-                                <a href="img/search-size2.png" data-fancybox="size">
-                                    <img src="img/search-size2.png" alt="">
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -586,9 +583,7 @@
                     <div class="next-step details">
                         <div class="row">
                             <a href="index.html" class="col-xs-5 home-section text-center"><span>Back To Home</span></a>
-                            <a href="Spring.html" class="col-xs-5 col-xs-offset-2 right-section text-center">
-                                <span>Next Project</span>
-                            </a>
+                            <a href="Spring.html" class="col-xs-5 col-xs-offset-2 right-section text-center"><span>Next Project</span></a>
                         </div>
                     </div>
                 </div>
@@ -606,5 +601,4 @@
         <!-- myJS -->
         <script type="text/javascript" src="index.js"></script>
     </body>
-
 </html>

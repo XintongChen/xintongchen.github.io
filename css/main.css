@@ -1,5 +1,63 @@
-@import url(https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i);
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i);
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v12/0QIhMX1D_JOuMw_LIftO.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v12/0QIiMX1D_JOuMw_Dmt5emNGu.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v12/0QIgMX1D_JOuO7HeNtxunw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Crimson Text SemiBold Italic'), local('CrimsonText-SemiBoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlprgwHKFkZgtmSR3NB0oRJfajCOD-NS_LA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNV.ttf) format('truetype');
+}
 @font-face {
   font-family: 'MuseoSans-100';
   src: url('../fonts/museosans-100.woff') format('woff'), url('../fonts/museosans-100.ttf') format('truetype');
@@ -447,7 +505,6 @@ body {
   width: 100%;
   position: relative;
   margin: auto;
-  height: 216px;
   overflow: hidden;
   box-shadow: 0px 2px 0px 0px #eeeeee;
   border: 1px solid #eeeeee;
@@ -458,33 +515,17 @@ body {
 }
 .ProjRow .square .projImg .scaled-img {
   border-radius: 4px;
-  margin-top: -32px;
-}
-@media only screen and (min-width: 991px) {
-  .ProjRow .square .projImg .scaled-img.lg-move-up {
-    margin-top: -160px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .ProjRow .square .projImg .scaled-img.md-move-up {
-    margin-top: -320px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .ProjRow .square .projImg .scaled-img.md-move-up {
-    margin-top: -24px;
-  }
 }
 .ProjRow .square .projImg .projIcon {
   position: absolute;
-  background: transparent;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), transparent);
   top: 0px;
   width: 100%;
-  height: 240px;
+  height: 100%;
   padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 25px;
-  padding-top: 64px;
+  padding-top: 35%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -497,7 +538,7 @@ body {
   margin-bottom: 16px;
 }
 .ProjRow .square .projImg .projIcon .projTags {
-  color: #b9b9b9;
+  color: #777;
   font-family: 'MuseoSans-300', sans-serif;
   font-size: 14px;
 }
@@ -869,6 +910,47 @@ body {
   font-style: italic;
   color: #b9b9b9;
   font-family: 'Lora', serif;
+}
+.whiteLine .details .panel {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.whiteLine .details .panel-default {
+  border: none;
+}
+.whiteLine .details .panel-default + .panel {
+  -webkit-box-sizing: none;
+  -moz-box-sizing: none;
+  box-sizing: none;
+}
+.whiteLine .details .panel-default .panel-heading {
+  padding: 0px;
+  background-color: #f4f4f4;
+}
+.whiteLine .details .panel-default .panel-heading a {
+  background-image: url("../icons/plus-solid.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding: 16px;
+  display: block;
+}
+.whiteLine .details .panel-default .panel-heading a.open {
+  background-image: url("../icons/minus-solid.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+.whiteLine .details .panel-default .panel-heading a.collapsed {
+  background-image: url("../icons/plus-solid.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+.whiteLine .details .panel-default .panel-body {
+  border: none;
+  padding: 16px 0px;
 }
 .whiteLine .details h4 {
   font-family: 'Lora', serif;
