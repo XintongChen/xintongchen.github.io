@@ -79,7 +79,6 @@
                         </p>
                         <p>
                             2. Priorities: high intent search (query search, search bar, and refinements) first, then browse/suggestion. 
-                            <p class="color-text">?</p>
                         </p>
                         <p class="color-text"><strong>Success Metrics</strong></p>
                         <p>
@@ -352,7 +351,7 @@
                                             <div class="img-title col-md-12 col-sm-12 col-xs-12">
                                                 <hr>Old search bar: 
                                                 <br>1. The search bar looks like a patch, some users don’t really see it; 
-                                                <br>2. The placement of navigation and search bar are awkward, lots of users acidentally touch the navigation and the navigation dropdown will block search bar.
+                                                <br>2. The navigation and search bar are too close vertically: when users want to search, some of them acidentally trigger the navigation dropdown which will block the search bar.
                                             </div>
                                         </div>
                                         <p><strong>Competitive Solutions</strong></p>
@@ -369,9 +368,9 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <p><strong>AB Testing</strong></p>
+                                        <p><strong>Testing</strong></p>
                                         <p>
-                                            I dug deeper into direction 2 and wanted to find out how I could make it even better. I got 2 variations and built prototypes for AB Testing to see what's a better hierachy for search bar and navigation, as well as what's a better way to show search suggestions.
+                                            I dug deeper into direction 2 and wanted to find out how I could make it even better. I prototyped 2 variations for testing to see what's a better hierachy for search bar and navigation, as well as, what's a better way to show search suggestions.
                                         </p>
                                         <div class="row">
                                             <div class="add-margin col-md-12 col-sm-12 col-xs-12">
@@ -385,7 +384,7 @@
                                                 <br>Variation 2: The placement of search bar is consistant with other shopping sites (right side), and search suggestions cover the promotion banner.
                                             </div>
                                         </div>
-                                        <p>After tested with 7 people internally, I chose Variation 1 as the final design. <a href="https://shopspring.invisionapp.com/share/JKO6A0Y3H49#/321170337_searchBar_C1" class="color-text" target="_blank">View Search Bar and Nav Prototype (V1)</a>.</p>
+                                        <p>After tesing with 2 separate groups internally, I chose Variation 1 as the final design. <a href="https://shopspring.invisionapp.com/share/JKO6A0Y3H49#/321170337_searchBar_C1" class="color-text" target="_blank">View Search Bar and Nav Prototype (V1)</a>.</p>
                                         <div class="row">
                                             <div class="add-margin col-md-12 col-sm-12 col-xs-12">
                                                 <img src="img/search-bar-new.png" alt="">
@@ -485,7 +484,7 @@
                                             <strong>Prototype and Testing</strong>
                                         </p>
                                         <p>
-                                            Within in Solution 3, I tried a few different visual treatments and prototyped 2 of them. We did AB testing on category refinement and breadcrumb internally with 6 people.
+                                            Within in Solution 3, I tried a few different visual treatments and prototyped 2 of them. We did intercal testing on category refinement and breadcrumb internally with 2 groups people.
                                         </p>
                                         <!-- <p>
                                             View prototyes for AB testing:
@@ -526,6 +525,56 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
+                                        <p><strong>1. Hierachy</strong></p>
+                                        <p>
+                                            Another challenge I had when designing High Intent Search experience was what’s the best hierarchy for all the refinements on search page.
+                                        </p>
+                                        <p>
+                                            I got 2 different inputs when I tried to figure out refinement hierarchy. Based on the data analysis, I saw there are more clicks on Price and Discount than Color and brands. But from user interviews, I found out people usually refine by brands and colors first, and then sizes, lastly price/discount. Because people don't want to limit the options at the beginning, and usually they don't have a clear bar for price.
+                                        </p>
+                                        <p>I finally decided to set the hierarchy based on the input from user interviews, because I believed it’s the natural way of refining a fashion search. </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-8 col-sm-8 col-xs-12">
+                                                <img src="img/search-hierachy.png" alt="">
+                                            </div>
+                                            <div class="img-title col-md-4 col-sm-4 col-xs-12">
+                                                <hr>Hierachy of refinements:
+                                                <br>Categories, Brands, Color, Size, Discount, and Price.
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <p><strong>2. Refinements</strong></p>
+                                        <p>
+                                            Through user interviews, we saw different usability issues with different refinements. I created design solutions, tested them internally, and landed on the following design.
+                                        </p>
+                                        <p>
+                                            <strong>Brands</strong>
+                                        </p>
+                                        <p>We listed all available brands A to Z before, which is very hard for users to browse and find out the brands that they are looking for. In the new design, we wanted to predit the brands people may click and list these brands at the top.</p>
+                                        <p>Which brands should be listed in the Top Brands group is still an open questions. We will testing among Favoirt Brands, Liked Brands, Popular Brands, and etc to figure which is the best.</p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <a href="img/search-brand.png" data-fancybox="picker">
+                                                    <img src="img/search-brand.png" alt="">
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <p><strong>Sizes & My Sizes</strong></p>
+                                        <p>
+                                            There were only a few size options before, and Sizes refinement was very apart from My Sizes feature, which meant users have to set up size preference at 2 different places. I improved the Sizes refinement by combining Sizes refinement and My Sizes and providing a better way of browse size options.
+                                        </p>
+                                        <div class="row">
+                                            <div class="add-margin col-md-12 col-sm-12 col-xs-12">
+                                                <a href="img/search-size.png" data-fancybox="picker">
+                                                    <img src="img/search-size.png" alt="">
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- <div class="panel-body">
                                         <p><strong>1. Hierachy</strong></p>
                                         <p>
                                             Another challenge I had when designing High Intent Search experience was what’s the best hierarchy for all the refinements on search page.
@@ -603,7 +652,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
