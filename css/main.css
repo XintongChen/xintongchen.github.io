@@ -1013,7 +1013,9 @@ body {
 }
 .whiteLine .next-step a {
   padding: 8px;
-  border: 1px solid;
+  border: 2px solid;
+  margin-bottom: 10px;
+  border-radius: 2px;
 }
 .whiteLine .next-step a:visited {
   color: #d83e77;
