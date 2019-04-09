@@ -2,61 +2,61 @@
   font-family: 'Lora';
   font-style: italic;
   font-weight: 400;
-  src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v12/0QIhMX1D_JOuMw_LIftO.ttf) format('truetype');
+  src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v13/0QIhMX1D_JOuMw_LIftO.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lora';
   font-style: italic;
   font-weight: 700;
-  src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v12/0QIiMX1D_JOuMw_Dmt5emNGu.ttf) format('truetype');
+  src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v13/0QIiMX1D_JOuMw_Dmt5emNGu.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
-  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v12/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v13/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
-  src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v12/0QIgMX1D_JOuO7HeNtxunw.ttf) format('truetype');
+  src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v13/0QIgMX1D_JOuO7HeNtxunw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 400;
-  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(https://fonts.gstatic.com/s/crimsontext/v9/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 600;
-  src: local('Crimson Text SemiBold Italic'), local('CrimsonText-SemiBoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlprgwHKFkZgtmSR3NB0oRJfajCOD-NS_LA.ttf) format('truetype');
+  src: local('Crimson Text SemiBold Italic'), local('CrimsonText-SemiBoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v9/wlprgwHKFkZgtmSR3NB0oRJfajCOD-NS_LA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 700;
-  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LA.ttf) format('truetype');
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v9/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 400;
-  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v9/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 600;
-  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
+  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'), url(https://fonts.gstatic.com/s/crimsontext/v9/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 700;
-  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNV.ttf) format('truetype');
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(https://fonts.gstatic.com/s/crimsontext/v9/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNV.ttf) format('truetype');
 }
 @font-face {
   font-family: 'MuseoSans-100';
@@ -518,7 +518,6 @@ body {
 }
 .ProjRow .square .projImg .projIcon {
   position: absolute;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.4), transparent);
   top: 0px;
   width: 100%;
   height: 100%;
@@ -1030,15 +1029,6 @@ body {
   .whiteLine .next-step .hide-mobile {
     display: none;
   }
-}
-.whiteLine .next-step .left-section i {
-  margin-right: 8px;
-}
-.whiteLine .next-step .right-section i {
-  margin-left: 8px;
-}
-.whiteLine .next-step .home-section i {
-  margin-right: 8px;
 }
 .whiteLine .next-step i {
   font-size: 14px;
