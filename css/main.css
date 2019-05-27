@@ -74,6 +74,11 @@
   /* Safari, Android, iOS */
 }
 @font-face {
+  font-family: 'MuseoSans-900';
+  src: url('../fonts/museosans-900.woff') format('woff'), url('../fonts/museosans-900.ttf') format('truetype');
+  /* Safari, Android, iOS */
+}
+@font-face {
   font-family: 'MuseoSans-300';
   src: url('../fonts/museosans-300.woff') format('woff'), url('../fonts/museosans-300.ttf') format('truetype');
   /* Safari, Android, iOS */
@@ -122,7 +127,7 @@ a:hover p {
   animation: scaling 2s infinite;
   width: 15px;
   height: 15px;
-  background-color: #d83e77;
+  background-color: #A71D50;
   display: inline-block;
   border-radius: 50%;
   opacity: 1;
@@ -148,13 +153,13 @@ body {
   position: relative;
 }
 .color-text {
-  color: #d83e77 !important;
+  color: #A71D50 !important;
 }
 .mobile-nav {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(216, 62, 119, 0.95);
+  background-color: rgba(167, 29, 80, 0.95);
   color: white;
   text-align: center;
   position: fixed;
@@ -216,13 +221,18 @@ body {
   width: 100px;
 }
 .IntroRow {
-  padding-bottom: 24px;
-  font-family: 'MuseoSans-300', sans-serif;
+  padding: 80px 0px;
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
   color: #444;
+}
+@media only screen and (max-width: 768px) {
+  .IntroRow {
+    padding: 48px 0px;
+  }
 }
 .IntroRow .intro {
   margin: auto;
-  margin-top: 60px;
   position: relative;
 }
 .IntroRow .intro .menu-trigger {
@@ -231,7 +241,7 @@ body {
   padding-top: 9px;
   font-size: 25px;
   right: 0px;
-  color: #d83e77;
+  color: #A71D50;
   cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
@@ -240,18 +250,25 @@ body {
   }
 }
 .IntroRow .intro .introduction {
-  font-size: 32px;
   color: #444;
   line-height: 1.5;
-  font-family: 'Crimson Text', serif;
-  font-weight: 600;
+  font-size: 32px;
 }
 @media only screen and (max-width: 768px) {
   .IntroRow .intro .introduction {
-    font-size: 26px;
+    font-size: 24px;
+  }
+}
+.IntroRow .intro .introduction .myName {
+  font-size: 64px;
+}
+@media only screen and (max-width: 768px) {
+  .IntroRow .intro .introduction .myName {
+    font-size: 32px;
   }
 }
 .IntroRow .intro .introduction-note {
+  font-size: 24px;
   margin-top: 8px;
   width: 60%;
   line-height: 1.7;
@@ -269,15 +286,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .IntroRow .intro .shuffle-wrapper {
-    height: 40px;
-  }
-}
-.IntroRow .intro .shuffle-wrapper.mobile {
-  display: none;
-}
-@media only screen and (max-width: 1024px) {
-  .IntroRow .intro .shuffle-wrapper.mobile {
-    display: block;
+    height: 32px;
   }
 }
 .IntroRow .intro .shuffle-wrapper .shuffle {
@@ -285,7 +294,7 @@ body {
   vertical-align: top;
   position: absolute;
   top: 0px;
-  padding: 7px 9px;
+  padding: 8px 0px;
   -webkit-animation-play-state: running;
   /* Chrome, Safari, Opera */
   animation-play-state: running;
@@ -295,27 +304,9 @@ body {
   -o-animation: flash 7s steps(4) infinite;
   animation: flash 7s steps(4) infinite;
 }
-@media only screen and (max-width: 1024px) {
-  .IntroRow .intro .shuffle-wrapper .shuffle {
-    display: none;
-  }
-}
-.IntroRow .intro .shuffle-wrapper .shuffle.mobile {
-  padding: 0px;
-  display: none;
-}
-@media only screen and (max-width: 1024px) {
-  .IntroRow .intro .shuffle-wrapper .shuffle.mobile {
-    -webkit-animation: flash-medium 7s steps(4) infinite;
-    -moz-animation: flash-medium 7s steps(4) infinite;
-    -ms-animation: flash-medium 7s steps(4) infinite;
-    -o-animation: flash-medium 7s steps(4) infinite;
-    animation: flash-medium 7s steps(4) infinite;
-    display: block;
-  }
-}
 @media only screen and (max-width: 768px) {
-  .IntroRow .intro .shuffle-wrapper .shuffle.mobile {
+  .IntroRow .intro .shuffle-wrapper .shuffle {
+    padding: 0px;
     -webkit-animation: flash-mobile 7s steps(4) infinite;
     -moz-animation: flash-mobile 7s steps(4) infinite;
     -ms-animation: flash-mobile 7s steps(4) infinite;
@@ -355,44 +346,12 @@ body {
     top: -198px;
   }
 }
-@-moz-keyframes flash-medium {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -192px;
-  }
-}
-@-webkit-keyframes flash-medium {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -192px;
-  }
-}
-@-o-keyframes flash-medium {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -192px;
-  }
-}
-@keyframes flash-medium {
-  0% {
-    top: 0px;
-  }
-  100% {
-    top: -192px;
-  }
-}
 @-moz-keyframes flash-mobile {
   0% {
     top: 0px;
   }
   100% {
-    top: -156px;
+    top: -144px;
   }
 }
 @-webkit-keyframes flash-mobile {
@@ -400,7 +359,7 @@ body {
     top: 0px;
   }
   100% {
-    top: -156px;
+    top: -144px;
   }
 }
 @-o-keyframes flash-mobile {
@@ -408,7 +367,7 @@ body {
     top: 0px;
   }
   100% {
-    top: -156px;
+    top: -144px;
   }
 }
 @keyframes flash-mobile {
@@ -416,7 +375,7 @@ body {
     top: 0px;
   }
   100% {
-    top: -156px;
+    top: -144px;
   }
 }
 .IntroRow .intro .mytitle {
@@ -458,10 +417,10 @@ body {
   font-family: 'MuseoSans-700', sans-serif;
 }
 .IntroRow .nav-wrapper .nav-link:focus {
-  color: #d83e77;
+  color: #A71D50;
 }
 .IntroRow .nav-wrapper .nav-link:hover {
-  color: #d83e77;
+  color: #A71D50;
 }
 .IntroRow .nav-wrapper .nav-link:after {
   position: absolute;
@@ -482,7 +441,7 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   opacity: 0;
-  background: rgba(216, 62, 119, 0.25);
+  background: rgba(167, 29, 80, 0.25);
 }
 .IntroRow .nav-wrapper .nav-link:hover:after {
   width: 70%;
@@ -499,19 +458,19 @@ body {
   width: 100%;
 }
 .ProjRow .square {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .ProjRow .square .projImg {
   width: 100%;
   position: relative;
   margin: auto;
   overflow: hidden;
-  box-shadow: 0px 2px 0px 0px #eeeeee;
-  border: 1px solid #eeeeee;
+  box-shadow: 0px 2px 0px 0px rgba(167, 29, 80, 0.12);
+  border: 1px solid rgba(167, 29, 80, 0.08);
   border-radius: 4px;
 }
 .ProjRow .square .projImg:hover {
-  box-shadow: 0px 3px 18px 0px rgba(185, 185, 185, 0.4);
+  box-shadow: 0px 2px 16px 0px rgba(167, 29, 80, 0.12);
 }
 .ProjRow .square .projImg .scaled-img {
   border-radius: 4px;
@@ -524,7 +483,7 @@ body {
   padding-right: 25px;
   padding-bottom: 10px;
   padding-left: 25px;
-  padding-top: 35%;
+  padding-top: 28%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -536,14 +495,24 @@ body {
   height: 20px;
   margin-bottom: 16px;
 }
+.ProjRow .square .projImg .projIcon .projTitle {
+  color: #444;
+  font-family: 'Crimson Text', serif;
+  font-weight: 700;
+  text-shadow: 0px 0px 3px #ffffff;
+  letter-spacing: 0.5;
+  font-size: 20px;
+}
 .ProjRow .square .projImg .projIcon .projTags {
   color: #777;
-  font-family: 'MuseoSans-300', sans-serif;
-  font-size: 14px;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 .ProjRow .square .projImg .projIcon .square-cta {
-  color: #d83e77;
-  opacity: 0;
+  color: #A71D50;
+  font-family: 'MuseoSans-500', sans-serif;
+  padding-top: 8px;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1.2px;
@@ -563,57 +532,71 @@ body {
   opacity: 1;
 }
 .ContactRow {
-  padding-bottom: 30px;
+  height: 400px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-family: 'MuseoSans-500', sans-serif;
+  margin-bottom: 24px;
 }
 @media only screen and (max-width: 768px) {
   .ContactRow {
-    padding-top: 10px;
+    height: auto;
   }
 }
-.ContactRow .special {
-  font-family: 'MuseoSans-500', sans-serif;
-  color: #d83e77;
+.ContactRow a:focus {
+  color: #ffffff !important;
 }
-.ContactRow h4 {
-  font-family: 'MuseoSans-500', sans-serif;
-  color: #d83e77;
-  letter-spacing: 1;
+.ContactRow a:hover {
+  color: #ffffff !important;
 }
-.ContactRow .myIntro {
-  font-family: 'MuseoSans-300', sans-serif;
-  font-size: 16px;
-  margin-bottom: 20px;
-  line-height: 1.5;
-  color: #444;
+.ContactRow .resumeBlock {
+  height: 100%;
+  background-color: #A71D50;
+  padding: 48px 24px;
+  position: relative;
 }
-.ContactRow .myPic {
-  margin-top: 25px;
-  margin-bottom: 35px;
+@media only screen and (max-width: 768px) {
+  .ContactRow .resumeBlock {
+    height: 160px;
+  }
 }
-.ContactRow .myPic img {
-  width: 185px;
-  margin: auto;
-  border-radius: 50%;
-}
-.ContactRow .ending-hr {
-  width: 250px;
-  border-top: 2.5px solid #d83e77;
-}
-.ContactRow i {
+.ContactRow .resumeBlock .resumeLink {
   font-size: 24px;
-  margin: 20px 8px 0 8px;
-  color: #777;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.ContactRow i:hover {
-  cursor: pointer;
-  color: #d83e77;
+.ContactRow .contactBlock {
+  height: 100%;
+  background-color: rgba(167, 29, 80, 0.85);
+  padding: 48px 24px;
 }
-.ContactRow .contact-info {
-  color: #777;
-  font-family: 'MuseoSans-300', sans-serif;
-  margin-top: 25px;
+@media only screen and (max-width: 768px) {
+  .ContactRow .contactBlock {
+    height: 400px;
+  }
+}
+.ContactRow .contactBlock .contacts {
+  width: 320px;
+  margin: 0 auto;
+}
+.ContactRow .contactBlock .contacts a {
   display: block;
-  line-height: 1.7;
+  padding: 8px;
+  font-size: 16px;
+  margin: 7px 0px;
+}
+.ContactRow .contactBlock .contacts a i {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.8);
+  vertical-align: sub;
+  margin: 0px 4px;
+}
+.ContactRow .contactBlock .contacts a i:hover {
+  cursor: pointer;
+  color: #ffffff;
 }
 @-webkit-keyframes bounce {
   0%,
@@ -697,7 +680,7 @@ body {
 }
 .homeKey {
   border-radius: 100%;
-  background-color: #d83e77;
+  background-color: #A71D50;
   width: 50px;
   height: 50px;
   position: fixed;
@@ -721,19 +704,20 @@ body {
 }
 .topKey {
   display: none;
-  background-color: #d83e77;
+  color: #A71D50;
   width: 50px;
   height: 50px;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: white;
-  box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  box-shadow: 2px 4px 10px 0 rgba(167, 29, 80, 0.4);
   z-index: 100;
+  border: 2px solid #A71D50;
   border-radius: 2px;
 }
 .topKey:hover {
-  box-shadow: 2px 6px 14px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 6px 14px 0 rgba(167, 29, 80, 0.4);
   cursor: pointer;
 }
 .topKey i {
@@ -744,7 +728,7 @@ body {
 .jumbotronRow {
   position: relative;
   padding: 40px;
-  color: #d83e77;
+  color: #A71D50;
   font-weight: 300;
   font-family: 'MuseoSans-300', sans-serif;
 }
@@ -770,7 +754,7 @@ body {
 }
 .jumbotronRow a {
   font-size: 14px;
-  color: #d83e77;
+  color: #A71D50;
   font-family: 'MuseoSans-500', sans-serif;
   text-decoration: none;
   font-weight: bold;
@@ -953,7 +937,7 @@ body {
 }
 .whiteLine .details h4 {
   font-family: 'Lora', serif;
-  color: #d83e77;
+  color: #A71D50;
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 12px;
@@ -961,7 +945,7 @@ body {
   font-weight: bold;
 }
 .whiteLine .details .label-tag {
-  background-color: #d83e77;
+  background-color: #A71D50;
   opacity: 0.75;
   font-weight: normal;
   padding: 3px 5px;
@@ -1003,7 +987,7 @@ body {
 .whiteLine .next-step {
   font-size: 18px;
   font-family: 'MuseoSans-500', sans-serif;
-  color: #d83e77;
+  color: #A71D50;
 }
 @media only screen and (max-width: 768px) {
   .whiteLine .next-step {
@@ -1017,10 +1001,10 @@ body {
   border-radius: 2px;
 }
 .whiteLine .next-step a:visited {
-  color: #d83e77;
+  color: #A71D50;
 }
 .whiteLine .next-step a:hover {
-  color: #d83e77;
+  color: #A71D50;
 }
 .whiteLine .next-step .hide-mobile {
   vertical-align: middle;
@@ -1085,11 +1069,11 @@ body {
 .carousel .carousel-indicators li {
   width: 10px;
   height: 10px;
-  background-color: rgba(216, 62, 119, 0.5);
+  background-color: rgba(167, 29, 80, 0.5);
   border: none;
 }
 .carousel .carousel-indicators .active {
-  background-color: #d83e77;
+  background-color: #A71D50;
   border: none;
   margin: 1px;
   width: 30px;
@@ -1097,7 +1081,7 @@ body {
 }
 .carousel .carousel-control {
   font-size: 30px;
-  color: #d83e77;
+  color: #A71D50;
   text-shadow: none;
   opacity: 0.6;
 }
@@ -1107,7 +1091,7 @@ body {
 }
 .carousel .carousel-control:hover,
 .carousel .carousel-control:focus {
-  color: #d83e77;
+  color: #A71D50;
   opacity: 1;
 }
 .carousel#deepintent-carousel .carousel-inner > .item > img {
