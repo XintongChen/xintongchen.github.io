@@ -222,7 +222,7 @@ body {
 }
 .IntroRow {
   padding: 80px 0px;
-  font-family: 'MuseoSans-900', sans-serif;
+  font-family: 'MuseoSans-700', sans-serif;
   color: #444;
 }
 @media only screen and (max-width: 768px) {
@@ -269,7 +269,7 @@ body {
 .IntroRow .intro .introduction .specialAnd {
   font-family: 'Crimson Text', serif;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 600;
 }
 .IntroRow .intro .introduction-note {
   font-size: 24px;
