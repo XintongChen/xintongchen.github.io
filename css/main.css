@@ -222,8 +222,7 @@ body {
 }
 .IntroRow {
   padding: 80px 0px;
-  font-family: 'Crimson Text', serif;
-  font-weight: 700;
+  font-family: 'MuseoSans-900', sans-serif;
   color: #444;
 }
 @media only screen and (max-width: 768px) {
@@ -266,6 +265,11 @@ body {
   .IntroRow .intro .introduction .myName {
     font-size: 32px;
   }
+}
+.IntroRow .intro .introduction .specialAnd {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  font-weight: 700;
 }
 .IntroRow .intro .introduction-note {
   font-size: 24px;
@@ -497,8 +501,7 @@ body {
 }
 .ProjRow .square .projImg .projIcon .projTitle {
   color: #444;
-  font-family: 'Crimson Text', serif;
-  font-weight: 700;
+  font-family: 'MuseoSans-700', sans-serif;
   text-shadow: 0px 0px 3px #ffffff;
   letter-spacing: 0.5;
   font-size: 20px;
@@ -507,7 +510,7 @@ body {
   color: #777;
   font-family: 'Crimson Text', serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 .ProjRow .square .projImg .projIcon .square-cta {
   color: #A71D50;
@@ -522,6 +525,11 @@ body {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@media only screen and (max-width: 414px) {
+  .ProjRow .square .projImg .projIcon .square-cta {
+    display: none;
+  }
+}
 .ProjRow .square:hover {
   cursor: pointer;
 }
@@ -532,8 +540,7 @@ body {
   opacity: 1;
 }
 .ContactRow {
-  height: 400px;
-  text-transform: uppercase;
+  height: 350px;
   letter-spacing: 1.5px;
   color: #ffffff;
   font-family: 'MuseoSans-500', sans-serif;
@@ -550,6 +557,9 @@ body {
 .ContactRow a:hover {
   color: #ffffff !important;
 }
+.ContactRow .footerTitle {
+  font-family: 'Crimson Text', serif;
+}
 .ContactRow .resumeBlock {
   height: 100%;
   background-color: #A71D50;
@@ -561,12 +571,18 @@ body {
     height: 160px;
   }
 }
-.ContactRow .resumeBlock .resumeLink {
+.ContactRow .resumeBlock .resume {
+  width: 240px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .ContactRow .resumeBlock .resume {
+    width: 350px;
+  }
+}
+.ContactRow .resumeBlock .resume .resumeLink {
   font-size: 24px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 16px 0px;
 }
 .ContactRow .contactBlock {
   height: 100%;
@@ -575,16 +591,16 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .ContactRow .contactBlock {
-    height: 400px;
+    height: 350px;
   }
 }
 .ContactRow .contactBlock .contacts {
-  width: 320px;
+  width: 350px;
   margin: 0 auto;
 }
 .ContactRow .contactBlock .contacts a {
-  display: block;
-  padding: 8px;
+  display: inline-block;
+  padding: 8px 8px 8px 0px;
   font-size: 16px;
   margin: 7px 0px;
 }
