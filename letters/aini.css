@@ -1,11 +1,12 @@
 .letter {
 
     font-family: 'Kalam', cursive;
-
+    color: #03144c;
     font-weight: 300;
     font-size: 20px;
     line-height: 2;
     margin: 64px 0px;
+
 }
 
 .letter p {
@@ -16,11 +17,8 @@ hr {
     border-top: 1px solid #e4e4e4;
 }
 
-.intro {
-    color: #7b7b7b;
-}
 
-img{
+img {
     width: 100%;
     margin-bottom: 8px;
 }
