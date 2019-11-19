@@ -23,42 +23,6 @@
   src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNtxunw.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Crimson Text SemiBold Italic'), local('CrimsonText-SemiBoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlprgwHKFkZgtmSR3NB0oRJfajCOD-NS_LA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Crimson Text SemiBold'), local('CrimsonText-SemiBold'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNV.ttf) format('truetype');
-}
-@font-face {
   font-family: 'MuseoSans-100';
   src: url('../fonts/museosans-100.woff') format('woff'), url('../fonts/museosans-100.ttf') format('truetype');
   /* Safari, Android, iOS */
@@ -222,7 +186,8 @@ body {
 }
 .IntroRow {
   padding: 80px 0px;
-  font-family: 'MuseoSans-700', sans-serif;
+  font-family: 'Lora', serif;
+  font-weight: 700;
   color: #444;
 }
 @media only screen and (max-width: 768px) {
@@ -508,7 +473,7 @@ body {
 }
 .ProjRow .square .projImg .projIcon .projTags {
   color: #777;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -541,7 +506,7 @@ body {
 }
 .ContactRow {
   height: 350px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   color: #ffffff;
   font-family: 'MuseoSans-500', sans-serif;
   margin-bottom: 24px;
@@ -558,7 +523,7 @@ body {
   color: #ffffff !important;
 }
 .ContactRow .footerTitle {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', serif;
 }
 .ContactRow .resumeBlock {
   height: 100%;
@@ -745,11 +710,10 @@ body {
   position: relative;
   padding: 40px;
   color: #A71D50;
-  font-weight: 300;
-  font-family: 'MuseoSans-300', sans-serif;
 }
 .jumbotronRow h1 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', serif;
+  font-weight: 700;
   letter-spacing: 0.3;
 }
 @media only screen and (max-width: 550px) {
@@ -764,9 +728,7 @@ body {
 }
 .jumbotronRow h5 {
   font-family: 'MuseoSans-300', sans-serif;
-  color: #777;
-  font-weight: 300;
-  line-height: 1.5;
+  color: #b9b9b9;
 }
 .jumbotronRow a {
   font-size: 14px;
@@ -799,6 +761,7 @@ body {
 }
 .hero-img {
   width: 100%;
+  margin-bottom: 64px;
 }
 .hero-img img {
   width: 100%;
@@ -948,29 +911,25 @@ body {
   border-radius: 2px;
   color: #333;
 }
-.whiteLine .details .gray-block-wrapper {
-  display: table;
-  margin-bottom: 10px;
-  width: 100%;
+.whiteLine .details .gray-block {
+  background: #eeeeee;
+  padding: 20px 20px 8px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
-.whiteLine .details .gray-block-wrapper .gray-block {
-  background: #f4f4f4;
-  padding: 24px 24px 14px 24px;
-  border-radius: 2px;
-  margin: 5px 0px 5px -15px;
-}
-@media only screen and (max-width: 480px) {
-  .whiteLine .details .gray-block-wrapper .gray-block {
-    padding: 20px 20px 10px 20px;
-  }
-}
-.whiteLine .details .gray-block-wrapper .gray-block .persona-name {
+.whiteLine .details .gray-block .persona-name {
   font-family: 'MuseoSans-700', sans-serif;
 }
-.whiteLine .details .gray-block-wrapper .gray-block .labels {
+.whiteLine .details .gray-block .labels {
   text-transform: uppercase;
   font-size: 14px;
   font-family: 'MuseoSans-700', sans-serif;
+}
+.whiteLine .details .outline-block {
+  border: 1px solid #b9b9b9;
+  padding: 20px 20px 8px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
 .whiteLine .next-step {
   font-size: 18px;
