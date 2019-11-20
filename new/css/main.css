@@ -272,7 +272,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .IntroRow .intro .introduction .myName {
-    font-size: 32px;
+    font-size: 40px;
   }
 }
 .IntroRow .intro .introduction .specialAnd {
@@ -402,12 +402,13 @@ body {
 }
 .IntroRow .link-wrapper {
   margin-top: 56px;
+  margin-bottom: 16px;
   color: #A71D50;
   text-transform: uppercase;
   letter-spacing: 0.5;
 }
 .IntroRow .link-wrapper .links {
-  padding: 8px 20px 8px 0px;
+  padding: 8px 19px 8px 0px;
 }
 .IntroRow .nav-wrapper {
   margin-left: -8px;
