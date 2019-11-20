@@ -23,6 +23,48 @@
   src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNtxunw.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+}
+@font-face {
   font-family: 'MuseoSans-100';
   src: url('../fonts/museosans-100.woff') format('woff'), url('../fonts/museosans-100.ttf') format('truetype');
   /* Safari, Android, iOS */
@@ -109,7 +151,8 @@ a:hover p {
   animation-delay: 0.9s;
 }
 strong {
-  font-family: 'MuseoSans-700', sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 700 !important;
 }
 body {
   max-width: 1440px;
@@ -154,8 +197,8 @@ body {
   padding: 15px 0px;
   cursor: pointer;
   opacity: 0.8;
-  font-family: 'Crimson Text', serif;
-  font-weight: 600;
+  font-family: 'Lora', serif;
+  font-weight: 700;
   font-size: 30px;
   letter-spacing: 1.5;
   display: block;
@@ -177,7 +220,8 @@ body {
 }
 .mobile-nav .inner-wrapper .inner .info {
   display: block;
-  font-family: 'MuseoSans-300', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   margin-top: 35px;
   letter-spacing: 1;
 }
@@ -185,8 +229,8 @@ body {
   width: 100px;
 }
 .IntroRow {
-  padding: 80px 0px;
-  font-family: 'Lora', serif;
+  padding: 80px 0px 60px 0px;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: #444;
 }
@@ -232,9 +276,9 @@ body {
   }
 }
 .IntroRow .intro .introduction .specialAnd {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', sans-serif;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
 }
 .IntroRow .intro .introduction-note {
   font-size: 24px;
@@ -353,7 +397,17 @@ body {
   letter-spacing: 1.1;
   font-size: 17px;
   font-variant: small-caps;
-  font-family: 'MuseoSans-700', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.IntroRow .link-wrapper {
+  margin-top: 56px;
+  color: #A71D50;
+  text-transform: uppercase;
+  letter-spacing: 0.5;
+}
+.IntroRow .link-wrapper .links {
+  padding: 8px 20px 8px 0px;
 }
 .IntroRow .nav-wrapper {
   margin-left: -8px;
@@ -383,7 +437,8 @@ body {
   letter-spacing: 1.1;
   color: #999;
   text-transform: uppercase;
-  font-family: 'MuseoSans-700', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 .IntroRow .nav-wrapper .nav-link:focus {
   color: #A71D50;
@@ -466,7 +521,8 @@ body {
 }
 .ProjRow .square .projImg .projIcon .projTitle {
   color: #444;
-  font-family: 'MuseoSans-700', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   text-shadow: 0px 0px 3px #ffffff;
   letter-spacing: 0.5;
   font-size: 20px;
@@ -479,7 +535,8 @@ body {
 }
 .ProjRow .square .projImg .projIcon .square-cta {
   color: #A71D50;
-  font-family: 'MuseoSans-500', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   padding-top: 8px;
   text-transform: uppercase;
   font-size: 12px;
@@ -505,16 +562,9 @@ body {
   opacity: 1;
 }
 .ContactRow {
-  height: 350px;
-  letter-spacing: 1px;
   color: #ffffff;
-  font-family: 'MuseoSans-500', sans-serif;
-  margin-bottom: 24px;
-}
-@media only screen and (max-width: 768px) {
-  .ContactRow {
-    height: auto;
-  }
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 40px;
 }
 .ContactRow a:focus {
   color: #ffffff !important;
@@ -522,62 +572,32 @@ body {
 .ContactRow a:hover {
   color: #ffffff !important;
 }
-.ContactRow .footerTitle {
-  font-family: 'Lora', serif;
-}
-.ContactRow .resumeBlock {
-  height: 100%;
-  background-color: #A71D50;
-  padding: 48px 24px;
-  position: relative;
-}
-@media only screen and (max-width: 768px) {
-  .ContactRow .resumeBlock {
-    height: 160px;
-  }
-}
-.ContactRow .resumeBlock .resume {
-  width: 240px;
-  margin: 0 auto;
-}
-@media only screen and (max-width: 768px) {
-  .ContactRow .resumeBlock .resume {
-    width: 350px;
-  }
-}
-.ContactRow .resumeBlock .resume .resumeLink {
-  font-size: 24px;
-  padding: 16px 0px;
-}
-.ContactRow .contactBlock {
-  height: 100%;
-  background-color: rgba(167, 29, 80, 0.85);
-  padding: 48px 24px;
-}
-@media only screen and (max-width: 768px) {
-  .ContactRow .contactBlock {
-    height: 350px;
-  }
-}
-.ContactRow .contactBlock .contacts {
-  width: 350px;
-  margin: 0 auto;
-}
-.ContactRow .contactBlock .contacts a {
+.ContactRow a {
   display: inline-block;
   padding: 8px 8px 8px 0px;
   font-size: 16px;
   margin: 7px 0px;
 }
-.ContactRow .contactBlock .contacts a i {
+.ContactRow a i {
   font-size: 28px;
   color: rgba(255, 255, 255, 0.8);
   vertical-align: sub;
   margin: 0px 4px;
 }
-.ContactRow .contactBlock .contacts a i:hover {
+.ContactRow a i:hover {
   cursor: pointer;
   color: #ffffff;
+}
+.ContactRow .contactTitle {
+  text-transform: uppercase;
+}
+.ContactRow .contactLeft {
+  padding: 56px 32px;
+  background-color: #A71D50;
+}
+.ContactRow .contactRight {
+  padding: 56px 32px;
+  background-color: rgba(167, 29, 80, 0.75);
 }
 @-webkit-keyframes bounce {
   0%,
@@ -727,13 +747,15 @@ body {
   margin-bottom: 15px;
 }
 .jumbotronRow h5 {
-  font-family: 'MuseoSans-300', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   color: #b9b9b9;
 }
 .jumbotronRow a {
   font-size: 14px;
   color: #A71D50;
-  font-family: 'MuseoSans-500', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   text-decoration: none;
   font-weight: bold;
   display: block;
@@ -768,9 +790,10 @@ body {
 }
 .img-title {
   color: #9e9e9e;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lora', sans-serif;
   margin-top: 8px;
   margin-bottom: 20px;
+  font-size: 13px;
 }
 .img-title .fa-hand-o-up {
   display: none;
@@ -800,7 +823,8 @@ body {
   border-radius: 2px;
 }
 .whiteLine .details {
-  font-family: 'MuseoSans-300', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   color: #444;
   margin-bottom: 72px;
 }
@@ -893,7 +917,7 @@ body {
   text-transform: capitalize;
   margin-bottom: 12px;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 700;
 }
 .whiteLine .details .label-tag {
   background-color: #A71D50;
@@ -902,7 +926,8 @@ body {
   padding: 3px 5px;
 }
 .whiteLine .details .proj-label {
-  font-family: 'MuseoSans-300', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   display: inline-block;
   border: 1px solid #333;
   padding-right: 5px;
@@ -918,12 +943,14 @@ body {
   margin-bottom: 20px;
 }
 .whiteLine .details .gray-block .persona-name {
-  font-family: 'MuseoSans-700', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 .whiteLine .details .gray-block .labels {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'MuseoSans-700', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 .whiteLine .details .outline-block {
   border: 1px solid #b9b9b9;
@@ -933,7 +960,8 @@ body {
 }
 .whiteLine .next-step {
   font-size: 18px;
-  font-family: 'MuseoSans-500', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   color: #A71D50;
   padding-bottom: 80px;
 }
