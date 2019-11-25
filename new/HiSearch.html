@@ -49,7 +49,7 @@
                                     Spring is an e-commerce marketplace where people can discover and buy products from 1500+ brands.
                                 </strong>
                             </p>
-                            <p>
+                            <p class="light-text">
                                 2018 summer, I led the design from concept to delivery for High Intent Search and Refine experience with a team of 6 talented people.
                             </p>
                         </div>
@@ -57,18 +57,72 @@
                 </div>
                 <div class="details">
                     <h4>Why improve search</h4>
-                    <p class="color-text"><strong>For Spring</strong></p>
                     <p>
+                        <strong class="color-text">For Spring</strong>
+                        <br>
                         The #1 business goal for Spring is to increase user retention.
                         Search is the primary mechanism for achieving Spring's business goal; by early 2018, over 110k unique users already use Spring's search each month so even a modest increase of search-to-cart conversion will drive significant impact on user retention.
                     </p>
-                    <p class="color-text"><strong>For users</strong></p>
                     <p>
+                        <strong class="color-text">For users</strong>
+                        <br>
                         Search is core to an online shopping experience. Especially when there are 200k+ products on Spring, we want to make it easier for users to find what they are looking for and instill confidence in starting their style search on Spring.
                     </p>
                 </div>
                 <div class="details">
-                    <h4>Define vision</h4>
+                    <h4>Process</h4>
+                    <ol class="process-anchor">
+                        <li>
+                            <span class="color-text" onclick="goTo('defineVision')">
+                                Define Vision
+                            </span>
+                        </li>
+                        <li>
+                            <span class="color-text" onclick="goTo('understand')">
+                                Understand Search Behavior
+                            </span>
+                            <br><span>User Interviews</span>
+                            <br><span>Quantitive Insights</span>
+                            <br><span>Search Flows</span>
+                        </li>
+                        <li>
+                            <span class="color-text" onclick="goTo('audit')">
+                                Audit Taxonomy Tree
+                            </span>
+                        </li>
+                        <li>
+                            <span class="color-text" onclick="goTo('competitive')">
+                                Competitive Research
+                            </span>
+                        </li>
+                        <li>
+                            <span class="color-text" onclick="goTo('defineProblems')">
+                                Define Problems
+                            </span>
+                        </li>
+                        <li>
+                            <span class="color-text" onclick="goTo('opportunity')">
+                                Opportunity Assessment
+                            </span>
+                        </li>
+                        <li>
+                            <span class="color-text" onclick="goTo('design')">
+                                Design & Iteration
+                            </span>
+                            <br><span>Part I. Query Search</span>
+                            <br><span>Part II. Categories</span>
+                            <br><span>Part III. Refinements</span>
+                        </li>
+                        <li>
+                            <span class="color-text" onclick="goTo('nextStep')">
+                                Next Steps
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+                <div class="details">
+                    <a id="defineVision"></a>
+                    <h4>Define Vision</h4>
                     <p>Search & Discover squad had a one-day offsite with team members and internal stakeholders. At the offsite, the entire team audited Spring search, understood current limitations/pain points, researched competitive landscape, and formulated short and medium term goals for the team.</p>
                     <p>
                         <strong class="color-text">Vision</strong>
@@ -83,13 +137,14 @@
                         The ultimate success metrics is search-to-cart conversion, but we will also monitor search-to-PDP conversion and search-to-love conversion.
                         <br>
                         <i>* PDP is referring to product detail page.</i></p>
-                    <p >
+                    <p>
                         <strong class="color-text">High Intent Search</strong>
                         <br>
                         High Intent Search is the top priority of our Search & Discover initiative. After our vision was clearly defined. I started the design process for high intent search by understanding search behavior.
                     </p>
                 </div>
                 <div class="details">
+                    <a id="understand"></a>
                     <h4>Understand search behavior</h4>
                     <p class="color-text">
                         <strong>User Interviews</strong>
@@ -176,12 +231,42 @@
                         </div>
                     </div>
                     <br>
-                    <p class="color-text"><strong>Taxonomy tree</strong></p>
+                    <p class="color-text"><strong>Search flows</strong></p>
+                    <p>
+                        There are multiple entry points for Search. Before I officially started any design, I mapped out all the possible search flows so that I can take all possible scenarios into consideration.
+                    </p>
+                    <div class="row">
+                        <div class="add-margin col-md-4 col-sm-4 col-xs-6">
+                            <img src="img/search-flow1.jpg" alt="">
+                        </div>
+                        <div class="add-margin col-md-4 col-sm-4 col-xs-6">
+                            <img src="img/search-flow0.jpg" alt="">
+                        </div>
+                        <div class="img-title col-md-4 col-sm-4 col-xs-12">
+                            <hr>Sketch of all possible user flows.
+                        </div>
+                    </div>
+                    <p>
+                        With technical input from our tech lead, I was able to simplify the user flows into 3 different scenarios.
+                    </p>
+                    <div class="row">
+                        <div class="add-margin col-md-8 col-sm-8 col-xs-12">
+                            <img src="img/search-flow3.png" alt="">
+                        </div>
+                        <div class="img-title col-md-4 col-sm-4 col-xs-12">
+                            <hr>3 different entry points for search and refine.
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <a id="audit"></a>
+                    <h4>Audit Taxonomy Tree</h4>
                     <p>
                         To better understand what products are available for the users to search and how Spring organizes all product categories. I took a close look at Spring's taxonomy tree.
                     </p>
-                    <p>Combining the research of taxonomy tree and user interviews, I found out there were a few pitfalls in our taxonomy tree, which made some products less searchable/discoverable.
+                    <p>Combining the research of taxonomy tree and users' search behaviors, I found out there were a few pitfalls in our taxonomy tree, which made some products less searchable/discoverable.
                     </p>
+                    <br>
                     <div class="row">
                         <div class="add-margin col-md-7 col-sm-7 col-xs-12">
                             <img src="img/search-taxonomy1.jpg" class="outline-img" alt="">
@@ -215,8 +300,10 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <p class="color-text"><strong>Competitive research</strong></p>
+                </div>
+                <div class="details">
+                    <a id="competitive"></a>
+                    <h4>Competitive Research</h4>
                     <p>
                         During the problem discovery phase, I was also asking myself what does a good search look like, what are the current solutions, and what can I learn from them? To answer all these questions, I conducted competitive research on other online shopping websites/apps, such as, ASOS, Lyst, ShopStyle, Revolve, and etc.
                     </p>
@@ -231,36 +318,10 @@
                             <hr>Screenshots of some competitive solutions.
                         </div>
                     </div>
-                    <br>
-                    <p class="color-text"><strong>Search flows</strong></p>
-                    <p>
-                        There are multiple entry points for Search. Before I officially started any design, I mapped out all the possible search flows so that I can take all possible scenarios into consideration.
-                    </p>
-                    <div class="row">
-                        <div class="add-margin col-md-4 col-sm-4 col-xs-6">
-                            <img src="img/search-flow1.jpg" alt="">
-                        </div>
-                        <div class="add-margin col-md-4 col-sm-4 col-xs-6">
-                            <img src="img/search-flow0.jpg" alt="">
-                        </div>
-                        <div class="img-title col-md-4 col-sm-4 col-xs-12">
-                            <hr>Sketch of all possible user flows.
-                        </div>
-                    </div>
-                    <p>
-                        With technical input from our tech lead, I was able to simplify the user flows into 3 different scenarios.
-                    </p>
-                    <div class="row">
-                        <div class="add-margin col-md-8 col-sm-8 col-xs-12">
-                            <img src="img/search-flow3.png" alt="">
-                        </div>
-                        <div class="img-title col-md-4 col-sm-4 col-xs-12">
-                            <hr>3 different entry points for search and refine.
-                        </div>
-                    </div>
                 </div>
                 <div class="details">
-                    <h4>Define Problem</h4>
+                    <a id="defineProblems"></a>
+                    <h4>Define Problems</h4>
                     <p>
                         While I was trying to understand users' search behavior from different perspectives, I felt very excited, because as I moved forward, my new findings confirmed my previous findings. After I connected the dots, I could see a whole picture of the problems in our Search and Refine experience.
                     </p>
@@ -287,6 +348,7 @@
                     </div>
                 </div>
                 <div class="details">
+                    <a id="opportunity"></a>
                     <h4>Opportunity Assessment</h4>
                     <p>
                         After the problems were clearly defined, we took our engineering resources into consideration to assess what problems we would work on at that time. We saw an opportunity to:
@@ -303,6 +365,7 @@
                     </p>
                 </div>
                 <div class="details">
+                    <a id="design"></a>
                     <h4>Design & Iteration</h4>
                     <p>
                         Here are a few screenshots of the new high intent search and refine experience:
@@ -319,12 +382,12 @@
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <p class="panel-title color-text">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-                                        <strong>Design 1. Query Search</strong>
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="open">
+                                        <strong>Part I. Query Search</strong>
                                     </a>
                                 </p>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <p>
                                         After engineers improved the search algorithm, we were able to provide very accurate results for users' high intent search. However, 2 UX problems arose with the improved search functionality:
@@ -434,7 +497,7 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <p class="panel-title color-text">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="collapsed">
-                                        <strong>Design 2. Categories</strong>
+                                        <strong>Part II. Categories</strong>
                                     </a>
                                 </p>
                             </div>
@@ -507,7 +570,7 @@
                             <div class="panel-heading" role="tab" id="headingThree">
                                 <p class="panel-title color-text">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree" class="collapsed">
-                                        <strong>Design 3. Refinements</strong>
+                                        <strong>Part III. Refinements</strong>
                                     </a>
                                 </p>
                             </div>
@@ -566,6 +629,7 @@
                     </div>
                 </div>
                 <div class="details">
+                    <a id="nextStep"></a>
                     <h4>Next steps</h4>
                     <p><strong>Short-term</strong></p>
                     <p>I wanted to see how this new design works from a quantative perspective. Even though we tested each piece either internally or with a small group of users, I still wanted to see if works well with all users and what we can improve to make this search and refine experience even smoothier.</p>

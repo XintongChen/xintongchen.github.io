@@ -162,6 +162,9 @@ body {
 .color-text {
   color: #A71D50 !important;
 }
+.light-text {
+  color: #999 !important;
+}
 .mobile-nav {
   display: none;
   width: 100%;
@@ -529,8 +532,8 @@ body {
   font-size: 20px;
 }
 .ProjRow .square .projImg .projIcon .projTags {
-  color: #777;
-  font-family: 'Lora', serif;
+  color: #999;
+  font-family: 'Lato', serif;
   font-weight: 400;
   font-size: 14px;
 }
@@ -1087,4 +1090,10 @@ body {
     width: 100%;
     height: auto;
   }
+}
+.process-anchor {
+  margin-left: -1em;
+}
+.process-anchor .color-text:hover {
+  cursor: pointer;
 }
