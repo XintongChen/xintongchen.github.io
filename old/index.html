@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <title>Xintong Chen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" href="img/favicon.png" type="image/png" />
+        <!-- jQuery lib -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <!-- jQuery UI lib -->
+        <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+        <!-- transit -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
+        <!-- Bootstrapt css-->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <!-- fancybox css -->
+        <!-- <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.min.css"> -->
+        <!-- twitter emoji   -->
+        <link rel="stylesheet" type="text/css" href="css/twmoji.css">
+        <!-- myCSS -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div class="loading">
+            <div class="loading-center">
+                <div class="loading-center-absolute">
+                    <div class="object object_one"></div>
+                    <div class="object object_two"></div>
+                    <div class="object object_three"></div>
+                    <div class="object object_four"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <div class="inner-wrapper">
+                <div class="menu-closer">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="inner">
+                    <!-- <div class="nav-option" onclick="goTo('aboutme')">About Me</div> -->
+                    <a class="nav-option" href="XintongChen_Resume.pdf" target="_blank">Resume</a>
+                    <div class="nav-option" onclick="goTo('works')">Product Design</div>
+                    <!-- <div class="nav-option">Photos <span class="tag">coming soon</span></div> -->
+                    <!-- <a href="visuals.html" target="_blank" class="nav-option">Visuals</a> -->
+                    <a class="nav-option" href="https://www.instagram.com/explore/tags/xintongpottery" target="_blank">Pottery</a>
+                    <span class="info">
+                        <hr>
+                        xintong0308@gmail.com
+                        <br>
+                        646.241.8178
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="topKey text-center">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+            <a id="aboutMe"></a>
+            <div class="row IntroRow">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <div class="intro ">
+                        <div class="menu-trigger">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <div class="introduction">
+                            <p class="color-text myName">Hi, I'm Xintong!</p>
+                            <p class="myJob">I'm a product designer, <span class="specialAnd">and</span></p>
+                        </div>
+                        <div class="introduction shuffle-wrapper">
+                            <span class="shuffle">
+                                I like photography <i class="twa twa-camera"></i>
+                                <br>I like pottery <i class="twa-love twa"></i>
+                                <br>I like jigsaw puzzle <i class="twa-v twa"></i>
+                                <br>I like cooking <i class="twa twa-cooking"></i>
+                            </span>
+                        </div>
+                        <!-- <div class="introduction shuffle-wrapper mobile">
+                            <span class="shuffle mobile">
+                                I like photography <i class="twa twa-camera"></i>
+                                <br>I like pottery<i class="twa-love twa"></i>
+                                <br>I like jigsaw puzzle <i class="twa-v twa"></i>
+                                <br>I like cooking <i class="twa twa-cooking"></i>
+                            </span>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- presentation of works -->
+            <a id="works"></a>
+            <!--  <div class="row IntroRow">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <div class="intro">
+                        <div class="introduction-note color-text">
+                            right now
+                        </div>
+                        <div class="introduction">
+                            I'm designing at Lifion!
+                        </div>
+                        <div class="introduction-note">
+                            Leading design for Position Management and New Hire experiences.
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div class="row ProjRow">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <a href="HiSearch.html">
+                            <div class="col-md-6 col-sm-12 col-xs-12  square" id="square_tc">
+                                <div class="projImg">
+                                    <img class="scaled-img lg-move-up" src="img/icon-search-bk.png" alt="">
+                                    <div class="projIcon">
+                                        <div class="projTitle">Search</div>
+                                        <p class="projTags">eCommerce
+                                            <br>@Spring | 2018</p>
+                                        <p class="square-cta">
+                                            View Case Study <i class="fa fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                         <a href="Proj_explore.html">
+                            <div class="col-md-6 col-sm-12 col-xs-12  square" id="square_tc">
+                                <div class="projImg">
+                                    <img class="scaled-img lg-move-up" src="img/icon-explore-bk.png" alt="">
+                                    <div class="projIcon">
+                                        <!-- <img src="img/icon-explore.svg" alt=""> -->
+                                        <div class="projTitle">Grovo Explore</div>
+                                        <p class="projTags">eLearning
+                                            <br>@Grovo | 2018</p>
+                                        <p class="square-cta">
+                                            View Case Study <i class="fa fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                              
+                        <a href="SpringReturns.html">
+                            <div class="col-md-6 col-sm-6 col-xs-12  square" id="square_tc">
+                                <div class="projImg">
+                                    <img class="scaled-img lg-move-up" src="img/icon-springreturns-bk.png" alt="">
+                                    <div class="projIcon">
+                                        <div class="projTitle">Returns (mobile)</div>
+                                        <p class="projTags">eCommerce | @Spring </p>
+                                        <p class="square-cta">
+                                            View Case Study <i class="fa fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="SpringBack.html">
+                            <div class="col-md-6 col-sm-6 col-xs-12  square" id="square_tc">
+                                <div class="projImg">
+                                    <img class="scaled-img lg-move-up" src="img/icon-springcredit-bk.png" alt="">
+                                    <div class="projIcon">
+                                        <div class="projTitle">Credit Rewards</div>
+                                        <p class="projTags">eCommerce | @Spring </p>
+                                        <p class="square-cta">
+                                            View Case Study <i class="fa fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="Proj_styleGuideGrovo.html">
+                            <div class="col-md-6 col-sm-6 col-xs-12  square" id="square_tc">
+                                <div class="projImg">
+                                    <img class="scaled-img lg-move-up" src="img/icon-styleguide-bk.png" alt="">
+                                    <div class="projIcon">
+                                        <div class="projTitle">Style Guide</div>
+                                        <p class="projTags">eLearning | @Grovo</p>
+                                        <p class="square-cta">
+                                            View Case Study <i class="fa fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- <a href="Proj_eCorcoran.html">
+                            <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
+                                <div class="projImg">
+                                    <img class="scaled-img" src="img/icon-ecorcoran-bk.png" alt="">
+                                    <div class="projIcon">
+                                        <p class="projTitle">eCorcoran</p>
+                                        <p class="projTags">Real Estate | @Corcoran</p>
+                                        <p class="square-cta">
+                                            View Case Study <i class="fa fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </a> -->
+
+                        <a href="Proj_AdCenter.html">
+                            <div class="col-md-6 col-sm-6 col-xs-12  square" id="square_tc">
+                                <div class="projImg">
+                                    <img class="scaled-img" src="img/icon-adcenter-bk.png" alt="">
+                                    <div class="projIcon">
+                                        <div class="projTitle">Ad Center</div>
+                                        <p class="projTags">Real Estate | @Corcoran</p>
+                                        <p class="square-cta">
+                                            View Case Study <i class="fa fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- <a href="Proj_reCorcoran.html">
+                            <div class="col-md-4 col-sm-6 col-xs-12  square" id="square_tc">
+                                <div class="projImg">
+                                    <img class="scaled-img md-move-up" src="img/icon-refresh-bk.png" alt="">
+                                    <div class="projIcon">
+                                        <p class="projTitle">corcoran.com</p>
+                                        <p class="projTags">Real Estate | @Corcoran</p>
+                                        <p class="square-cta">
+                                            View Case Study <i class="fa fa-angle-right"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a> -->
+
+                    </div>
+                </div>
+            </div>
+            
+            
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                    <div class="row ContactRow">
+                        <div class="col-md-5 col-sm-5 col-xs-12 resumeBlock">
+                            <div class="resume">
+                                <p class="footerTitle">click here to</p>
+                                 <a class="resumeLink" href="XintongChen_Resume.pdf" target="_blank">
+                                    View My Resume
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-12 contactBlock">
+                            <div class="contacts">
+                                <p class="footerTitle">beyond my UX portfolio</p>
+                                
+                                <a href="https://www.linkedin.com/in/xintongchen" target="_blank">
+                                    <i class="fa fa-linkedin-square"></i>  LinkedIn</a>
+                                <a href="https://www.instagram.com/explore/tags/xintongpottery" target="_blank">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i> Pottery</a>
+                                <a href="https://www.flickr.com/photos/xin-tong/" target="_blank">
+                                    <i class="fa fa-flickr"></i> Photos</a>
+                                <a href="https://dribbble.com/clairechen" target="_blank">
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i> Illustrations</a>
+                                <a href="">
+                                    <i class="fa fa-envelope-square"></i>  xintong0308@gmail.com</a>
+                                <a href="">
+                                    <i class="fa fa-phone-square"></i>  646.241.8178</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrapt js-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- fancybox js -->
+        <!-- <script src="fancybox/dist/jquery.fancybox.min.js"></script> -->
+        <!-- myJS -->
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

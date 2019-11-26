@@ -1,0 +1,170 @@
+<html class="">
+
+<head>
+    <title>Spring Design Explorations</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <!-- Bootstrapt css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" type="text/css" href="fancybox/dist/jquery.fancybox.css">
+    <!-- myCSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <body>
+        <div class="loading">
+            <div class="loading-center">
+                <div class="loading-center-absolute">
+                    <div class="object object_one"></div>
+                    <div class="object object_two"></div>
+                    <div class="object object_three"></div>
+                    <div class="object object_four"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="homeKey text-center">
+                <img src="img/homeKey.png"></img>
+            </div>
+            <div class="topKey text-center">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+            <div class="row jumbotronRow calligraphy_jumbotron text-center">
+                <h1>Returns (Mobile)</h1>
+            </div>
+            <div class="row whiteLine">
+                <div class="col-md-10 col-md-offset-1 col-xs-12 col-sm-12">
+                    <div class="details  text-center">
+                        <div class="row ">
+                            <div class="col-md-offset-2 col-md-8 col-sm-12">
+                                <p>
+                                    <strong>
+                                        Spring is a fashion and beauty marketplace where people can discover and buy products from 1500+ brands.
+                                    </strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a id="returns"></a>
+                    <div class="details">
+                        <h4>Why</h4>
+                        <p>
+                            Spring launched the new desktop Returns experience mid 2018. Two months after the launch, we've got lots of positive feedback and saw a 10% increase in NPS for customers who have experienced a refund, as well as, a 20% reduction in tickets from users requesting a return label.
+                        </p>
+                        <p>
+                            There are about 50% of Spring users who shop in our iOS app. So launching a better mobile Returns experience will definitely benefit users and drive positive impact on user retention.
+                        </p>
+                        <br>
+                        <h4>Challenges</h4>
+                        <p><strong>Mobile Friendly</strong></p>
+                        <p>From desktop to iOS, it was not a direct translation from the big screen to small screen. So figuring out how to prioritize information and use interaction/animation to avoid information overloading is the top challenge. </p>
+                        <p><strong>Multiple Returns Flows</strong></p>
+                        <p>Users can purchase from 1500+ brands on Spring, and different brands have different return policies. So figuring out how to guide users through 3 different return flows in a consistant way is the other challenge.</p>
+                        <br>
+                        <h4>Design and Iteration</h4>
+                        <p>The design and iteration process lasted for about 3 weeks. I gathered feedback from internal stakeholders and polished the design for a few rounds. 
+                        </p>
+                        <p>Here are 2 examples of my design iteration:</p>
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <a href="img/returns-c.png" data-fancybox="returns-iteration">
+                                    <img src="img/returns-c.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-10 col-lg-10">
+                                <div class="img-title ">
+                                    <hr> Example 1: Iteration of Enter-Tracking-Number Page.
+                                    <br>V1 has everything on one page. After I realized the problem of information overloading, I started to think about how to break it into multiple pieces and have users focus on one thing at a time. 
+                                    <br>V2 and V3 allow users to enter tracking number in a pop-up modal or a second page. From V2 to V3, I gave users an easier access to the keyboard which better serviced the goal of allowing users to enter tracking numbers easily. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <a href="img/returns-d.png" data-fancybox="returns-iteration">
+                                    <img src="img/returns-d.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-md-10 col-lg-10">
+                                <div class="img-title">
+                                    <hr> Example 2: Iteration of Your-Item Page.
+                                    <br>V1 expands item information but pushes all CTA further down the page, which requires users to make more effort when they want to take an action on the item. After I realized this problem, I collapsed the information section and only presented part of it at the beginning (V2). Further thinking about the use case of this page, I cannot justify the #1 goal of this page is to check item information. So I put all CTAs upfront and moved item information on a separate page (V3).
+                                </div>
+                            </div>
+                        </div>
+                        <p>After all these iterations, I got the final design and delivered it to our iOS engineers. Here is the entire mobile returns experience:</p>
+                        
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <a href="img/returns-b.jpg" data-fancybox="returns-flow">
+                                    <img src="img/returns-b.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="gray-block-wrapper">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="gray-block">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                            If you are interested, please see prototypes of all 3 different returns flows in the following links.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 color-text">
+                                            <p>
+                                                <a href="https://shopspring.invisionapp.com/share/45N69OKTRDF" target="_blank">Returns Flow 1</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 color-text">
+                                            <p>
+                                                <a href="https://shopspring.invisionapp.com/share/P5N69P0Y9VN" target="_blank">Returns Flow 2</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 color-text">
+                                            <p>
+                                                <a href="https://shopspring.invisionapp.com/share/U5N180L7YWC" target="_blank">Returns Flow 3</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <h4>Next Steps</h4>
+                        <p>
+                            Right now, users have to manually enter their tracking numbers to track their returns, which isn't the most pleasant experience for users and may cause potential typos/mistakes. As a next step, we will build a feature that allows users to scan their tracking numbers more easily in the App.
+                        </p>
+                    </div>   
+                    </div> 
+                    <div class="next-step details">
+                        <div class="row">
+                            <a href="index.html" class="col-xs-12 col-md-5 text-center"><span>Back to Home</span></a>
+                            <a href="SpringBack.html" class="col-xs-12 col-md-5 col-md-offset-2 text-center">
+                                <span>Next: Credit Rewards</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery UI lib -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+        <!-- Bootstrapt js-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- transit -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.js"></script>
+        <!-- fancybox js -->
+        <script src="fancybox/dist/jquery.fancybox.js"></script>
+        <!-- myJS -->
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+
+</html>
