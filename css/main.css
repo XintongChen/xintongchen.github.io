@@ -407,6 +407,12 @@ body {
   color: #b10343;
   text-transform: uppercase;
   letter-spacing: 0.5;
+  font-size: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .IntroRow .link-wrapper {
+    font-size: 16px;
+  }
 }
 .IntroRow .link-wrapper .links {
   padding: 8px 19px 8px 0px;
