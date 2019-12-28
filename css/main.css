@@ -133,7 +133,7 @@ a:hover p {
   animation: scaling 2s infinite;
   width: 15px;
   height: 15px;
-  background-color: #A71D50;
+  background-color: #b10343;
   display: inline-block;
   border-radius: 50%;
   opacity: 1;
@@ -152,24 +152,22 @@ a:hover p {
 }
 strong {
   font-family: 'Lato', sans-serif !important;
-  font-weight: 700 !important;
+  font-weight: 900 !important;
 }
 body {
-  max-width: 1440px;
-  margin: auto;
   position: relative;
 }
 .color-text {
-  color: #A71D50 !important;
+  color: #b10343 !important;
 }
 .light-text {
-  color: #999 !important;
+  color: #a8a3a5 !important;
 }
 .mobile-nav {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(167, 29, 80, 0.95);
+  background-color: rgba(177, 3, 67, 0.95);
   color: white;
   text-align: center;
   position: fixed;
@@ -235,7 +233,7 @@ body {
   padding: 80px 0px 60px 0px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  color: #444;
+  color: #2d2629;
 }
 @media only screen and (max-width: 768px) {
   .IntroRow {
@@ -252,7 +250,7 @@ body {
   padding-top: 9px;
   font-size: 25px;
   right: 0px;
-  color: #A71D50;
+  color: #b10343;
   cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
@@ -261,7 +259,7 @@ body {
   }
 }
 .IntroRow .intro .introduction {
-  color: #444;
+  color: #2d2629;
   line-height: 1.5;
   font-size: 32px;
 }
@@ -406,7 +404,7 @@ body {
 .IntroRow .link-wrapper {
   margin-top: 56px;
   margin-bottom: 16px;
-  color: #A71D50;
+  color: #b10343;
   text-transform: uppercase;
   letter-spacing: 0.5;
 }
@@ -439,16 +437,16 @@ body {
   -o-transition: all 0.25s;
   transition: all 0.25s;
   letter-spacing: 1.1;
-  color: #999;
+  color: #a8a3a5;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 .IntroRow .nav-wrapper .nav-link:focus {
-  color: #A71D50;
+  color: #b10343;
 }
 .IntroRow .nav-wrapper .nav-link:hover {
-  color: #A71D50;
+  color: #b10343;
 }
 .IntroRow .nav-wrapper .nav-link:after {
   position: absolute;
@@ -469,7 +467,7 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   opacity: 0;
-  background: rgba(167, 29, 80, 0.25);
+  background: rgba(177, 3, 67, 0.25);
 }
 .IntroRow .nav-wrapper .nav-link:hover:after {
   width: 70%;
@@ -493,12 +491,12 @@ body {
   position: relative;
   margin: auto;
   overflow: hidden;
-  box-shadow: 0px 2px 0px 0px rgba(167, 29, 80, 0.12);
-  border: 1px solid rgba(167, 29, 80, 0.08);
+  box-shadow: 0px 2px 0px 0px rgba(177, 3, 67, 0.12);
+  border: 1px solid rgba(177, 3, 67, 0.08);
   border-radius: 4px;
 }
 .ProjRow .square .projImg:hover {
-  box-shadow: 0px 2px 16px 0px rgba(167, 29, 80, 0.12);
+  box-shadow: 0px 2px 16px 0px rgba(177, 3, 67, 0.12);
 }
 .ProjRow .square .projImg .scaled-img {
   border-radius: 4px;
@@ -524,7 +522,7 @@ body {
   margin-bottom: 16px;
 }
 .ProjRow .square .projImg .projIcon .projTitle {
-  color: #444;
+  color: #2d2629;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-shadow: 0px 0px 3px #ffffff;
@@ -532,13 +530,13 @@ body {
   font-size: 20px;
 }
 .ProjRow .square .projImg .projIcon .projTags {
-  color: #999;
+  color: #a8a3a5;
   font-family: 'Lato', serif;
   font-weight: 400;
   font-size: 14px;
 }
 .ProjRow .square .projImg .projIcon .square-cta {
-  color: #A71D50;
+  color: #b10343;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   padding-top: 8px;
@@ -597,11 +595,11 @@ body {
 }
 .ContactRow .contactLeft {
   padding: 56px 32px;
-  background-color: #A71D50;
+  background-color: #b10343;
 }
 .ContactRow .contactRight {
   padding: 56px 32px;
-  background-color: rgba(167, 29, 80, 0.75);
+  background-color: rgba(177, 3, 67, 0.75);
 }
 @-webkit-keyframes bounce {
   0%,
@@ -685,7 +683,7 @@ body {
 }
 .homeKey {
   border-radius: 100%;
-  background-color: #A71D50;
+  background-color: #b10343;
   width: 50px;
   height: 50px;
   position: fixed;
@@ -709,20 +707,20 @@ body {
 }
 .topKey {
   display: none;
-  color: #A71D50;
+  color: #b10343;
   width: 50px;
   height: 50px;
   position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: #ffffff;
-  box-shadow: 2px 4px 10px 0 rgba(167, 29, 80, 0.4);
+  box-shadow: 2px 4px 10px 0 rgba(177, 3, 67, 0.4);
   z-index: 100;
-  border: 2px solid #A71D50;
+  border: 2px solid #b10343;
   border-radius: 2px;
 }
 .topKey:hover {
-  box-shadow: 2px 6px 14px 0 rgba(167, 29, 80, 0.4);
+  box-shadow: 2px 6px 14px 0 rgba(177, 3, 67, 0.4);
   cursor: pointer;
 }
 .topKey i {
@@ -732,17 +730,18 @@ body {
 }
 .jumbotronRow {
   position: relative;
-  padding: 40px;
+  padding: 72px 0px 32px 0px;
 }
 .jumbotronRow h1 {
-  color: #A71D50;
+  color: #b10343;
   font-family: 'Lora', serif;
   font-weight: 700;
   letter-spacing: 0.3;
+  font-size: 56px;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
   .jumbotronRow h1 {
-    font-size: 28px;
+    font-size: 40px;
   }
 }
 .jumbotronRow hr {
@@ -757,14 +756,13 @@ body {
 }
 .jumbotronRow a {
   font-size: 14px;
-  color: #A71D50;
+  color: #b10343;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   text-decoration: none;
   font-weight: bold;
   display: block;
   width: 200px;
-  margin: auto;
   margin-top: 30px;
   letter-spacing: 0.5px;
 }
@@ -793,7 +791,7 @@ body {
   width: 100%;
 }
 .img-title {
-  color: #9e9e9e;
+  color: #b0abb0;
   font-family: 'Lora', sans-serif;
   margin-top: 8px;
   margin-bottom: 20px;
@@ -822,6 +820,13 @@ body {
     display: none;
   }
 }
+.img-fluid {
+  margin-top: -56px;
+  margin-bottom: 24px;
+}
+.img-fluid img {
+  width: 100%;
+}
 .whiteLine img {
   width: 100%;
   border-radius: 2px;
@@ -829,7 +834,7 @@ body {
 .whiteLine .details {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: #444;
+  color: #2d2629;
   margin-bottom: 72px;
 }
 @media only screen and (max-width: 815px) {
@@ -858,15 +863,15 @@ body {
 .whiteLine .details p,
 .whiteLine .details span,
 .whiteLine .details ul {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.15px;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 .whiteLine .details blockquote {
   padding: 4px 20px 4px 10px;
   font-size: 16px;
   margin: 12px 0px 7px 10px;
-  border-left: 4px solid #eeeeee;
+  border-left: 4px solid #f5f4f5;
 }
 .whiteLine .details blockquote .quoted-by {
   font-style: italic;
@@ -916,15 +921,21 @@ body {
 }
 .whiteLine .details h4 {
   font-family: 'Lora', serif;
-  color: #A71D50;
-  font-size: 28px;
+  color: #b10343;
+  font-size: 40px;
   text-transform: capitalize;
   margin-bottom: 12px;
   line-height: 1.5;
   font-weight: 700;
+  width: 80%;
+}
+@media only screen and (max-width: 768px) {
+  .whiteLine .details h4 {
+    font-size: 32px;
+  }
 }
 .whiteLine .details .label-tag {
-  background-color: #A71D50;
+  background-color: #b10343;
   opacity: 0.75;
   font-weight: normal;
   padding: 3px 5px;
@@ -941,7 +952,7 @@ body {
   color: #333;
 }
 .whiteLine .details .gray-block {
-  background: #eeeeee;
+  background: #f5f4f5;
   padding: 20px 20px 8px 20px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -966,7 +977,7 @@ body {
   font-size: 18px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: #A71D50;
+  color: #b10343;
   padding-bottom: 80px;
 }
 .whiteLine .next-step a {
@@ -976,10 +987,10 @@ body {
   border-radius: 2px;
 }
 .whiteLine .next-step a:visited {
-  color: #A71D50;
+  color: #b10343;
 }
 .whiteLine .next-step a:hover {
-  color: #A71D50;
+  color: #b10343;
 }
 .whiteLine .next-step .hide-mobile {
   vertical-align: middle;
@@ -1016,7 +1027,7 @@ body {
   box-shadow: 2px 2px 7px #b7b7b7;
 }
 .whiteLine .outline-img {
-  border: 1px solid #eeeeee;
+  border: 1px solid #f5f4f5;
   border-radius: 3px;
 }
 .whiteLine .add-margin {
@@ -1044,11 +1055,11 @@ body {
 .carousel .carousel-indicators li {
   width: 10px;
   height: 10px;
-  background-color: rgba(167, 29, 80, 0.5);
+  background-color: rgba(177, 3, 67, 0.5);
   border: none;
 }
 .carousel .carousel-indicators .active {
-  background-color: #A71D50;
+  background-color: #b10343;
   border: none;
   margin: 1px;
   width: 30px;
@@ -1056,7 +1067,7 @@ body {
 }
 .carousel .carousel-control {
   font-size: 30px;
-  color: #A71D50;
+  color: #b10343;
   text-shadow: none;
   opacity: 0.6;
 }
@@ -1066,7 +1077,7 @@ body {
 }
 .carousel .carousel-control:hover,
 .carousel .carousel-control:focus {
-  color: #A71D50;
+  color: #b10343;
   opacity: 1;
 }
 .carousel#deepintent-carousel .carousel-inner > .item > img {

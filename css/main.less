@@ -1,12 +1,17 @@
         @import url(https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i);
         @import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900);
-        @primary-color: #A71D50;
-        @dark-gray: #444;
+        // @primary-color: #A71D50;
+        @primary-color: #b10343;
+        // @dark-gray: #444;
+        @dark-gray: #2d2629;
         @mid-gray: #777;
-        @nav-gray: #999;
-        @gray: #9e9e9e;
+        // @nav-gray: #999;
+        @nav-gray: #a8a3a5;
+        // @gray: #9e9e9e;
+        @gray: #b0abb0;
         @light-gray: #b9b9b9;
-        @light-light-gray: #eeeeee;
+        // @light-light-gray: #eeeeee;
+        @light-light-gray: #f5f4f5;
         @even-lighter-gray: #f4f4f4;
         @white: #ffffff;
 
@@ -159,14 +164,14 @@
 
         strong {
             font-family: 'Lato', sans-serif !important;
-            font-weight: 700 !important;
+            font-weight: 900 !important;
 
 
         }
 
         body {
-            max-width: 1440px;
-            margin: auto;
+            // max-width: 1440px;
+            // margin: auto;
             position: relative;
         }
 
@@ -747,16 +752,17 @@
 
         .jumbotronRow {
             position: relative;
-            padding: 40px;
+            padding: 72px 0px 32px 0px;
 
             h1 {
                 color: @primary-color;
                 font-family: 'Lora', serif;
                 font-weight: 700;
                 letter-spacing: 0.3;
+                font-size: 56px;
 
-                @media only screen and (max-width: 550px) {
-                    font-size: 28px;
+                @media only screen and (max-width: 768px) {
+                    font-size: 40px;
                 }
             }
 
@@ -781,7 +787,7 @@
                 font-weight: bold;
                 display: block;
                 width: 200px;
-                margin: auto;
+                // margin: auto;
                 margin-top: 30px;
                 letter-spacing: 0.5px;
 
@@ -842,6 +848,15 @@
             }
         }
 
+        .img-fluid {
+            margin-top: -56px;
+            margin-bottom: 24px;
+
+            img {
+                width: 100%;
+            }
+        }
+
         .whiteLine {
             img {
                 width: 100%;
@@ -879,9 +894,9 @@
                 p,
                 span,
                 ul {
-                    font-size: 16px;
+                    font-size: 18px;
                     letter-spacing: 0.15px;
-                    line-height: 1.5;
+                    line-height: 1.8;
                 }
 
                 blockquote {
@@ -950,11 +965,16 @@
                 h4 {
                     font-family: 'Lora', serif;
                     color: @primary-color;
-                    font-size: 28px;
+                    font-size: 40px;
                     text-transform: capitalize;
                     margin-bottom: 12px;
                     line-height: 1.5;
                     font-weight: 700;
+                    width:80%;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 32px;
+                    }
                 }
 
                 .label-tag {
@@ -1164,7 +1184,8 @@
         // for High Intent Search only
         .process-anchor {
             margin-left: -1em;
-            .color-text:hover{
+
+            .color-text:hover {
                 cursor: pointer;
             }
 
