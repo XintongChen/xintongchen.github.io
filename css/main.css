@@ -2,67 +2,67 @@
   font-family: 'Lora';
   font-style: italic;
   font-weight: 400;
-  src: local('Lora Italic'), local('Lora-Italic'), url(https://fonts.gstatic.com/s/lora/v14/0QIhMX1D_JOuMw_LIftO.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoq92mQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lora';
   font-style: italic;
   font-weight: 700;
-  src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url(https://fonts.gstatic.com/s/lora/v14/0QIiMX1D_JOuMw_Dmt5emNGu.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-C0Coq92mQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
-  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 700;
-  src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v14/0QIgMX1D_JOuO7HeNtxunw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lora/v16/0QI6MX1D_JOuGQbT0gvTJPa787z5vBJBkqg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 300;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v16/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v16/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'MuseoSans-100';
@@ -133,7 +133,7 @@ a:hover p {
   animation: scaling 2s infinite;
   width: 15px;
   height: 15px;
-  background-color: #b10343;
+  background-color: #5b09bd;
   display: inline-block;
   border-radius: 50%;
   opacity: 1;
@@ -158,16 +158,16 @@ body {
   position: relative;
 }
 .color-text {
-  color: #b10343 !important;
+  color: #5b09bd !important;
 }
 .light-text {
-  color: #a8a3a5 !important;
+  color: #918a9a !important;
 }
 .mobile-nav {
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(177, 3, 67, 0.95);
+  background-color: rgba(91, 9, 189, 0.95);
   color: white;
   text-align: center;
   position: fixed;
@@ -250,7 +250,7 @@ body {
   padding-top: 9px;
   font-size: 25px;
   right: 0px;
-  color: #b10343;
+  color: #5b09bd;
   cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
@@ -404,7 +404,7 @@ body {
 .IntroRow .link-wrapper {
   margin-top: 56px;
   margin-bottom: 16px;
-  color: #b10343;
+  color: #5b09bd;
   text-transform: uppercase;
   letter-spacing: 0.5;
   font-size: 24px;
@@ -443,16 +443,16 @@ body {
   -o-transition: all 0.25s;
   transition: all 0.25s;
   letter-spacing: 1.1;
-  color: #a8a3a5;
+  color: #918a9a;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 .IntroRow .nav-wrapper .nav-link:focus {
-  color: #b10343;
+  color: #5b09bd;
 }
 .IntroRow .nav-wrapper .nav-link:hover {
-  color: #b10343;
+  color: #5b09bd;
 }
 .IntroRow .nav-wrapper .nav-link:after {
   position: absolute;
@@ -473,7 +473,7 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   opacity: 0;
-  background: rgba(177, 3, 67, 0.25);
+  background: rgba(91, 9, 189, 0.25);
 }
 .IntroRow .nav-wrapper .nav-link:hover:after {
   width: 70%;
@@ -497,12 +497,12 @@ body {
   position: relative;
   margin: auto;
   overflow: hidden;
-  box-shadow: 0px 2px 0px 0px rgba(177, 3, 67, 0.12);
-  border: 1px solid rgba(177, 3, 67, 0.08);
+  box-shadow: 0px 2px 0px 0px rgba(91, 9, 189, 0.12);
+  border: 1px solid rgba(91, 9, 189, 0.08);
   border-radius: 4px;
 }
 .ProjRow .square .projImg:hover {
-  box-shadow: 0px 2px 16px 0px rgba(177, 3, 67, 0.12);
+  box-shadow: 0px 2px 16px 0px rgba(91, 9, 189, 0.12);
 }
 .ProjRow .square .projImg .scaled-img {
   border-radius: 4px;
@@ -536,13 +536,13 @@ body {
   font-size: 20px;
 }
 .ProjRow .square .projImg .projIcon .projTags {
-  color: #a8a3a5;
+  color: #918a9a;
   font-family: 'Lato', serif;
   font-weight: 400;
   font-size: 14px;
 }
 .ProjRow .square .projImg .projIcon .square-cta {
-  color: #b10343;
+  color: #5b09bd;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   padding-top: 8px;
@@ -601,11 +601,11 @@ body {
 }
 .ContactRow .contactLeft {
   padding: 56px 32px;
-  background-color: #b10343;
+  background-color: #5b09bd;
 }
 .ContactRow .contactRight {
   padding: 56px 32px;
-  background-color: rgba(177, 3, 67, 0.75);
+  background-color: rgba(91, 9, 189, 0.75);
 }
 @-webkit-keyframes bounce {
   0%,
@@ -689,7 +689,7 @@ body {
 }
 .homeKey {
   border-radius: 100%;
-  background-color: #b10343;
+  background-color: #5b09bd;
   width: 50px;
   height: 50px;
   position: fixed;
@@ -713,20 +713,20 @@ body {
 }
 .topKey {
   display: none;
-  color: #b10343;
+  color: #5b09bd;
   width: 50px;
   height: 50px;
   position: fixed;
   bottom: 20px;
   right: 20px;
   background-color: #ffffff;
-  box-shadow: 2px 4px 10px 0 rgba(177, 3, 67, 0.4);
+  box-shadow: 2px 4px 10px 0 rgba(91, 9, 189, 0.4);
   z-index: 100;
-  border: 2px solid #b10343;
+  border: 2px solid #5b09bd;
   border-radius: 2px;
 }
 .topKey:hover {
-  box-shadow: 2px 6px 14px 0 rgba(177, 3, 67, 0.4);
+  box-shadow: 2px 6px 14px 0 rgba(91, 9, 189, 0.4);
   cursor: pointer;
 }
 .topKey i {
@@ -739,7 +739,7 @@ body {
   padding: 72px 0px 32px 0px;
 }
 .jumbotronRow h1 {
-  color: #b10343;
+  color: #5b09bd;
   font-family: 'Lora', serif;
   font-weight: 700;
   letter-spacing: 0.3;
@@ -762,7 +762,7 @@ body {
 }
 .jumbotronRow a {
   font-size: 14px;
-  color: #b10343;
+  color: #5b09bd;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   text-decoration: none;
@@ -797,7 +797,7 @@ body {
   width: 100%;
 }
 .img-title {
-  color: #b0abb0;
+  color: #918a9a;
   font-family: 'Lora', sans-serif;
   margin-top: 8px;
   margin-bottom: 20px;
@@ -877,7 +877,7 @@ body {
   padding: 4px 20px 4px 10px;
   font-size: 16px;
   margin: 12px 0px 7px 10px;
-  border-left: 4px solid #f5f4f5;
+  border-left: 4px solid #f4f4f5;
 }
 .whiteLine .details blockquote .quoted-by {
   font-style: italic;
@@ -927,7 +927,7 @@ body {
 }
 .whiteLine .details h4 {
   font-family: 'Lora', serif;
-  color: #b10343;
+  color: #5b09bd;
   font-size: 40px;
   text-transform: capitalize;
   margin-bottom: 12px;
@@ -941,7 +941,7 @@ body {
   }
 }
 .whiteLine .details .label-tag {
-  background-color: #b10343;
+  background-color: #5b09bd;
   opacity: 0.75;
   font-weight: normal;
   padding: 3px 5px;
@@ -958,7 +958,7 @@ body {
   color: #333;
 }
 .whiteLine .details .gray-block {
-  background: #f5f4f5;
+  background: #f4f4f5;
   padding: 20px 20px 8px 20px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -983,7 +983,7 @@ body {
   font-size: 18px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  color: #b10343;
+  color: #5b09bd;
   padding-bottom: 80px;
 }
 .whiteLine .next-step a {
@@ -993,10 +993,10 @@ body {
   border-radius: 2px;
 }
 .whiteLine .next-step a:visited {
-  color: #b10343;
+  color: #5b09bd;
 }
 .whiteLine .next-step a:hover {
-  color: #b10343;
+  color: #5b09bd;
 }
 .whiteLine .next-step .hide-mobile {
   vertical-align: middle;
@@ -1033,7 +1033,7 @@ body {
   box-shadow: 2px 2px 7px #b7b7b7;
 }
 .whiteLine .outline-img {
-  border: 1px solid #f5f4f5;
+  border: 1px solid #f4f4f5;
   border-radius: 3px;
 }
 .whiteLine .add-margin {
@@ -1061,11 +1061,11 @@ body {
 .carousel .carousel-indicators li {
   width: 10px;
   height: 10px;
-  background-color: rgba(177, 3, 67, 0.5);
+  background-color: rgba(91, 9, 189, 0.5);
   border: none;
 }
 .carousel .carousel-indicators .active {
-  background-color: #b10343;
+  background-color: #5b09bd;
   border: none;
   margin: 1px;
   width: 30px;
@@ -1073,7 +1073,7 @@ body {
 }
 .carousel .carousel-control {
   font-size: 30px;
-  color: #b10343;
+  color: #5b09bd;
   text-shadow: none;
   opacity: 0.6;
 }
@@ -1083,7 +1083,7 @@ body {
 }
 .carousel .carousel-control:hover,
 .carousel .carousel-control:focus {
-  color: #b10343;
+  color: #5b09bd;
   opacity: 1;
 }
 .carousel#deepintent-carousel .carousel-inner > .item > img {
