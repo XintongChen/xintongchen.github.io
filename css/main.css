@@ -826,10 +826,6 @@ body {
     display: none;
   }
 }
-.img-fluid {
-  margin-top: -56px;
-  margin-bottom: 24px;
-}
 .img-fluid img {
   width: 100%;
 }
@@ -872,6 +868,9 @@ body {
   font-size: 18px;
   letter-spacing: 0.15px;
   line-height: 1.8;
+}
+.whiteLine .details .body-big {
+  font-size: 22px;
 }
 .whiteLine .details blockquote {
   padding: 4px 20px 4px 10px;
@@ -928,7 +927,7 @@ body {
 .whiteLine .details h4 {
   font-family: 'Lora', serif;
   color: #5b09bd;
-  font-size: 40px;
+  font-size: 32px;
   text-transform: capitalize;
   margin-bottom: 12px;
   line-height: 1.5;
@@ -937,7 +936,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .whiteLine .details h4 {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 .whiteLine .details .label-tag {
@@ -1033,7 +1032,7 @@ body {
   box-shadow: 2px 2px 7px #b7b7b7;
 }
 .whiteLine .outline-img {
-  border: 1px solid #f4f4f5;
+  border: 2px solid #f4f4f5;
   border-radius: 3px;
 }
 .whiteLine .add-margin {
