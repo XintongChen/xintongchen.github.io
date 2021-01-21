@@ -1,5 +1,8 @@
-        @import url(https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i);
-        @import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900);
+        // @import url(https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i);
+        // @import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900);
+
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+
         @primary-color: #5b09bd;
         //@primary-color: #b10343;
         // @dark-gray: #444;
@@ -15,47 +18,35 @@
         @even-lighter-gray: #f4f4f4;
         @white: #ffffff;
 
-        @font-face {
-            font-family: 'MuseoSans-100';
-            // src: ~"url('../fonts/museosans-100.eot') format('embedded-opentype')";/* IE9 Compat Modes */
-            src: ~"url('../fonts/museosans-100.woff') format('woff')", ~"url('../fonts/museosans-100.ttf') format('truetype')";
-            /* Safari, Android, iOS */
-        }
+        // @font-face {
+        //     font-family: 'MuseoSans-100';
+        //     src: ~"url('../fonts/museosans-100.woff') format('woff')", ~"url('../fonts/museosans-100.ttf') format('truetype')";
+        // }
 
-        @font-face {
-            font-family: 'MuseoSans-500';
-            // src: ~"url('../fonts/museosans-500.eot') format('embedded-opentype')";/* IE9 Compat Modes */
-            src: ~"url('../fonts/museosans-500.woff') format('woff')", ~"url('../fonts/museosans-500.ttf') format('truetype')";
-            /* Safari, Android, iOS */
-        }
+        // @font-face {
+        //     font-family: 'MuseoSans-500';
+        //     src: ~"url('../fonts/museosans-500.woff') format('woff')", ~"url('../fonts/museosans-500.ttf') format('truetype')";
+        // }
 
-        @font-face {
-            font-family: 'MuseoSans-700';
-            // src: ~"url('../fonts/museosans-700.eot') format('embedded-opentype')";/* IE9 Compat Modes */
-            src: ~"url('../fonts/museosans-700.woff') format('woff')", ~"url('../fonts/museosans-700.ttf') format('truetype')";
-            /* Safari, Android, iOS */
-        }
+        // @font-face {
+        //     font-family: 'MuseoSans-700';
+        //     src: ~"url('../fonts/museosans-700.woff') format('woff')", ~"url('../fonts/museosans-700.ttf') format('truetype')";
+        // }
 
-        @font-face {
-            font-family: 'MuseoSans-900';
-            // src: ~"url('../fonts/museosans-700.eot') format('embedded-opentype')";/* IE9 Compat Modes */
-            src: ~"url('../fonts/museosans-900.woff') format('woff')", ~"url('../fonts/museosans-900.ttf') format('truetype')";
-            /* Safari, Android, iOS */
-        }
+        // @font-face {
+        //     font-family: 'MuseoSans-900';
+        //     src: ~"url('../fonts/museosans-900.woff') format('woff')", ~"url('../fonts/museosans-900.ttf') format('truetype')";
+        // }
 
-        @font-face {
-            font-family: 'MuseoSans-300';
-            // src: ~"url('../fonts/museosans-300.eot') format('embedded-opentype')";/* IE9 Compat Modes */
-            src: ~"url('../fonts/museosans-300.woff') format('woff')", ~"url('../fonts/museosans-300.ttf') format('truetype')";
-            /* Safari, Android, iOS */
-        }
+        // @font-face {
+        //     font-family: 'MuseoSans-300';
+        //     src: ~"url('../fonts/museosans-300.woff') format('woff')", ~"url('../fonts/museosans-300.ttf') format('truetype')";
+        // }
 
-        @font-face {
-            font-family: 'FontAwesome';
-            // src: ~"url('../fonts/museosans-300.eot') format('embedded-opentype')";/* IE9 Compat Modes */
-            src: ~"url('../fonts/fontawesome-webfont.woff') format('woff')", ~"url('../fonts/fontawesome-webfont.ttf') format('truetype')";
-            /* Safari, Android, iOS */
-        }
+        // @font-face {
+        //     font-family: 'FontAwesome';
+        //     src: ~"url('../fonts/fontawesome-webfont.woff') format('woff')", ~"url('../fonts/fontawesome-webfont.ttf') format('truetype')";
+        // }
 
         .transform(@transforms) {
             -moz-transform: @transforms;
@@ -163,7 +154,9 @@
         }
 
         strong {
-            font-family: 'Lato', sans-serif !important;
+            // font-family: 'Lato', sans-serif !important;
+            font-family: 'Open Sans', sans-serif !important;
+
             font-weight: 900 !important;
 
 
@@ -219,7 +212,9 @@
                         padding: 15px 0px;
                         cursor: pointer;
                         opacity: 0.8;
-                        font-family: 'Lora', serif;
+                        // font-family: 'Lora', serif;
+                        font-family: 'Amiri', serif;
+
                         font-weight: 700;
                         font-size: 30px;
                         letter-spacing: 1.5;
@@ -235,7 +230,8 @@
                         }
 
                         .tag {
-                            font-family: 'Lora', serif;
+                            // font-family: 'Lora', serif;
+                            font-family: 'Amiri', serif;
                             font-size: 12px;
                             font-style: italic;
                             display: block;
@@ -246,7 +242,9 @@
 
                     .info {
                         display: block;
-                        font-family: 'Lato', sans-serif;
+                        // font-family: 'Lato', sans-serif;
+                        font-family: 'Open Sans', sans-serif;
+
                         font-weight: 300;
                         margin-top: 35px;
                         letter-spacing: 1;
@@ -261,8 +259,10 @@
 
         .IntroRow {
             padding: 80px 0px 60px 0px;
-            font-family: 'Lato', sans-serif;
-            font-weight: 700;
+            // font-family: 'Lato', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+
+            font-weight: 600;
             color: @dark-gray;
 
             @media only screen and (max-width: 768px) {
@@ -305,7 +305,9 @@
                     }
 
                     .specialAnd {
-                        font-family: 'Lora', sans-serif;
+                        // font-family: 'Lora', serif;
+                        font-family: 'Amiri', serif;
+
                         font-style: italic;
                         font-weight: 400;
                     }
@@ -383,7 +385,9 @@
                     letter-spacing: 1.1;
                     font-size: 17px;
                     font-variant: small-caps;
-                    font-family: 'Lato', sans-serif;
+                    // font-family: 'Lato', sans-serif;
+                    font-family: 'Open Sans', sans-serif;
+
                     font-weight: 700;
 
                 }
@@ -430,7 +434,10 @@
                     letter-spacing: 1.1;
                     color: @gray;
                     text-transform: uppercase;
-                    font-family: 'Lato', sans-serif;
+                    // font-family: 'Lato', sans-serif;
+                    font-family: 'Open Sans', sans-serif;
+
+
                     font-weight: 700;
 
                     &:focus {
@@ -516,7 +523,9 @@
 
                         .projTitle {
                             color: @dark-gray;
-                            font-family: 'Lato', sans-serif;
+                            // font-family: 'Lato', sans-serif;
+                            font-family: 'Open Sans', sans-serif;
+
                             font-weight: 700;
                             text-shadow: 0px 0px 3px @white;
                             letter-spacing: 0.5;
@@ -525,7 +534,8 @@
 
                         .projTags {
                             color: @gray;
-                            font-family: 'Lato', serif;
+                            // font-family: 'Lato', serif;
+                            font-family: 'Open Sans', sans-serif;
                             font-weight: 400;
                             font-weight: 400;
                             font-size: 14px;
@@ -534,7 +544,9 @@
 
                         .square-cta {
                             color: @primary-color;
-                            font-family: 'Lato', sans-serif;
+                            // font-family: 'Lato', sans-serif;
+                            font-family: 'Open Sans', sans-serif;
+
                             font-weight: 700;
                             padding-top: 8px;
                             text-transform: uppercase;
@@ -565,7 +577,9 @@
 
         .ContactRow {
             color: @white;
-            font-family: 'Lato', sans-serif;
+            // font-family: 'Lato', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+
             margin-bottom: 40px;
 
             a:focus {
@@ -755,13 +769,21 @@
             }
         }
 
+        .img-featured {
+            img {
+                width: 100%;
+            }
+        }
+
         .jumbotronRow {
             position: relative;
             padding: 72px 0px 32px 0px;
 
             h1 {
                 color: @primary-color;
-                font-family: 'Lora', serif;
+                // font-family: 'Lora', serif;
+                font-family: 'Amiri', serif;
+
                 font-weight: 700;
                 letter-spacing: 0.3;
                 font-size: 56px;
@@ -778,7 +800,9 @@
             }
 
             h5 {
-                font-family: 'Lato', sans-serif;
+                // font-family: 'Lato', sans-serif;
+                font-family: 'Open Sans', sans-serif;
+
                 font-weight: 300;
                 color: @light-gray;
             }
@@ -786,7 +810,9 @@
             a {
                 font-size: 14px;
                 color: @primary-color;
-                font-family: 'Lato', sans-serif;
+                // font-family: 'Lato', sans-serif;
+                font-family: 'Open Sans', sans-serif;
+
                 font-weight: 400;
                 text-decoration: none;
                 font-weight: bold;
@@ -822,7 +848,9 @@
 
         .img-title {
             color: @gray;
-            font-family: 'Lora', sans-serif;
+            // font-family: 'Lora', serif;
+            font-family: 'Amiri', serif;
+
             margin-top: 8px;
             margin-bottom: 20px;
             font-size: 13px;
@@ -854,8 +882,8 @@
         }
 
         .img-fluid {
-            // margin-top: -56px;
-            // margin-bottom: 24px;
+            margin-top: -56px;
+            margin-bottom: 72px;
 
             img {
                 width: 100%;
@@ -869,7 +897,9 @@
             }
 
             .details {
-                font-family: 'Lato', sans-serif;
+                // font-family: 'Lato', sans-serif;
+                font-family: 'Open Sans', sans-serif;
+
                 font-weight: 400;
                 color: @dark-gray;
                 margin-bottom: 72px;
@@ -904,7 +934,7 @@
                     line-height: 1.8;
                 }
 
-                .body-big{
+                .body-big {
                     font-size: 22px;
                 }
 
@@ -917,7 +947,9 @@
                     .quoted-by {
                         font-style: italic;
                         color: @light-gray;
-                        font-family: 'Lora', serif;
+                        // font-family: 'Lora', serif;
+                        font-family: 'Amiri', serif;
+
                     }
                 }
 
@@ -972,7 +1004,9 @@
                 }
 
                 h4 {
-                    font-family: 'Lora', serif;
+                    // font-family: 'Lora', serif;
+                    font-family: 'Amiri', serif;
+
                     color: @primary-color;
                     font-size: 32px;
                     text-transform: capitalize;
@@ -994,7 +1028,9 @@
                 }
 
                 .proj-label {
-                    font-family: 'Lato', sans-serif;
+                    // font-family: 'Lato', sans-serif;
+                    font-family: 'Open Sans', sans-serif;
+
                     font-weight: 300;
                     display: inline-block;
                     border: 1px solid #333;
@@ -1012,7 +1048,9 @@
                     margin-bottom: 20px;
 
                     .persona-name {
-                        font-family: 'Lato', sans-serif;
+                        // font-family: 'Lato', sans-serif;
+                        font-family: 'Open Sans', sans-serif;
+
                         font-weight: 700;
 
                     }
@@ -1020,7 +1058,9 @@
                     .labels {
                         text-transform: uppercase;
                         font-size: 14px;
-                        font-family: 'Lato', sans-serif;
+                        // font-family: 'Lato', sans-serif;
+                        font-family: 'Open Sans', sans-serif;
+
                         font-weight: 700;
                     }
 
@@ -1040,7 +1080,9 @@
 
             .next-step {
                 font-size: 18px;
-                font-family: 'Lato', sans-serif;
+                // font-family: 'Lato', sans-serif;
+                font-family: 'Open Sans', sans-serif;
+
                 font-weight: 400;
                 color: @primary-color;
                 padding-bottom: 80px;
