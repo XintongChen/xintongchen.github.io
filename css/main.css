@@ -3,70 +3,76 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/amiri/v16/J7afnpd8CGxBHpUrtLY.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/amiri/v24/J7afnpd8CGxBHpUrtLY.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Amiri';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/amiri/v16/J7aanpd8CGxBHpUrjAo9zps.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/amiri/v24/J7aanpd8CGxBHpUrjAo9zps.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Amiri';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/amiri/v16/J7aRnpd8CGxBHqUp.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/amiri/v24/J7aRnpd8CGxBHqUp.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Amiri';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/amiri/v16/J7acnpd8CGxBHp2VkZY4.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/amiri/v24/J7acnpd8CGxBHp2VkZY4.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
+  font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem6YaGs126MiZpBA-UFUJ0e.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkaVc.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
+  font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0C4n.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
+  font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-U1Ug.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
+  font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UNirk-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
+  font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rg-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 800;
+  font-stretch: normal;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rs-VQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1y4n.ttf) format('truetype');
 }
 a,
 a:hover {
@@ -224,7 +230,6 @@ body {
   padding-top: 9px;
   font-size: 25px;
   right: 0px;
-  color: #5b09bd;
   cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
@@ -244,6 +249,7 @@ body {
 }
 .IntroRow .intro .introduction .myName {
   font-size: 64px;
+  font-weight: 700;
 }
 @media only screen and (max-width: 768px) {
   .IntroRow .intro .introduction .myName {
@@ -254,6 +260,15 @@ body {
   font-family: 'Amiri', serif;
   font-style: italic;
   font-weight: 400;
+}
+.IntroRow .intro .introduction .currentJob {
+  line-height: 170%;
+  width: 80%;
+}
+.IntroRow .intro .introduction .currentJob a {
+  text-decoration: underline !important;
+  text-decoration-color: #5b09bd !important;
+  text-decoration-thickness: 8px !important;
 }
 .IntroRow .intro .introduction-note {
   font-size: 24px;
@@ -379,7 +394,6 @@ body {
   margin-top: 56px;
   margin-bottom: 16px;
   color: #5b09bd;
-  text-transform: uppercase;
   letter-spacing: 0.5;
   font-size: 24px;
 }
@@ -544,42 +558,27 @@ body {
   opacity: 1;
 }
 .ContactRow {
-  color: #ffffff;
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 40px;
+  margin-bottom: 56px;
+  margin-top: 24px;
 }
-.ContactRow a:focus {
-  color: #ffffff !important;
-}
-.ContactRow a:hover {
-  color: #ffffff !important;
+.ContactRow div {
+  padding: 8px 0px;
 }
 .ContactRow a {
   display: inline-block;
-  padding: 8px 8px 8px 0px;
+  padding: 8px 32px 8px 0px;
   font-size: 16px;
   margin: 7px 0px;
 }
 .ContactRow a i {
   font-size: 28px;
-  color: rgba(255, 255, 255, 0.8);
   vertical-align: sub;
   margin: 0px 4px;
 }
 .ContactRow a i:hover {
   cursor: pointer;
-  color: #ffffff;
-}
-.ContactRow .contactTitle {
-  text-transform: uppercase;
-}
-.ContactRow .contactLeft {
-  padding: 56px 32px;
-  background-color: #5b09bd;
-}
-.ContactRow .contactRight {
-  padding: 56px 32px;
-  background-color: rgba(91, 9, 189, 0.75);
 }
 @-webkit-keyframes bounce {
   0%,

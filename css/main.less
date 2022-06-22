@@ -279,7 +279,7 @@
                     padding-top: 9px;
                     font-size: 25px;
                     right: 0px;
-                    color: @primary-color;
+                    // color: @primary-color;
                     cursor: pointer;
 
                     @media only screen and (max-width: 700px) {
@@ -298,6 +298,7 @@
 
                     .myName {
                         font-size: 64px;
+                        font-weight: 700;
 
                         @media only screen and (max-width: 768px) {
                             font-size: 40px;
@@ -310,6 +311,15 @@
 
                         font-style: italic;
                         font-weight: 400;
+                    }
+                    .currentJob {
+                        line-height: 170%;
+                        width: 80%;
+                        a{
+                            text-decoration: underline !important;
+                            text-decoration-color: @primary-color !important;
+                            text-decoration-thickness: 8px !important;
+                        }
                     }
                 }
 
@@ -397,7 +407,7 @@
                 margin-top: 56px;
                 margin-bottom: 16px;
                 color: @primary-color;
-                text-transform: uppercase;
+                // text-transform: uppercase;
                 letter-spacing: 0.5;
                 font-size: 24px;
 
@@ -503,6 +513,8 @@
 
                     }
 
+
+
                     .projIcon {
                         position: absolute;
 
@@ -576,55 +588,34 @@
         }
 
         .ContactRow {
-            color: @white;
-            // font-family: 'Lato', sans-serif;
+            text-align: center;
             font-family: 'Open Sans', sans-serif;
 
-            margin-bottom: 40px;
+            margin-bottom: 56px;
+            margin-top: 24px;
 
-            a:focus {
-                color: @white  !important;
+            div {
+                padding: 8px 0px;
             }
-
-            a:hover {
-                color: @white  !important;
-            }
-
 
             a {
                 display: inline-block;
-                padding: 8px 8px 8px 0px;
+                padding: 8px 32px 8px 0px;
                 font-size: 16px;
                 margin: 7px 0px;
 
                 i {
                     font-size: 28px;
-                    color: fade(@white, 80%);
                     vertical-align: sub;
                     margin: 0px 4px;
 
                     &:hover {
                         cursor: pointer;
-                        color: @white;
                     }
                 }
             }
-
-            .contactTitle {
-                text-transform: uppercase;
-            }
-
-            .contactLeft {
-                padding: 56px 32px;
-                background-color: @primary-color;
-            }
-
-            .contactRight {
-                padding: 56px 32px;
-                background-color: fade(@primary-color, 75%);
-            }
-
         }
+
 
         @-webkit-keyframes bounce {
 
