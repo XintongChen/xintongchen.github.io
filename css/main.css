@@ -265,10 +265,15 @@ body {
   line-height: 170%;
   width: 80%;
 }
+@media only screen and (max-width: 1024px) {
+  .IntroRow .intro .introduction .currentJob {
+    width: 100%;
+  }
+}
 .IntroRow .intro .introduction .currentJob a {
   text-decoration: underline !important;
   text-decoration-color: #5b09bd !important;
-  text-decoration-thickness: 8px !important;
+  text-decoration-thickness: 4px !important;
 }
 .IntroRow .intro .introduction-note {
   font-size: 24px;

@@ -315,10 +315,15 @@
                     .currentJob {
                         line-height: 170%;
                         width: 80%;
+
+                        @media only screen and (max-width: 1024px) {
+                            width: 100%;
+                        }
+
                         a{
                             text-decoration: underline !important;
                             text-decoration-color: @primary-color !important;
-                            text-decoration-thickness: 8px !important;
+                            text-decoration-thickness: 4px !important;
                         }
                     }
                 }
