@@ -524,7 +524,6 @@ body {
   color: #2d2629;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  text-shadow: 0px 0px 3px #ffffff;
   letter-spacing: 0.5;
   font-size: 20px;
 }
@@ -552,6 +551,15 @@ body {
   .ProjRow .square .projImg .projIcon .square-cta {
     display: none;
   }
+}
+.ProjRow .square .projImg .debit .projTitle {
+  color: #ffffff;
+}
+.ProjRow .square .projImg .debit .projTags {
+  color: #ffffff;
+}
+.ProjRow .square .projImg .debit .square-cta {
+  color: #ffffff;
 }
 .ProjRow .square:hover {
   cursor: pointer;
